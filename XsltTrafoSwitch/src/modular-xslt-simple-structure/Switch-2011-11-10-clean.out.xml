@@ -1,0 +1,386 @@
+
+"Number"|"Name"|"Description"|"Type"|"Depend on"|"Roadmap"|"Epic Story"|"Feature"|"Story"|"Product Name"|"Schedule"|"Release"|"Sprint"|"Task"|"Defect"|"Story Points Dev"|"Story Points QA"|"Story Points Total"|"Start Date"|"End Date"|"Status"|"Task Status"|"acceptedDate"|"suggestedDate"|"estimatedDate"|"plannedDate"|"inProgressDate"|"doneDate"|"creationDate"
+"#15"|"R1"|""|"Release"|""|"no"|""|""|""|""|"yes"|""|""|""|""|""|""|""|"2011-09-12 00:00:00.0"|"2012-02-08 00:00:00.0"|""|""|""|""|""|""|""|""|""
+"#16"|"Generated Sprint-16"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-09-12 00:00:00.0"|"2011-09-25 00:00:00.0"|""|""|""|""|""|""|""|""|""
+
+this was a story line...|||
+STORY-TASK ID:354 node its STORY ID=210 -----
+	STORY-TASK ID:353 node its STORY ID=210 -----
+	
+this was a story line...|||
+STORY-TASK ID:359 node its STORY ID=214 -----
+	STORY-TASK ID:356 node its STORY ID=214 -----
+	STORY-TASK ID:357 node its STORY ID=214 -----
+	STORY-TASK ID:355 node its STORY ID=214 -----
+	
+this was a story line...|||
+STORY-TASK ID:352 node its STORY ID=216 -----
+	STORY-TASK ID:351 node its STORY ID=216 -----
+	STORY-TASK ID:350 node its STORY ID=216 -----
+	STORY-TASK ID:358 node its STORY ID=216 -----
+	
+this was a story line...|||
+STORY-TASK ID:362 node its STORY ID=213 -----
+	STORY-TASK ID:360 node its STORY ID=213 -----
+	STORY-TASK ID:361 node its STORY ID=213 -----
+	"#17"|"Generated Sprint-17"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-09-26 00:00:00.0"|"2011-10-09 00:00:00.0"|""|""|""|""|""|""|""|""|""
+
+this was a story line...|||
+STORY-TASK ID:395 node its STORY ID=252 -----
+	STORY-TASK ID:396 node its STORY ID=252 -----
+	STORY-TASK ID:394 node its STORY ID=252 -----
+	
+this was a story line...|||
+STORY-TASK ID:378 node its STORY ID=212 -----
+	STORY-TASK ID:379 node its STORY ID=212 -----
+	STORY-TASK ID:386 node its STORY ID=212 -----
+	
+this was a story line...|||
+STORY-TASK ID:393 node its STORY ID=242 -----
+	STORY-TASK ID:392 node its STORY ID=242 -----
+	
+this was a story line...|||
+STORY-TASK ID:371 node its STORY ID=222 -----
+	STORY-TASK ID:370 node its STORY ID=222 -----
+	STORY-TASK ID:390 node its STORY ID=222 -----
+	STORY-TASK ID:368 node its STORY ID=222 -----
+	STORY-TASK ID:369 node its STORY ID=222 -----
+	
+this was a story line...|||
+STORY-TASK ID:373 node its STORY ID=234 -----
+	STORY-TASK ID:372 node its STORY ID=234 -----
+	
+this was a story line...|||
+STORY-TASK ID:385 node its STORY ID=236 -----
+	
+this was a story line...|||
+STORY-TASK ID:382 node its STORY ID=217 -----
+	STORY-TASK ID:388 node its STORY ID=217 -----
+	STORY-TASK ID:389 node its STORY ID=217 -----
+	STORY-TASK ID:384 node its STORY ID=217 -----
+	STORY-TASK ID:383 node its STORY ID=217 -----
+	STORY-TASK ID:381 node its STORY ID=217 -----
+	
+this was a story line...|||
+STORY-TASK ID:366 node its STORY ID=211 -----
+	STORY-TASK ID:367 node its STORY ID=211 -----
+	
+this was a story line...|||
+STORY-TASK ID:375 node its STORY ID=215 -----
+	STORY-TASK ID:374 node its STORY ID=215 -----
+	
+this was a story line...|||
+STORY-TASK ID:380 node its STORY ID=29 -----
+	STORY-TASK ID:377 node its STORY ID=29 -----
+	STORY-TASK ID:387 node its STORY ID=29 -----
+	SPRINT-TASK ID:398 node its SPRINT ID=17 -----
+	SPRINT-TASK ID:399 node its SPRINT ID=17 -----
+	"#18"|"Generated Sprint-18"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-10-10 00:00:00.0"|"2011-10-23 00:00:00.0"|""|""|""|""|""|""|""|""|""
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+STORY-TASK ID:3117 node its STORY ID=220 -----
+	STORY-TASK ID:3129 node its STORY ID=220 -----
+	STORY-TASK ID:3116 node its STORY ID=220 -----
+	SPRINT-TASK ID:3142 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3136 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3106 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3141 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3122 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3104 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3125 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3128 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3107 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3153 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3155 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3120 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3159 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3119 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3139 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3112 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3110 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3137 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3156 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3103 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3126 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3150 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3105 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3109 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3152 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3114 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3127 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3140 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3138 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3132 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3113 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3115 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3151 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3157 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3111 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3158 node its SPRINT ID=18 -----
+	SPRINT-TASK ID:3134 node its SPRINT ID=18 -----
+	"#19"|"Generated Sprint-19"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-10-24 00:00:00.0"|"2011-11-05 23:00:00.0"|""|""|""|""|""|""|""|""|""
+
+this was a story line...|||
+STORY-TASK ID:3171 node its STORY ID=274 -----
+	
+this was a story line...|||
+STORY-TASK ID:3173 node its STORY ID=262 -----
+	
+this was a story line...|||
+STORY-TASK ID:3154 node its STORY ID=269 -----
+	STORY-TASK ID:3145 node its STORY ID=269 -----
+	
+this was a story line...|||
+STORY-TASK ID:3177 node its STORY ID=261 -----
+	STORY-TASK ID:3181 node its STORY ID=261 -----
+	STORY-TASK ID:3178 node its STORY ID=261 -----
+	STORY-TASK ID:3179 node its STORY ID=261 -----
+	STORY-TASK ID:3180 node its STORY ID=261 -----
+	STORY-TASK ID:3182 node its STORY ID=261 -----
+	
+this was a story line...|||
+STORY-TASK ID:3195 node its STORY ID=265 -----
+	STORY-TASK ID:3205 node its STORY ID=265 -----
+	STORY-TASK ID:3199 node its STORY ID=265 -----
+	STORY-TASK ID:3202 node its STORY ID=265 -----
+	STORY-TASK ID:3194 node its STORY ID=265 -----
+	STORY-TASK ID:3198 node its STORY ID=265 -----
+	STORY-TASK ID:3203 node its STORY ID=265 -----
+	STORY-TASK ID:3201 node its STORY ID=265 -----
+	STORY-TASK ID:3196 node its STORY ID=265 -----
+	STORY-TASK ID:3200 node its STORY ID=265 -----
+	STORY-TASK ID:3193 node its STORY ID=265 -----
+	STORY-TASK ID:3197 node its STORY ID=265 -----
+	STORY-TASK ID:3191 node its STORY ID=265 -----
+	STORY-TASK ID:3192 node its STORY ID=265 -----
+	
+this was a story line...|||
+STORY-TASK ID:3135 node its STORY ID=2102 -----
+	STORY-TASK ID:3102 node its STORY ID=2102 -----
+	
+this was a story line...|||
+STORY-TASK ID:3167 node its STORY ID=298 -----
+	STORY-TASK ID:3168 node its STORY ID=298 -----
+	STORY-TASK ID:3166 node its STORY ID=298 -----
+	STORY-TASK ID:3174 node its STORY ID=298 -----
+	
+this was a story line...|||
+STORY-TASK ID:3170 node its STORY ID=264 -----
+	
+this was a story line...|||
+STORY-TASK ID:3144 node its STORY ID=284 -----
+	
+this was a story line...|||
+STORY-TASK ID:3146 node its STORY ID=2101 -----
+	STORY-TASK ID:3108 node its STORY ID=2101 -----
+	SPRINT-TASK ID:3161 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3163 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3221 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3162 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3147 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3186 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3188 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3206 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3228 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3189 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3225 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3209 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3210 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3222 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3216 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3121 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3184 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3149 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3229 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3148 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3217 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3207 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3235 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3218 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3172 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3215 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3226 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3230 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3185 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3175 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3214 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3220 node its SPRINT ID=19 -----
+	SPRINT-TASK ID:3223 node its SPRINT ID=19 -----
+	"#20"|"Generated Sprint-20"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-11-06 23:00:00.0"|"2011-11-19 23:00:00.0"|""|""|""|""|""|""|""|""|""
+
+this was a story line...|||
+STORY-TASK ID:3256 node its STORY ID=280 -----
+	STORY-TASK ID:3264 node its STORY ID=280 -----
+	STORY-TASK ID:3257 node its STORY ID=280 -----
+	STORY-TASK ID:3255 node its STORY ID=280 -----
+	
+this was a story line...|||
+STORY-TASK ID:3190 node its STORY ID=221 -----
+	STORY-TASK ID:3250 node its STORY ID=221 -----
+	STORY-TASK ID:3187 node its STORY ID=221 -----
+	
+this was a story line...|||
+STORY-TASK ID:3253 node its STORY ID=2121 -----
+	STORY-TASK ID:3254 node its STORY ID=2121 -----
+	
+this was a story line...|||
+STORY-TASK ID:3248 node its STORY ID=2100 -----
+	STORY-TASK ID:3251 node its STORY ID=2100 -----
+	STORY-TASK ID:3232 node its STORY ID=2100 -----
+	STORY-TASK ID:3219 node its STORY ID=2100 -----
+	
+this was a story line...|||
+STORY-TASK ID:3237 node its STORY ID=266 -----
+	STORY-TASK ID:3238 node its STORY ID=266 -----
+	
+this was a story line...|||
+STORY-TASK ID:3244 node its STORY ID=273 -----
+	STORY-TASK ID:3245 node its STORY ID=273 -----
+	
+this was a story line...|||
+STORY-TASK ID:3242 node its STORY ID=267 -----
+	STORY-TASK ID:3243 node its STORY ID=267 -----
+	STORY-TASK ID:3241 node its STORY ID=267 -----
+	
+this was a story line...|||
+STORY-TASK ID:3236 node its STORY ID=2128 -----
+	STORY-TASK ID:3266 node its STORY ID=2128 -----
+	STORY-TASK ID:3143 node its STORY ID=2128 -----
+	
+this was a story line...|||
+
+this was a story line...|||
+STORY-TASK ID:3246 node its STORY ID=2129 -----
+	STORY-TASK ID:3247 node its STORY ID=2129 -----
+	
+this was a story line...|||
+STORY-TASK ID:3240 node its STORY ID=270 -----
+	STORY-TASK ID:3239 node its STORY ID=270 -----
+	
+this was a story line...|||
+STORY-TASK ID:3259 node its STORY ID=225 -----
+	STORY-TASK ID:3260 node its STORY ID=225 -----
+	STORY-TASK ID:3262 node its STORY ID=225 -----
+	STORY-TASK ID:3258 node its STORY ID=225 -----
+	STORY-TASK ID:3265 node its STORY ID=225 -----
+	STORY-TASK ID:3261 node its STORY ID=225 -----
+	SPRINT-TASK ID:3233 node its SPRINT ID=20 -----
+	SPRINT-TASK ID:3249 node its SPRINT ID=20 -----
+	SPRINT-TASK ID:3213 node its SPRINT ID=20 -----
+	SPRINT-TASK ID:3212 node its SPRINT ID=20 -----
+	SPRINT-TASK ID:397 node its SPRINT ID=20 -----
+	SPRINT-TASK ID:3211 node its SPRINT ID=20 -----
+	SPRINT-TASK ID:3252 node its SPRINT ID=20 -----
+	SPRINT-TASK ID:3267 node its SPRINT ID=20 -----
+	SPRINT-TASK ID:3234 node its SPRINT ID=20 -----
+	"#21"|"Generated Sprint-21"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-11-20 23:00:00.0"|"2011-12-03 23:00:00.0"|""|""|""|""|""|""|""|""|""
+"#22"|"Generated Sprint-22"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-12-04 23:00:00.0"|"2011-12-17 23:00:00.0"|""|""|""|""|""|""|""|""|""
+"#23"|"Generated Sprint-23"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-12-18 23:00:00.0"|"2011-12-31 23:00:00.0"|""|""|""|""|""|""|""|""|""
+"#24"|"Generated Sprint-24"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2012-01-01 23:00:00.0"|"2012-01-14 23:00:00.0"|""|""|""|""|""|""|""|""|""
+"#25"|"Generated Sprint-25"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2012-01-15 23:00:00.0"|"2012-01-28 23:00:00.0"|""|""|""|""|""|""|""|""|""
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||
+
+this was a story line...|||

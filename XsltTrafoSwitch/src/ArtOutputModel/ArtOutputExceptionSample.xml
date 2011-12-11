@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteBusinessOutputData>
+	<BusinessServiceExecutionInfo status="1">
+		<Exception code="5" Description="no infrastructure on address"/>
+	</BusinessServiceExecutionInfo>
+	<BusinessInfo/>
+</RemoteBusinessOutputData>

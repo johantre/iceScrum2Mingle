@@ -1,41 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 "Number"|"Name"|"Description"|"Type"|"Depend on"|"Roadmap"|"Epic Story"|"Feature"|"Story"|"Product Name"|"Schedule"|"Release"|"Sprint"|"Task"|"Defect"|"Story Points Dev"|"Story Points QA"|"Story Points Total"|"Start Date"|"End Date"|"Status"|"Task Status"|"acceptedDate"|"suggestedDate"|"estimatedDate"|"plannedDate"|"inProgressDate"|"doneDate"|"creationDate"
 "#15"|"R1"|""|"Release"|""|"no"|""|""|""|""|"yes"|""|""|""|""|""|""|""|"2011-09-12 00:00:00.0"|"2012-02-08 00:00:00.0"|""|""|""|""|""|""|""|""|""
 "#16"|"Generated Sprint-16"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-09-12 00:00:00.0"|"2011-09-25 00:00:00.0"|""|""|""|""|""|""|""|""|""
 "#210"|"SwitchClient module "|"h2. Narrative
 
 
-As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
-actually use, i.e. SwitchClient, in order to get the most out of my investment.
-
-h2. Notes
-
-
-The communication elements (Submit point, Checkpoint and Checkpoint via mail)
-should be licensed separately from Switch. Meaning that only when I use a valid
-key, these elements become available in the Communication section of the
-elements pane.
-Next to the elements also the User panel and the Client Activity and Client
-Connection pane on the Statistics panel should become available whenever
-correctly licensed.
-The key can either be a permanent or trial key. Both keys have the same result,
-however a trial key is time bombed so when it expires, functionality cannot be
-used anymore. Same thing when you deactivate a key.
-
-h2. Acceptance Criteria
-
-
-Make the Submit point, Checkpoint and Checkpoint via mail behave like the
-Database connect tool in Switch 10 update1. Meaning that only when they are
-licensed (separately from PowerSwitch), they can be used. Note that the
-Database module only includes 1 tool and the Client module includes 3 elements.
-Make sure the User panel appears according to the licensing status
-Make sure the Client Activity and Client Connection pane on the Statistics
-panel appear according to the licensing status.
-Note that nothing changes to the “5 license included” policy for PowerSwitch so
-if a customer has licensed the SwitchClient module then he or she still gets 5
-licenses, knowing that this number of licenses can be expanded with additional
-Client licensing.
+As a  I can  to 
 
 h2. Related Stories
 
@@ -52,8 +22,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:58:03.0"|"2011-09-09 16:54:17.0"|"2011-09-12 12:14:51.0"|"2011-09-12 14:26:24.0"|"2011-09-12 15:14:40.0"|"2011-09-26 09:38:11.0"|"2011-09-09 16:54:17.0"
-"#354"|"Hide UI elements"|"Description:User panel and the Client Activity and Client Connection pane on the Statistics panel should become available whenever
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:58:03.0"|"2011-09-09 16:54:17.0"|"2011-09-12 12:14:51.0"|"2011-09-12 14:26:24.0"|"2011-09-12 15:14:40.0"|"2011-09-26 09:38:11.0"|"2011-09-09 16:54:17.0""#354"|"Hide UI elements"|"Description:User panel and the Client Activity and Client Connection pane on the Statistics panel should become available whenever
 correctly licensed. Notes:Next to the elements also the User panel and the Client Activity and Client
 Connection pane on the Statistics panel should become available whenever
 correctly licensed.
@@ -108,8 +77,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:57:56.0"|"2011-09-09 16:56:21.0"|"2011-09-12 11:08:15.0"|"2011-09-12 14:25:32.0"|"2011-09-12 15:14:40.0"|"2011-09-26 09:38:21.0"|"2011-09-09 16:56:21.0"
-"#359"|"Prevent flow from starting when not licensed"|"Description:Prevent flow from starting in case used configurator is not licensed Notes:"|"Task"|""|"no"|""|""|"#214"|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-13 11:27:36.0"|"2011-09-26 09:38:21.0"|"2011-09-12 14:58:46.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:57:56.0"|"2011-09-09 16:56:21.0"|"2011-09-12 11:08:15.0"|"2011-09-12 14:25:32.0"|"2011-09-12 15:14:40.0"|"2011-09-26 09:38:21.0"|"2011-09-09 16:56:21.0""#359"|"Prevent flow from starting when not licensed"|"Description:Prevent flow from starting in case used configurator is not licensed Notes:"|"Task"|""|"no"|""|""|"#214"|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-13 11:27:36.0"|"2011-09-26 09:38:21.0"|"2011-09-12 14:58:46.0"
 "#356"|"Add Module ID to congurators"|"Description:Add module ID to all configurators from Processing category Notes:"|"Task"|""|"no"|""|""|"#214"|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-15 14:54:09.0"|"2011-09-26 09:38:21.0"|"2011-09-12 14:52:34.0"
 "#357"|"Mechanism for checking module license"|"Description:Make common mechanism for checking module license Notes:"|"Task"|""|"no"|""|""|"#214"|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-12 15:15:22.0"|"2011-09-26 09:38:21.0"|"2011-09-12 14:54:46.0"
 "#355"|"Update Scripter to support Module ID"|"Description: Notes:"|"Task"|""|"no"|""|""|"#214"|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-13 10:04:11.0"|"2011-09-26 09:38:21.0"|"2011-09-12 14:50:43.0"
@@ -154,8 +122,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-12 12:22:41.0"|"2011-09-12 12:22:35.0"|"2011-09-12 12:43:50.0"|"2011-09-12 14:25:56.0"|"2011-09-12 15:14:40.0"|"2011-09-26 09:38:26.0"|"2011-09-12 12:22:35.0"
-"#352"|"Test dataset availability"|"Description:Make sure that datasets and private data are available in Switch basic Notes:Note that datasets are also supported in this basic version.
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-12 12:22:41.0"|"2011-09-12 12:22:35.0"|"2011-09-12 12:43:50.0"|"2011-09-12 14:25:56.0"|"2011-09-12 15:14:40.0"|"2011-09-26 09:38:26.0"|"2011-09-12 12:22:35.0""#352"|"Test dataset availability"|"Description:Make sure that datasets and private data are available in Switch basic Notes:Note that datasets are also supported in this basic version.
 E.g. ftp send can create a dataset on the data+log outgoing connection (just like in LightSwitch). If customer has Configurator module then PitStop Server configurator can create dataset with a report and if the customer also has the SwitchClient module the he can see this report in SwitchClient.
 
 Note that private data is also supported for some tools (e.g. group and ungroup) and that the job.PrivatData variable remains part of Switch (basic) (just like in LightSwitch) 
@@ -220,8 +187,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:57:58.0"|"2011-09-09 16:55:53.0"|"2011-09-12 11:41:11.0"|"2011-09-12 14:26:03.0"|"2011-09-12 15:14:40.0"|"2011-09-26 09:33:49.0"|"2011-09-09 16:55:53.0"
-"#362"|"Disable dataset dropdown list from metadata fields"|"Description:And access to XML based datasets when defining dropdown list as metadata
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:57:58.0"|"2011-09-09 16:55:53.0"|"2011-09-12 11:41:11.0"|"2011-09-12 14:26:03.0"|"2011-09-12 15:14:40.0"|"2011-09-26 09:33:49.0"|"2011-09-09 16:55:53.0""#362"|"Disable dataset dropdown list from metadata fields"|"Description:And access to XML based datasets when defining dropdown list as metadata
 fields on Submit and Checkpoints Notes:"|"Task"|""|"no"|""|""|"#213"|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-14 08:57:31.0"|"2011-09-26 09:33:49.0"|"2011-09-12 15:03:10.0"
 "#360"|"Add Module ID to configurators"|"Description:XML, JDF, XMP and opaque pickup, XMP inject, export metadata Notes:Note that XSLT transform and log job info are not included in this module so
 they do not appear/disappear based on license status of this module"|"Task"|""|"no"|""|""|"#213"|"Switch"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-14 15:00:00.0"|"2011-09-26 09:33:49.0"|"2011-09-12 15:01:23.0"
@@ -253,8 +219,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-28 09:23:00.0"|"2011-09-27 15:22:37.0"|"2011-09-28 13:21:21.0"|"2011-09-28 13:22:31.0"|"2011-09-28 13:22:31.0"|"2011-10-04 09:47:13.0"|"2011-09-27 15:22:36.0"
-"#395"|"BZ 6309 - Switch 10 can't upload to FTP user root folder"|"Description: Notes:"|"Task"|""|"no"|""|""|"#252"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-29 11:02:00.0"|"2011-10-04 09:47:13.0"|"2011-09-28 15:52:46.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-28 09:23:00.0"|"2011-09-27 15:22:37.0"|"2011-09-28 13:21:21.0"|"2011-09-28 13:22:31.0"|"2011-09-28 13:22:31.0"|"2011-10-04 09:47:13.0"|"2011-09-27 15:22:36.0""#395"|"BZ 6309 - Switch 10 can't upload to FTP user root folder"|"Description: Notes:"|"Task"|""|"no"|""|""|"#252"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-29 11:02:00.0"|"2011-10-04 09:47:13.0"|"2011-09-28 15:52:46.0"
 "#396"|"BZ 6329 - Mail receive can't handle special character like /"|"Description: Notes:"|"Task"|""|"no"|""|""|"#252"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-29 16:47:38.0"|"2011-10-04 09:47:13.0"|"2011-09-28 15:52:58.0"
 "#394"|"BZ 4331: 'Hold' on connection doesn't always work"|"Description: Notes:"|"Task"|""|"no"|""|""|"#252"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-30 14:31:03.0"|"2011-10-04 09:47:13.0"|"2011-09-28 15:52:34.0"
 "#212"|"Database module"|"h2. Narrative
@@ -305,8 +270,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:58:00.0"|"2011-09-09 16:55:17.0"|"2011-09-12 12:14:05.0"|"2011-09-26 10:33:45.0"|"2011-09-26 11:41:25.0"|"2011-10-04 09:56:57.0"|"2011-09-09 16:55:17.0"
-"#378"|"Add Database key to Database connector element"|"Description: Notes:"|"Task"|""|"no"|""|""|"#212"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-29 15:10:52.0"|"2011-10-04 09:56:58.0"|"2011-09-26 11:13:20.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:58:00.0"|"2011-09-09 16:55:17.0"|"2011-09-12 12:14:05.0"|"2011-09-26 10:33:45.0"|"2011-09-26 11:41:25.0"|"2011-10-04 09:56:57.0"|"2011-09-09 16:55:17.0""#378"|"Add Database key to Database connector element"|"Description: Notes:"|"Task"|""|"no"|""|""|"#212"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-29 15:10:52.0"|"2011-10-04 09:56:58.0"|"2011-09-26 11:13:20.0"
 "#379"|"Check that Database features are not available without licence"|"Description: Notes:"|"Task"|""|"no"|""|""|"#212"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-26 12:16:20.0"|"2011-10-04 09:56:58.0"|"2011-09-26 11:14:10.0"
 "#386"|"Move Database tool into new category"|"Description: Notes:"|"Task"|""|"no"|""|""|"#212"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-28 15:08:57.0"|"2011-10-04 09:56:58.0"|"2011-09-26 12:04:54.0"
 "#242"|"Betatester reported bugs"|"h2. Narrative
@@ -340,8 +304,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-27 14:24:57.0"|"2011-09-26 15:04:32.0"|"2011-09-28 13:21:11.0"|"2011-09-28 13:22:05.0"|"2011-09-28 13:22:05.0"|"2011-09-29 11:00:05.0"|"2011-09-26 15:04:32.0"
-"#393"|"BZ 6248"|"Description: Notes:"|"Task"|""|"no"|""|""|"#242"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-29 11:00:02.0"|"2011-09-29 11:00:05.0"|"2011-09-28 15:52:01.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-27 14:24:57.0"|"2011-09-26 15:04:32.0"|"2011-09-28 13:21:11.0"|"2011-09-28 13:22:05.0"|"2011-09-28 13:22:05.0"|"2011-09-29 11:00:05.0"|"2011-09-26 15:04:32.0""#393"|"BZ 6248"|"Description: Notes:"|"Task"|""|"no"|""|""|"#242"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-29 11:00:02.0"|"2011-09-29 11:00:05.0"|"2011-09-28 15:52:01.0"
 "#392"|"BZ 6241"|"Description: Notes:"|"Task"|""|"no"|""|""|"#242"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-28 16:49:32.0"|"2011-09-29 11:00:05.0"|"2011-09-28 15:51:47.0"
 "#222"|"WoodWing Configurator "|"h2. Narrative
 
@@ -366,8 +329,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-26 10:37:31.0"|"2011-09-14 14:33:30.0"|"2011-09-26 10:38:50.0"|"2011-09-26 10:39:04.0"|"2011-09-26 11:41:25.0"|"2011-10-04 09:47:30.0"|"2011-09-14 14:33:30.0"
-"#371"|"BZ 5612"|"Description: Notes:"|"Task"|""|"no"|""|""|"#222"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-28 08:03:22.0"|"2011-10-04 09:47:30.0"|"2011-09-26 11:02:12.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-26 10:37:31.0"|"2011-09-14 14:33:30.0"|"2011-09-26 10:38:50.0"|"2011-09-26 10:39:04.0"|"2011-09-26 11:41:25.0"|"2011-10-04 09:47:30.0"|"2011-09-14 14:33:30.0""#371"|"BZ 5612"|"Description: Notes:"|"Task"|""|"no"|""|""|"#222"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-28 08:03:22.0"|"2011-10-04 09:47:30.0"|"2011-09-26 11:02:12.0"
 "#370"|"BZ 6277"|"Description: Notes:"|"Task"|""|"no"|""|""|"#222"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-26 12:24:24.0"|"2011-10-04 09:47:30.0"|"2011-09-26 11:01:53.0"
 "#390"|"Include 'Generic application' element into Configurator module"|"Description: Notes:"|"Task"|""|"no"|""|""|"#222"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-28 16:07:19.0"|"2011-10-04 09:47:30.0"|"2011-09-27 18:27:18.0"
 "#368"|"BZ 6274"|"Description: Notes:"|"Task"|""|"no"|""|""|"#222"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-26 16:26:27.0"|"2011-10-04 09:47:30.0"|"2011-09-26 11:01:19.0"
@@ -403,8 +365,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-21 13:44:28.0"|"2011-09-21 13:44:22.0"|"2011-09-22 17:00:55.0"|"2011-09-26 10:33:25.0"|"2011-09-26 11:41:25.0"|"2011-10-10 11:56:38.0"|"2011-09-21 13:44:22.0"
-"#373"|"Check that each module depends on its own key"|"Description: Notes:"|"Task"|""|"no"|""|""|"#234"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-04 09:56:15.0"|"2011-10-10 11:56:38.0"|"2011-09-26 11:04:20.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-21 13:44:28.0"|"2011-09-21 13:44:22.0"|"2011-09-22 17:00:55.0"|"2011-09-26 10:33:25.0"|"2011-09-26 11:41:25.0"|"2011-10-10 11:56:38.0"|"2011-09-21 13:44:22.0""#373"|"Check that each module depends on its own key"|"Description: Notes:"|"Task"|""|"no"|""|""|"#234"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-04 09:56:15.0"|"2011-10-10 11:56:38.0"|"2011-09-26 11:04:20.0"
 "#372"|"Add real keys to modules in Switch"|"Description: Notes:I cannot move this story to Done because I cannot submit my changes unless we have the keys with many possible activations."|"Task"|""|"no"|""|""|"#234"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-03 14:28:25.0"|"2011-10-10 11:56:38.0"|"2011-09-26 11:03:49.0"
 "#236"|"New installer"|"h2. Narrative
 
@@ -436,8 +397,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-26 10:25:08.0"|"2011-09-22 17:14:15.0"|"2011-09-26 11:22:37.0"|"2011-09-26 11:23:33.0"|"2011-09-26 11:41:25.0"|"2011-09-28 15:54:39.0"|"2011-09-22 17:14:15.0"
-"#385"|"Create new installer"|"Description: Notes:"|"Task"|""|"no"|""|""|"#236"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-26 13:01:18.0"|"2011-09-28 15:54:39.0"|"2011-09-26 11:24:00.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-26 10:25:08.0"|"2011-09-22 17:14:15.0"|"2011-09-26 11:22:37.0"|"2011-09-26 11:23:33.0"|"2011-09-26 11:41:25.0"|"2011-09-28 15:54:39.0"|"2011-09-22 17:14:15.0""#385"|"Create new installer"|"Description: Notes:"|"Task"|""|"no"|""|""|"#236"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-26 13:01:18.0"|"2011-09-28 15:54:39.0"|"2011-09-26 11:24:00.0"
 "#217"|"Switch name change"|"h2. Narrative
 
 
@@ -475,8 +435,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-14 14:19:27.0"|"2011-09-13 15:12:30.0"|"2011-09-22 17:16:07.0"|"2011-09-26 10:33:53.0"|"2011-09-26 11:41:25.0"|"2011-10-05 12:06:32.0"|"2011-09-13 15:12:30.0"
-"#382"|"Remove flavors from Switch code"|"Description: Notes:"|"Task"|""|"no"|""|""|"#217"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-27 18:09:59.0"|"2011-10-05 12:06:32.0"|"2011-09-26 11:17:05.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-14 14:19:27.0"|"2011-09-13 15:12:30.0"|"2011-09-22 17:16:07.0"|"2011-09-26 10:33:53.0"|"2011-09-26 11:41:25.0"|"2011-10-05 12:06:32.0"|"2011-09-13 15:12:30.0""#382"|"Remove flavors from Switch code"|"Description: Notes:"|"Task"|""|"no"|""|""|"#217"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-27 18:09:59.0"|"2011-10-05 12:06:32.0"|"2011-09-26 11:17:05.0"
 "#388"|"Refactor SwitchCommon\GSCSwitchFeatures.h"|"Description: Notes:"|"Task"|""|"no"|""|""|"#217"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-30 16:21:49.0"|"2011-10-05 12:06:32.0"|"2011-09-27 18:10:28.0"
 "#389"|"Make sure AppleScript works after removing flavors"|"Description:The problem is that for AppleScripts we use
 
@@ -528,8 +487,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:58:01.0"|"2011-09-09 16:54:47.0"|"2011-09-12 11:57:04.0"|"2011-09-26 10:33:39.0"|"2011-09-26 11:41:25.0"|"2011-09-29 15:03:07.0"|"2011-09-09 16:54:47.0"
-"#366"|"Add license checking mechanism for Scripting module"|"Description:Make sure Switch checks for separate license when loading Script element and Script features such as script expressions in UI Notes:"|"Task"|""|"no"|""|""|"#211"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-26 12:13:35.0"|"2011-09-29 15:03:07.0"|"2011-09-26 10:58:58.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:58:01.0"|"2011-09-09 16:54:47.0"|"2011-09-12 11:57:04.0"|"2011-09-26 10:33:39.0"|"2011-09-26 11:41:25.0"|"2011-09-29 15:03:07.0"|"2011-09-09 16:54:47.0""#366"|"Add license checking mechanism for Scripting module"|"Description:Make sure Switch checks for separate license when loading Script element and Script features such as script expressions in UI Notes:"|"Task"|""|"no"|""|""|"#211"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-26 12:13:35.0"|"2011-09-29 15:03:07.0"|"2011-09-26 10:58:58.0"
 "#367"|"Move Script element to Scripting module"|"Description: Notes:"|"Task"|""|"no"|""|""|"#211"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-27 12:24:05.0"|"2011-09-29 15:03:07.0"|"2011-09-26 10:59:19.0"
 "#215"|"SwitchProxy module"|"h2. Narrative
 
@@ -566,8 +524,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:57:53.0"|"2011-09-09 16:56:43.0"|"2011-09-12 11:08:31.0"|"2011-09-26 10:33:29.0"|"2011-09-26 11:41:25.0"|"2011-09-28 11:17:19.0"|"2011-09-09 16:56:43.0"
-"#375"|"Check SwitchProxy is not able to connect to Switch if not licensed"|"Description: Notes:"|"Task"|""|"no"|""|""|"#215"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-28 09:46:20.0"|"2011-09-28 11:17:19.0"|"2011-09-26 11:05:59.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:57:53.0"|"2011-09-09 16:56:43.0"|"2011-09-12 11:08:31.0"|"2011-09-26 10:33:29.0"|"2011-09-26 11:41:25.0"|"2011-09-28 11:17:19.0"|"2011-09-09 16:56:43.0""#375"|"Check SwitchProxy is not able to connect to Switch if not licensed"|"Description: Notes:"|"Task"|""|"no"|""|""|"#215"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-28 09:46:20.0"|"2011-09-28 11:17:19.0"|"2011-09-26 11:05:59.0"
 "#374"|"Add real key to Switch"|"Description: Notes:"|"Task"|""|"no"|""|""|"#215"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-28 08:03:52.0"|"2011-09-28 11:17:19.0"|"2011-09-26 11:05:00.0"
 "#29"|"Client SDK module"|"h2. Narrative
 
@@ -608,8 +565,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:58:05.0"|"2011-09-09 16:53:40.0"|"2011-09-12 12:32:02.0"|"2011-09-26 10:33:42.0"|"2011-09-26 11:41:25.0"|"2011-09-28 15:36:11.0"|"2011-09-09 16:53:40.0"
-"#380"|"Check that connecitons from Client and SDK based clients"|"Description:Check different variations of Client and SDK licenses - Client should be able to connect with both licenses, SDK based Client should be able to connect only with ClientSDK license;
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-09 16:58:05.0"|"2011-09-09 16:53:40.0"|"2011-09-12 12:32:02.0"|"2011-09-26 10:33:42.0"|"2011-09-26 11:41:25.0"|"2011-09-28 15:36:11.0"|"2011-09-09 16:53:40.0""#380"|"Check that connecitons from Client and SDK based clients"|"Description:Check different variations of Client and SDK licenses - Client should be able to connect with both licenses, SDK based Client should be able to connect only with ClientSDK license;
 
 Make sure that number of availble connections is calculated correctly according to license installed. Notes:"|"Task"|""|"no"|""|""|"#29"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-28 11:53:41.0"|"2011-09-28 15:36:11.0"|"2011-09-26 11:15:11.0"
 "#377"|"Make sure Client SDK enables Client license"|"Description: Notes:"|"Task"|""|"no"|""|""|"#29"|"Switch"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-09-27 14:55:40.0"|"2011-09-28 15:36:11.0"|"2011-09-26 11:09:56.0"
@@ -668,8 +624,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:06.0"|"2011-10-05 15:27:30.0"|"2011-10-07 14:52:04.0"|"2011-10-10 11:21:24.0"|"2011-10-10 11:57:05.0"|"2011-10-12 10:04:57.0"|"2011-10-05 15:27:30.0"
-"#271"|"10u2 QA Bugfixes customer bugs"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:06.0"|"2011-10-05 15:27:30.0"|"2011-10-07 14:52:04.0"|"2011-10-10 11:21:24.0"|"2011-10-10 11:57:05.0"|"2011-10-12 10:04:57.0"|"2011-10-05 15:27:30.0""#271"|"10u2 QA Bugfixes customer bugs"|"h2. Narrative
 
 
 As a  I can  to These are 3  bugs reported by customers against previous versions of Switch:
@@ -698,8 +653,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:12.0"|"2011-10-05 15:27:28.0"|"2011-10-07 15:00:34.0"|"2011-10-10 11:21:36.0"|"2011-10-10 11:57:05.0"|"2011-10-12 10:05:14.0"|"2011-10-05 15:27:28.0"
-"#220"|"DEV Info on missing elements"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:12.0"|"2011-10-05 15:27:28.0"|"2011-10-07 15:00:34.0"|"2011-10-10 11:21:36.0"|"2011-10-10 11:57:05.0"|"2011-10-12 10:05:14.0"|"2011-10-05 15:27:28.0""#220"|"DEV Info on missing elements"|"h2. Narrative
 
 
 As a a Switch Administrator I can see to which module a tool, property editor or variable group belongs if i import a flow to know exactly what is missing and make it easy to extend Switch, buy or try  additional moduleh2. Notes
@@ -738,8 +692,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-14 14:19:17.0"|"2011-09-13 16:46:00.0"|"2011-10-10 11:23:55.0"|"2011-10-10 11:25:46.0"|"2011-10-10 11:57:05.0"|"2011-10-12 10:47:02.0"|"2011-09-13 16:46:00.0"
-"#3117"|"Add license check for Scripting module"|"Description:When importing a flow that uses script expression editor and scripting module is not active, the message says: 'Unsupported property editor “define script expression” was detected when importing this flow'. 
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|"Accepted"|""|"2011-09-14 14:19:17.0"|"2011-09-13 16:46:00.0"|"2011-10-10 11:23:55.0"|"2011-10-10 11:25:46.0"|"2011-10-10 11:57:05.0"|"2011-10-12 10:47:02.0"|"2011-09-13 16:46:00.0""#3117"|"Add license check for Scripting module"|"Description:When importing a flow that uses script expression editor and scripting module is not active, the message says: 'Unsupported property editor “define script expression” was detected when importing this flow'. 
 Once imported, flow validation fails just like when importing such flow from PowerSwitch in LightSwitch Notes:"|"Task"|""|"no"|""|""|"#220"|"Switch"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-10 15:06:20.0"|"2011-10-12 10:47:02.0"|"2011-10-10 11:49:27.0"
 "#3129"|"Add license checking for variables_1"|"Description:When importing a flow that uses a variable from a non supported group (i.e. metadata or database), the message says: “Unsupported variable was detected when importing this flow”. 
 Once imported, flow validation fails. Currently it is not clear to me what happens if you import such flow from PowerSwitch in LightSwitch so this behavior should be improved Notes:"|"Task"|""|"no"|""|""|"#220"|"Switch"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-12 10:48:06.0"|"2011-10-12 10:59:53.0"|"2011-10-12 10:47:47.0"
@@ -845,8 +798,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:19:58.0"|"2011-10-05 15:27:39.0"|"2011-10-07 14:32:43.0"|"2011-10-24 10:56:50.0"|"2011-10-24 12:06:06.0"|"2011-10-25 11:11:27.0"|"2011-10-05 15:27:39.0"
-"#3171"|"Testing names on Windows and mac"|"Description: Notes:Update 1: Mac OSX 10.6.8 build 279320 Ok
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:19:58.0"|"2011-10-05 15:27:39.0"|"2011-10-07 14:32:43.0"|"2011-10-24 10:56:50.0"|"2011-10-24 12:06:06.0"|"2011-10-25 11:11:27.0"|"2011-10-05 15:27:39.0""#3171"|"Testing names on Windows and mac"|"Description: Notes:Update 1: Mac OSX 10.6.8 build 279320 Ok
 Update 2: Windows Vista Business Service Pack 1 build 279230 OK
 
 No old names (PowerSwitch,...) found."|"Task"|""|"no"|""|""|"#274"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-25 11:06:50.0"|"2011-10-25 11:11:27.0"|"2011-10-25 09:27:57.0"
@@ -909,8 +861,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:49.0"|"2011-10-05 15:26:51.0"|"2011-10-07 16:26:28.0"|"2011-10-24 10:56:05.0"|"2011-10-24 12:06:06.0"|"2011-10-25 14:44:23.0"|"2011-10-05 15:26:51.0"
-"#3173"|"Testing Client Panes"|"Description: Notes:Testing if you can't see client panes when not activated and if you can when it is activated on mac and windows.
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:49.0"|"2011-10-05 15:26:51.0"|"2011-10-07 16:26:28.0"|"2011-10-24 10:56:05.0"|"2011-10-24 12:06:06.0"|"2011-10-25 14:44:23.0"|"2011-10-05 15:26:51.0""#3173"|"Testing Client Panes"|"Description: Notes:Testing if you can't see client panes when not activated and if you can when it is activated on mac and windows.
 
 Mac OSX 10.6.8 and Switch build 279320 Ok
 Windows Vista Business Service Pack 1, build 279320 Ok.
@@ -950,8 +901,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:21.0"|"2011-10-05 15:27:23.0"|"2011-10-07 15:13:14.0"|"2011-10-24 10:42:34.0"|"2011-10-24 12:06:06.0"|"2011-10-27 13:47:55.0"|"2011-10-05 15:27:23.0"
-"#3154"|"Bug 6221 - How does the variable group 'Connection' work? "|"Description: Notes:"|"Task"|""|"no"|""|""|"#269"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-27 13:47:54.0"|"2011-10-27 13:47:55.0"|"2011-10-21 10:50:30.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:21.0"|"2011-10-05 15:27:23.0"|"2011-10-07 15:13:14.0"|"2011-10-24 10:42:34.0"|"2011-10-24 12:06:06.0"|"2011-10-27 13:47:55.0"|"2011-10-05 15:27:23.0""#3154"|"Bug 6221 - How does the variable group 'Connection' work? "|"Description: Notes:"|"Task"|""|"no"|""|""|"#269"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-27 13:47:54.0"|"2011-10-27 13:47:55.0"|"2011-10-21 10:50:30.0"
 "#3145"|"QA Test Betatester reported bugs"|"Description: Notes:"|"Task"|""|"no"|""|""|"#269"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-25 13:13:19.0"|"2011-10-27 13:47:55.0"|"2011-10-19 10:57:38.0"
 "#261"|"QA Metadata module"|"h2. Narrative
 
@@ -1006,8 +956,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:54.0"|"2011-10-05 15:26:45.0"|"2011-10-07 16:31:33.0"|"2011-10-24 10:55:57.0"|"2011-10-24 12:06:06.0"|"2011-11-08 09:14:36.0"|"2011-10-05 15:26:45.0"
-"#3177"|"test elements  on a windows machine"|"Description:ONLY after licensing the metadata module :
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:54.0"|"2011-10-05 15:26:45.0"|"2011-10-07 16:31:33.0"|"2011-10-24 10:55:57.0"|"2011-10-24 12:06:06.0"|"2011-11-08 09:14:36.0"|"2011-10-05 15:26:45.0""#3177"|"test elements  on a windows machine"|"Description:ONLY after licensing the metadata module :
 The metadata elements (XML, JDF, XMP and opaque pickup, XMP inject, export
 metadata)
 are available
@@ -1059,8 +1008,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:36.0"|"2011-10-05 15:27:10.0"|"2011-10-07 15:41:25.0"|"2011-10-24 10:55:34.0"|"2011-10-25 16:40:32.0"|"2011-11-03 15:30:22.0"|"2011-10-05 15:27:10.0"
-"#3195"|"test switchclient SDK module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#265"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-28 13:22:46.0"|"2011-11-03 15:30:22.0"|"2011-10-26 13:00:33.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:36.0"|"2011-10-05 15:27:10.0"|"2011-10-07 15:41:25.0"|"2011-10-24 10:55:34.0"|"2011-10-25 16:40:32.0"|"2011-11-03 15:30:22.0"|"2011-10-05 15:27:10.0""#3195"|"test switchclient SDK module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#265"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-28 13:22:46.0"|"2011-11-03 15:30:22.0"|"2011-10-26 13:00:33.0"
 "#3205"|"test keys on mac and win"|"Description: Notes:"|"Task"|""|"no"|""|""|"#265"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-31 11:50:02.0"|"2011-11-03 15:30:22.0"|"2011-10-26 13:25:36.0"
 "#3199"|"test metadata module Key + functionality on a mac machine"|"Description: Notes:Oké tested on a Mac osX 10.6.8 with build 279649."|"Task"|""|"no"|""|""|"#265"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-26 13:48:42.0"|"2011-11-03 15:30:22.0"|"2011-10-26 13:04:22.0"
 "#3202"|"test configurator module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#265"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-26 13:59:14.0"|"2011-11-03 15:30:22.0"|"2011-10-26 13:04:53.0"
@@ -1100,8 +1048,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-24 12:06:37.0"|"2011-10-24 12:05:55.0"|"2011-10-24 12:06:55.0"|"2011-10-24 12:07:18.0"|"2011-10-24 12:07:18.0"|"2011-10-31 10:19:13.0"|"2011-10-24 12:05:55.0"
-"#3135"|"bz6349"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2102"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-25 16:57:31.0"|"2011-10-31 10:19:13.0"|"2011-10-14 12:40:10.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-24 12:06:37.0"|"2011-10-24 12:05:55.0"|"2011-10-24 12:06:55.0"|"2011-10-24 12:07:18.0"|"2011-10-24 12:07:18.0"|"2011-10-31 10:19:13.0"|"2011-10-24 12:05:55.0""#3135"|"bz6349"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2102"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-25 16:57:31.0"|"2011-10-31 10:19:13.0"|"2011-10-14 12:40:10.0"
 "#3102"|"Bug　6349 - application error after ftp stresstesting"|"Description:This is task was replaced in done because bug 6349 changed status on 'RESOLVED WORKSFORME' Notes:"|"Task"|""|"no"|""|""|"#2102"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-28 12:39:27.0"|"2011-10-31 10:19:13.0"|"2011-10-10 11:26:45.0"
 "#298"|"Add files to compressed package"|"h2. Narrative
 
@@ -1132,8 +1079,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-24 09:47:07.0"|"2011-10-24 09:47:02.0"|"2011-10-24 10:35:21.0"|"2011-10-24 10:48:25.0"|"2011-10-24 12:06:06.0"|"2011-11-03 15:29:59.0"|"2011-10-24 09:47:02.0"
-"#3167"|"Investigate problems with folder hierarchy"|"Description: Notes:"|"Task"|""|"no"|""|""|"#298"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-24 14:49:46.0"|"2011-11-03 15:30:00.0"|"2011-10-24 12:05:01.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-24 09:47:07.0"|"2011-10-24 09:47:02.0"|"2011-10-24 10:35:21.0"|"2011-10-24 10:48:25.0"|"2011-10-24 12:06:06.0"|"2011-11-03 15:29:59.0"|"2011-10-24 09:47:02.0""#3167"|"Investigate problems with folder hierarchy"|"Description: Notes:"|"Task"|""|"no"|""|""|"#298"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-24 14:49:46.0"|"2011-11-03 15:30:00.0"|"2011-10-24 12:05:01.0"
 "#3168"|"Create Shaker tests"|"Description: Notes:"|"Task"|""|"no"|""|""|"#298"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-25 17:07:54.0"|"2011-11-03 15:30:00.0"|"2011-10-24 12:05:51.0"
 "#3166"|"Extend Swtich scripting API"|"Description:Make it possible to add/update files into existing archive Notes:"|"Task"|""|"no"|""|""|"#298"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-24 15:56:43.0"|"2011-11-03 15:30:00.0"|"2011-10-24 11:44:37.0"
 "#3174"|"QA - Test updated compress functionality"|"Description: Notes:"|"Task"|""|"no"|""|""|"#298"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-28 11:21:25.0"|"2011-11-03 15:30:44.0"|"2011-10-25 12:50:04.0"
@@ -1183,8 +1129,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:39.0"|"2011-10-05 15:26:56.0"|"2011-10-07 15:53:21.0"|"2011-10-24 10:56:14.0"|"2011-10-24 12:06:06.0"|"2011-10-24 17:07:46.0"|"2011-10-05 15:26:56.0"
-"#3170"|"Test on a windows machine"|"Description:Test on a windows machine Notes:"|"Task"|""|"no"|""|""|"#264"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-24 15:15:19.0"|"2011-10-24 17:07:47.0"|"2011-10-24 15:14:44.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:39.0"|"2011-10-05 15:26:56.0"|"2011-10-07 15:53:21.0"|"2011-10-24 10:56:14.0"|"2011-10-24 12:06:06.0"|"2011-10-24 17:07:46.0"|"2011-10-05 15:26:56.0""#3170"|"Test on a windows machine"|"Description:Test on a windows machine Notes:"|"Task"|""|"no"|""|""|"#264"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-24 15:15:19.0"|"2011-10-24 17:07:47.0"|"2011-10-24 15:14:44.0"
 "#284"|"QA Info on missing elements"|"h2. Narrative
 
 
@@ -1224,8 +1169,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-10 11:24:30.0"|"2011-10-10 11:23:13.0"|"2011-10-10 11:24:57.0"|"2011-10-24 10:42:35.0"|"2011-10-24 12:06:06.0"|"2011-11-08 09:15:00.0"|"2011-10-10 11:23:13.0"
-"#3144"|"QA - Test Info on missing elements"|"Description: Notes:"|"Task"|""|"no"|""|""|"#284"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-11-02 15:02:27.0"|"2011-11-08 09:15:00.0"|"2011-10-19 10:56:50.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-10 11:24:30.0"|"2011-10-10 11:23:13.0"|"2011-10-10 11:24:57.0"|"2011-10-24 10:42:35.0"|"2011-10-24 12:06:06.0"|"2011-11-08 09:15:00.0"|"2011-10-10 11:23:13.0""#3144"|"QA - Test Info on missing elements"|"Description: Notes:"|"Task"|""|"no"|""|""|"#284"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-11-02 15:02:27.0"|"2011-11-08 09:15:00.0"|"2011-10-19 10:56:50.0"
 "#2101"|"Preferences match my installation."|"h2. Narrative
 
 
@@ -1253,8 +1197,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-24 12:03:18.0"|"2011-10-24 12:02:14.0"|"2011-10-24 12:03:31.0"|"2011-10-24 12:03:49.0"|"2011-10-24 12:06:06.0"|"2011-10-26 15:43:56.0"|"2011-10-24 12:02:14.0"
-"#3146"|"QA Test Preferences match my installation"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2101"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-26 09:46:08.0"|"2011-10-26 15:43:56.0"|"2011-10-19 10:58:23.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-24 12:03:18.0"|"2011-10-24 12:02:14.0"|"2011-10-24 12:03:31.0"|"2011-10-24 12:03:49.0"|"2011-10-24 12:06:06.0"|"2011-10-26 15:43:56.0"|"2011-10-24 12:02:14.0""#3146"|"QA Test Preferences match my installation"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2101"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-26 09:46:08.0"|"2011-10-26 15:43:56.0"|"2011-10-19 10:58:23.0"
 "#3108"|"Refactoring Preferences classes"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2101"|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-24 12:40:19.0"|"2011-10-26 15:43:56.0"|"2011-10-10 11:37:36.0"
 "#3161"|"Investigate problems on Lion"|"Description:Carine will add the necessary info in the task notes Notes:Kirill:
 My investigation shown that Switch hung when calling to Flex service. Is reinstall will not help, let's ask Halewijn to investigate it.
@@ -1272,7 +1215,7 @@ Flex is not officially compatible with Lion, therefore we need to involve Halewi
 "#3186"|"Extra - Add event indicating that license info is changed"|"Description:Make it possible to inform all interested objects that license informaiton is changed, so Switch will be able to react on chenges fast Notes:"|"Task"|""|"no"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-27 16:45:54.0"|"2011-11-04 07:51:52.0"|"2011-10-26 11:28:36.0"
 "#3188"|"Create license validation procedure"|"Description:In Server add procedure that will check all Flow's elements and properties if they are licesensed or not Notes:"|"Task"|""|"no"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-26 12:54:06.0"|"2011-11-04 13:43:30.0"|"2011-10-26 11:32:13.0"
 "#3206"|"Support question BGZ 6331"|"Description:Bug 6331 - Persistent execution thread for 'PitStop Server' was started Notes:"|"Task"|""|"no"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-10-27 11:05:35.0"|"2011-10-27 11:05:51.0"|"2011-10-27 11:05:01.0"
-"#3228"|"Review - BZ 5433 - Rename file for FTP &amp; SFTP"|"Description:It is necessary to review changes done by JOPA and submit it into NetworkSupport.Main. Notes:"|"Task"|""|"no"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-11-04 08:16:27.0"|"2011-11-04 12:45:27.0"|"2011-11-03 09:56:03.0"
+"#3228"|"Review - BZ 5433 - Rename file for FTP & SFTP"|"Description:It is necessary to review changes done by JOPA and submit it into NetworkSupport.Main. Notes:"|"Task"|""|"no"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-11-04 08:16:27.0"|"2011-11-04 12:45:27.0"|"2011-11-03 09:56:03.0"
 "#3189"|"Extra - Add License Manager's event handler "|"Description:Make Switch server able to catch event sent by License Manager indicating that license information has been changed. By this event Switch will validate flows. Notes:"|"Task"|""|"no"|""|""|""|"Switch"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-11-04 10:07:02.0"|"2011-11-04 10:09:27.0"|"2011-10-26 11:33:39.0"
 "#3225"|"Investigate BGZ 6497"|"Description:Bug 6497 - Switch cannot start if it is launched twice
 
@@ -1362,8 +1305,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-10 11:56:21.0"|"2011-10-10 10:28:38.0"|"2011-10-27 16:43:36.0"|"2011-11-08 09:59:12.0"|"2011-11-08 14:14:34.0"|""|"2011-10-10 10:28:38.0"
-"#3256"|"Add warning about 30 and less days of maintanance"|"Description: Notes:"|"Task"|""|"no"|""|""|"#280"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|""|""|"2011-11-08 14:17:17.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-10 11:56:21.0"|"2011-10-10 10:28:38.0"|"2011-10-27 16:43:36.0"|"2011-11-08 09:59:12.0"|"2011-11-08 14:14:34.0"|""|"2011-10-10 10:28:38.0""#3256"|"Add warning about 30 and less days of maintanance"|"Description: Notes:"|"Task"|""|"no"|""|""|"#280"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|""|""|"2011-11-08 14:17:17.0"
 "#3264"|"QA - test maintenance expiration"|"Description:h2. How to test
 
 
@@ -1418,8 +1360,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-09-14 14:19:10.0"|"2011-09-14 11:49:30.0"|"2011-10-19 17:35:27.0"|"2011-11-08 09:17:12.0"|"2011-11-08 14:14:34.0"|""|"2011-09-14 11:49:30.0"
-"#3190"|"QA - check that Switch reacts on expires licenses"|"Description:Do the following tests:
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-09-14 14:19:10.0"|"2011-09-14 11:49:30.0"|"2011-10-19 17:35:27.0"|"2011-11-08 09:17:12.0"|"2011-11-08 14:14:34.0"|""|"2011-09-14 11:49:30.0""#3190"|"QA - check that Switch reacts on expires licenses"|"Description:Do the following tests:
 - Check that after Server restart expired elements are missed in Elements pane and marked on canvas
 - Check that Switch fails expired elements in the running flows
 - Check that it is possible to import/create flow with expired elements in case Switch has not been restarted
@@ -1428,7 +1369,7 @@ h2. Defects
 "#3250"|"Crash in SwitchScripter"|"Description:The crash appeared after license cache was implemented. To reproduce:
 - start SwitchScripter
 - add one test file in Fixture pane
-- click to browse for a file path -&gt; the crash
+- click to browse for a file path -> the crash
 
 According to the callstack the crash happens because of null pointer in the license cache functionality Notes:"|"Task"|""|"no"|""|""|"#221"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-11-09 12:09:53.0"|"2011-11-10 09:32:24.0"|"2011-11-08 12:59:46.0"
 "#3187"|"Update Flow manager so it check flow's elements validity"|"Description:Let Switch server check all running flows by timer - license state of used elements/properties should be checked Notes:"|"Task"|""|"no"|""|""|"#221"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-09 09:58:36.0"|""|"2011-10-26 11:31:14.0"
@@ -1472,8 +1413,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-11-02 15:31:35.0"|"2011-11-02 15:30:40.0"|"2011-11-04 15:07:15.0"|"2011-11-08 09:58:27.0"|"2011-11-08 14:14:34.0"|""|"2011-11-02 15:30:40.0"
-"#3253"|"Take documentation for PitStop Pro"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2121"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-08 14:39:02.0"|""|"2011-11-08 14:15:33.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-11-02 15:31:35.0"|"2011-11-02 15:30:40.0"|"2011-11-04 15:07:15.0"|"2011-11-08 09:58:27.0"|"2011-11-08 14:14:34.0"|""|"2011-11-02 15:30:40.0""#3253"|"Take documentation for PitStop Pro"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2121"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-08 14:39:02.0"|""|"2011-11-08 14:15:33.0"
 "#3254"|"Review code and make estimations"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2121"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|""|""|"2011-11-08 14:15:47.0"
 "#2100"|"Upgrade"|"h2. Narrative
 
@@ -1498,9 +1438,9 @@ h2. How to test
 
 
 * test upgrade from power, light, full for 09u3 and 10u2 to Switch 11 on one version of SnowLeopard/Leopard and windows XP/Vista
-* power-&gt;Switch on windows 2008 Server R2, XP, SnowLeopard 
-* full-&gt;Switch on Lion, Leopard
-* Light-&gt;Switch on Windows 7, 2003 Server
+* power->Switch on windows 2008 Server R2, XP, SnowLeopard 
+* full->Switch on Lion, Leopard
+* Light->Switch on Windows 7, 2003 Server
 
 h2. Related Stories
 
@@ -1517,8 +1457,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-24 11:53:08.0"|"2011-10-24 11:52:58.0"|"2011-10-24 11:53:31.0"|"2011-11-08 09:17:10.0"|"2011-11-08 14:14:34.0"|""|"2011-10-24 11:52:58.0"
-"#3248"|"Uninstall previous versions on Mac"|"Description:Installer of Switch 11 should automatically uninstall Switch 09 and 10 Notes:"|"Task"|""|"no"|""|""|"#2100"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|""|""|"2011-11-08 12:31:07.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-24 11:53:08.0"|"2011-10-24 11:52:58.0"|"2011-10-24 11:53:31.0"|"2011-11-08 09:17:10.0"|"2011-11-08 14:14:34.0"|""|"2011-10-24 11:52:58.0""#3248"|"Uninstall previous versions on Mac"|"Description:Installer of Switch 11 should automatically uninstall Switch 09 and 10 Notes:"|"Task"|""|"no"|""|""|"#2100"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|""|""|"2011-11-08 12:31:07.0"
 "#3251"|"Fix for BGZ 6511"|"Description:Bug 6511 - SwitchUpgradeApp.exe doesn't detect that upgrade has already been carried out  Notes:"|"Task"|""|"no"|""|""|"#2100"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-08 17:11:43.0"|""|"2011-11-08 13:01:03.0"
 "#3232"|"Uninstall previous Switch versions on Win"|"Description:Installer of Switch 11 should automatically uninstall Switch 09 and 10 Notes:"|"Task"|""|"no"|""|""|"#2100"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-11-08 15:26:48.0"|"2011-11-10 10:34:02.0"|"2011-11-04 11:36:36.0"
 "#3219"|"QA Test Upgrade features"|"Description:To test:
@@ -1569,8 +1508,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-06 10:20:32.0"|"2011-10-05 15:27:13.0"|"2011-10-07 15:25:28.0"|"2011-11-08 10:09:40.0"|"2011-11-08 14:14:34.0"|""|"2011-10-05 15:27:13.0"
-"#3237"|"MAc QA SwitchProxy module"|"Description:Check if possible to connect and submit file through proxy on Mac. Notes:"|"Task"|""|"no"|""|""|"#266"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-09 16:52:21.0"|""|"2011-11-08 11:09:37.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-06 10:20:32.0"|"2011-10-05 15:27:13.0"|"2011-10-07 15:25:28.0"|"2011-11-08 10:09:40.0"|"2011-11-08 14:14:34.0"|""|"2011-10-05 15:27:13.0""#3237"|"MAc QA SwitchProxy module"|"Description:Check if possible to connect and submit file through proxy on Mac. Notes:"|"Task"|""|"no"|""|""|"#266"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-09 16:52:21.0"|""|"2011-11-08 11:09:37.0"
 "#3238"|"PC QA SwitchProxy module"|"Description:Check if possible to connect and submit file through proxy on a windows computer. Notes:"|"Task"|""|"no"|""|""|"#266"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-10 09:59:31.0"|""|"2011-11-08 11:10:10.0"
 "#273"|"QA Database module"|"h2. Narrative
 
@@ -1627,8 +1565,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:03.0"|"2011-10-05 15:27:35.0"|"2011-10-07 15:04:31.0"|"2011-11-08 10:07:46.0"|"2011-11-08 14:14:34.0"|"2011-11-10 11:11:56.0"|"2011-10-05 15:27:35.0"
-"#3244"|"Mac QA Database module"|"Description:Test on Mac
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:03.0"|"2011-10-05 15:27:35.0"|"2011-10-07 15:04:31.0"|"2011-11-08 10:07:46.0"|"2011-11-08 14:14:34.0"|"2011-11-10 11:11:56.0"|"2011-10-05 15:27:35.0""#3244"|"Mac QA Database module"|"Description:Test on Mac
 
 h2. Notes
 
@@ -1735,8 +1672,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-06 10:20:29.0"|"2011-10-05 15:27:16.0"|"2011-10-07 15:21:03.0"|"2011-11-08 10:07:56.0"|"2011-11-08 14:14:34.0"|""|"2011-10-05 15:27:16.0"
-"#3242"|"PC QA Client SDK module"|"Description:test with Switch Client, Switch Proxy, sample from Client SDK on a windows.
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-06 10:20:29.0"|"2011-10-05 15:27:16.0"|"2011-10-07 15:21:03.0"|"2011-11-08 10:07:56.0"|"2011-11-08 14:14:34.0"|""|"2011-10-05 15:27:16.0""#3242"|"PC QA Client SDK module"|"Description:test with Switch Client, Switch Proxy, sample from Client SDK on a windows.
 
 h2. Notes
 
@@ -1823,8 +1759,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-11-08 09:30:52.0"|"2011-11-08 09:30:23.0"|"2011-11-08 09:31:53.0"|"2011-11-08 09:32:08.0"|"2011-11-08 14:14:34.0"|""|"2011-11-08 09:30:23.0"
-"#3236"|"Bugfix bgz 6410 QA"|"Description:Bugfix bgz 6410 - 'FTP Receive' - zero length resource fork file created on windows.
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-11-08 09:30:52.0"|"2011-11-08 09:30:23.0"|"2011-11-08 09:31:53.0"|"2011-11-08 09:32:08.0"|"2011-11-08 14:14:34.0"|""|"2011-11-08 09:30:23.0""#3236"|"Bugfix bgz 6410 QA"|"Description:Bugfix bgz 6410 - 'FTP Receive' - zero length resource fork file created on windows.
 http://87.118.100.46/bugzilla/show_bug.cgi?id=6410 Notes:"|"Task"|""|"no"|""|""|"#2128"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-11-09 10:25:16.0"|"2011-11-10 09:13:01.0"|"2011-11-08 09:21:31.0"
 "#3266"|"Modifications in FTP Shaker tests according to fixed BGZ 6410"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2128"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-10 10:04:13.0"|""|"2011-11-10 09:03:46.0"
 "#3143"|"Bugfix bgz 6410"|"Description:Bugfix bgz 6410 - 'FTP Receive' - zero length resource fork file created on windows.
@@ -1880,8 +1815,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-06 10:20:45.0"|"2011-10-05 15:26:54.0"|"2011-11-08 10:07:09.0"|"2011-11-08 10:07:51.0"|"2011-11-08 14:14:34.0"|""|"2011-10-05 15:26:54.0"
-"#2129"|"Spike - Switch on Lion"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-10-06 10:20:45.0"|"2011-10-05 15:26:54.0"|"2011-11-08 10:07:09.0"|"2011-11-08 10:07:51.0"|"2011-11-08 14:14:34.0"|""|"2011-10-05 15:26:54.0""#2129"|"Spike - Switch on Lion"|"h2. Narrative
 
 
 As a a system administrator I can run Switch on Lion to use the benefits of new mac hardware (that by default comes with Lion)h2. Notes
@@ -1910,8 +1844,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-11-08 10:24:27.0"|"2011-11-08 10:24:22.0"|"2011-11-08 10:24:45.0"|"2011-11-08 10:25:01.0"|"2011-11-08 14:14:34.0"|""|"2011-11-08 10:24:22.0"
-"#3246"|"Investigate how to store global data on Lion"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2129"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-09 15:19:01.0"|""|"2011-11-08 11:45:25.0"
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-11-08 10:24:27.0"|"2011-11-08 10:24:22.0"|"2011-11-08 10:24:45.0"|"2011-11-08 10:25:01.0"|"2011-11-08 14:14:34.0"|""|"2011-11-08 10:24:22.0""#3246"|"Investigate how to store global data on Lion"|"Description: Notes:"|"Task"|""|"no"|""|""|"#2129"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-09 15:19:01.0"|""|"2011-11-08 11:45:25.0"
 "#3247"|"Investigate is it possible to workaround the problem via Qt "|"Description: Notes:"|"Task"|""|"no"|""|""|"#2129"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-09 15:46:04.0"|""|"2011-11-08 11:46:24.0"
 "#270"|"QA Scripting module"|"h2. Narrative
 
@@ -1962,8 +1895,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:19.0"|"2011-10-05 15:27:25.0"|"2011-10-07 15:08:24.0"|"2011-11-08 10:08:33.0"|"2011-11-08 14:14:34.0"|"2011-11-09 10:22:27.0"|"2011-10-05 15:27:25.0"
-"#3240"|"PC QA Scripting module"|"Description:h2. Notes
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"Accepted"|""|"2011-10-06 10:20:19.0"|"2011-10-05 15:27:25.0"|"2011-10-07 15:08:24.0"|"2011-11-08 10:08:33.0"|"2011-11-08 14:14:34.0"|"2011-11-09 10:22:27.0"|"2011-10-05 15:27:25.0""#3240"|"PC QA Scripting module"|"Description:h2. Notes
 
 
 The script element and property editor “Define script expression” should be
@@ -2062,8 +1994,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-09-14 16:21:44.0"|"2011-09-14 15:34:01.0"|"2011-11-07 10:44:12.0"|"2011-11-08 10:02:42.0"|"2011-11-08 14:14:34.0"|""|"2011-09-14 15:34:01.0"
-"#3259"|"Decide where to place License Panel"|"Description:Probably AboutLayer???
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|"In Development"|""|"2011-09-14 16:21:44.0"|"2011-09-14 15:34:01.0"|"2011-11-07 10:44:12.0"|"2011-11-08 10:02:42.0"|"2011-11-08 14:14:34.0"|""|"2011-09-14 15:34:01.0""#3259"|"Decide where to place License Panel"|"Description:Probably AboutLayer???
 
 Create template list of icons Notes:"|"Task"|""|"no"|""|""|"#225"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"Done"|""|""|""|""|"2011-11-08 14:38:53.0"|"2011-11-08 14:51:42.0"|"2011-11-08 14:19:34.0"
 "#3260"|"Create Dialog"|"Description:Using QT Designer Notes:"|"Task"|""|"no"|""|""|"#225"|"Switch"|"yes"|"#15"|"#20"|""|""|""|""|""|""|""|""|"New"|""|""|""|""|"2011-11-10 09:57:58.0"|""|"2011-11-08 14:19:52.0"
@@ -2138,8 +2069,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-11 15:18:07.0"|"2011-10-11 15:17:56.0"|""|""|""|""|"2011-10-11 15:17:56.0"
-"#226"|"Check license in installer"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-11 15:18:07.0"|"2011-10-11 15:17:56.0"|""|""|""|""|"2011-10-11 15:17:56.0""#226"|"Check license in installer"|"h2. Narrative
 
 
 As a Switch administrator I can not run the installer of a new version (especially major release version) to find out that (after installing) i cannot use that new version because of the maintenance policy and have to revert my installation to a previous versionDEV 13 + QA 2h2. Notes
@@ -2196,8 +2126,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-14 16:21:47.0"|"2011-09-14 15:50:11.0"|"2011-10-21 16:26:29.0"|"2011-11-08 09:59:54.0"|""|""|"2011-09-14 15:50:11.0"
-"#241"|"Shaker tests for Configurators category"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-14 16:21:47.0"|"2011-09-14 15:50:11.0"|"2011-10-21 16:26:29.0"|"2011-11-08 09:59:54.0"|""|""|"2011-09-14 15:50:11.0""#241"|"Shaker tests for Configurators category"|"h2. Narrative
 
 
 As a  I can  to Only write tests for configurators that Enfocus is responsible for, e.g. Adobe configurators, word, ...
@@ -2248,8 +2177,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-09-26 15:00:42.0"|""|""|""|""|"2011-09-26 15:00:42.0"
-"#227"|"Start Switch trial and start module trial"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-09-26 15:00:42.0"|""|""|""|""|"2011-09-26 15:00:42.0""#227"|"Start Switch trial and start module trial"|"h2. Narrative
 
 
 As a a Switch administrator I can not activate a module trial as long as Switch is not licensed (trial or permanent) to 1) keep an overview on the basic feature set and the modular feature set and not get overloaded with all features right from the start 
@@ -2287,8 +2215,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-14 16:18:09.0"|"2011-09-14 16:02:11.0"|"2011-10-28 16:33:11.0"|"2011-11-08 10:04:17.0"|""|""|"2011-09-14 16:02:11.0"
-"#254"|"bug 5382 job icon in SwitchClient"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-14 16:18:09.0"|"2011-09-14 16:02:11.0"|"2011-10-28 16:33:11.0"|"2011-11-08 10:04:17.0"|""|""|"2011-09-14 16:02:11.0""#254"|"bug 5382 job icon in SwitchClient"|"h2. Narrative
 
 
 As a a SwitchClient user I can see either the main job in a jobfolder or if there's no main job, a job folder icon to have a better view on which job's need my attention.Bug 5382 - Betatester - When submitting multiple jobs into 1 job - icon not ok.
@@ -2308,8 +2235,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-28 16:59:52.0"|"2011-09-28 16:59:45.0"|""|""|""|""|"2011-09-28 16:59:45.0"
-"#296"|"Woodwing configurator improvements"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-28 16:59:52.0"|"2011-09-28 16:59:45.0"|""|""|""|""|"2011-09-28 16:59:45.0""#296"|"Woodwing configurator improvements"|"h2. Narrative
 
 
 As a  I can  to -  bz 6355 : woodwing download change metadata
@@ -2330,8 +2256,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-19 11:21:29.0"|""|""|""|""|"2011-10-19 11:21:29.0"
-"#235"|"New product, new artwork"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-19 11:21:29.0"|""|""|""|""|"2011-10-19 11:21:29.0""#235"|"New product, new artwork"|"h2. Narrative
 
 
 As a an operator I can only see one product name 'Switch' in the artwork to not be confused about possible property sets, flavors and modulesDEV 1 + QA 1*Note: new icons are not included in this story, will be separate story
@@ -2370,8 +2295,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-21 13:53:01.0"|"2011-09-21 13:52:54.0"|"2011-11-04 15:07:08.0"|""|""|""|"2011-09-21 13:52:54.0"
-"#239"|"Show passed and failed Shaker tests with cruisecontrol"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-21 13:53:01.0"|"2011-09-21 13:52:54.0"|"2011-11-04 15:07:08.0"|""|""|""|"2011-09-21 13:52:54.0""#239"|"Show passed and failed Shaker tests with cruisecontrol"|"h2. Narrative
 
 
 As a  I can  to As a Switch developer or QA tester I want to easily see which Shaker tests passed and failed so I know that all tests are still running every day without having to dig into the log file every time.Cruisecontrol has support to show test results by mail and on the dashboard. See http://cruisecontrol.sourceforge.net/main/configxml.html#merge
@@ -2396,8 +2320,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:47:04.0"|"2011-09-26 14:53:20.0"|""|""|""|""|"2011-09-26 14:53:20.0"
-"#2114"|"Distribute SwitchClient settings"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:47:04.0"|"2011-09-26 14:53:20.0"|""|""|""|""|"2011-09-26 14:53:20.0""#2114"|"Distribute SwitchClient settings"|"h2. Narrative
 
 
 As a a Switch administrator I can can export and import SwitchClient settings to save time because it takes lot's of time to sync all SwitchClients so all operators use the same settingsh2. Notes
@@ -2423,8 +2346,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 11:13:21.0"|"2011-10-28 11:13:12.0"|""|""|""|""|"2011-10-28 11:13:12.0"
-"#299"|"SwitchProxy Maintenance"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 11:13:21.0"|"2011-10-28 11:13:12.0"|""|""|""|""|"2011-10-28 11:13:12.0""#299"|"SwitchProxy Maintenance"|"h2. Narrative
 
 
 As a  I can  to h2. Notes
@@ -2453,8 +2375,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-24 09:52:34.0"|""|""|""|""|"2011-10-24 09:52:33.0"
-"#2125"|"Switch 11Shaker Needs"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-24 09:52:34.0"|""|""|""|""|"2011-10-24 09:52:33.0""#2125"|"Switch 11Shaker Needs"|"h2. Narrative
 
 
 As a  I can  to DEV 13
@@ -2475,8 +2396,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-04 15:40:44.0"|"2011-11-04 11:27:49.0"|""|""|""|""|"2011-11-04 11:27:49.0"
-"#2108"|"Woodwing Bug 6456 "|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-04 15:40:44.0"|"2011-11-04 11:27:49.0"|""|""|""|""|"2011-11-04 11:27:49.0""#2108"|"Woodwing Bug 6456 "|"h2. Narrative
 
 
 As a  I can  to asset does not get downloaded when set to checked out without choosing a specific user
@@ -2496,8 +2416,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-26 15:47:32.0"|"2011-10-26 15:21:19.0"|""|""|""|""|"2011-10-26 15:21:18.0"
-"#2120"|"Variables in PitStop Server"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-26 15:47:32.0"|"2011-10-26 15:21:19.0"|""|""|""|""|"2011-10-26 15:21:18.0""#2120"|"Variables in PitStop Server"|"h2. Narrative
 
 
 As a a PitStop Server user I can use metadata to drive preflight and actions to get faster, better and more intelligent workflows in PitStop Server h2. Notes
@@ -2528,8 +2447,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-11-02 15:24:07.0"|""|""|""|""|"2011-11-02 15:24:06.0"
-"#2111"|"userfriendly defining dependency"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-11-02 15:24:07.0"|""|""|""|""|"2011-11-02 15:24:06.0""#2111"|"userfriendly defining dependency"|"h2. Narrative
 
 
 As a a flow desigener I can more easily define dependent metadata fields for SwitchClient to make flows faster as behavior is more straight forwardh2. Notes
@@ -2562,8 +2480,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 10:59:01.0"|"2011-10-28 10:58:48.0"|""|""|""|""|"2011-10-28 10:58:48.0"
-"#28"|"Use license files instead of license keys"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 10:59:01.0"|"2011-10-28 10:58:48.0"|""|""|""|""|"2011-10-28 10:58:48.0""#28"|"Use license files instead of license keys"|"h2. Narrative
 
 
 As a  I can  to As a Switch administrator I like to have an easy mechanism to license Switch
@@ -2603,8 +2520,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-09 16:58:06.0"|"2011-09-09 16:53:04.0"|""|""|""|""|"2011-09-09 16:53:04.0"
-"#290"|"FTP: Concurrent up and download"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-09 16:58:06.0"|"2011-09-09 16:53:04.0"|""|""|""|""|"2011-09-09 16:53:04.0""#290"|"FTP: Concurrent up and download"|"h2. Narrative
 
 
 As a a Switch administrator I can fine tune the upload and download setting separately to get a more transparent FTP behaviorh2. Notes
@@ -2636,8 +2552,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-11 16:13:25.0"|""|""|""|""|"2011-10-11 16:13:25.0"
-"#2109"|"Clean up installer"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-11 16:13:25.0"|""|""|""|""|"2011-10-11 16:13:25.0""#2109"|"Clean up installer"|"h2. Narrative
 
 
 As a a Switch administator I can get faster access to the application because the installation procedure and activation procedure are streamlined to get production up to speed asap or to test the software asap. So whenever you start Switch you will be up and ready for processing.h2. Notes
@@ -2662,8 +2577,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-26 15:55:32.0"|"2011-10-26 15:55:14.0"|""|""|""|""|"2011-10-26 15:55:14.0"
-"#2124"|"Check 3rd party libaries if they support all OS versions supported by Switch 11"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-26 15:55:32.0"|"2011-10-26 15:55:14.0"|""|""|""|""|"2011-10-26 15:55:14.0""#2124"|"Check 3rd party libaries if they support all OS versions supported by Switch 11"|"h2. Narrative
 
 
 As a  I can  to 
@@ -2683,8 +2597,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-03 17:52:17.0"|"2011-11-03 17:49:55.0"|""|""|""|""|"2011-11-03 17:49:55.0"
-"#2122"|"Links to Switch 11 web pages"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-03 17:52:17.0"|"2011-11-03 17:49:55.0"|""|""|""|""|"2011-11-03 17:49:55.0""#2122"|"Links to Switch 11 web pages"|"h2. Narrative
 
 
 As a a Switch administrator I can find information in a few clicks to buy the application easily, check for updates or read documentationDEV 1/2 + QA 1/2h2. Notes
@@ -2714,8 +2627,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-02 15:46:45.0"|"2011-11-02 15:42:16.0"|"2011-11-04 15:23:28.0"|""|""|""|"2011-11-02 15:42:16.0"
-"#291"|"Update Word configurator"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-02 15:46:45.0"|"2011-11-02 15:42:16.0"|"2011-11-04 15:23:28.0"|""|""|""|"2011-11-02 15:42:16.0""#291"|"Update Word configurator"|"h2. Narrative
 
 
 As a an operator I can use latest Word version on win and mac to handle files in up to date Microsoft Word.h2. Notes
@@ -2738,8 +2650,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-13 09:56:14.0"|""|""|""|""|"2011-10-13 09:56:14.0"
-"#2103"|"Automatically setup local (S)FTP server for Shaker"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-13 09:56:14.0"|""|""|""|""|"2011-10-13 09:56:14.0""#2103"|"Automatically setup local (S)FTP server for Shaker"|"h2. Narrative
 
 
 As a  I can  to write a scripts for automatic configuration of an (S)FTP server to run on the system where Shaker is running: automatic installation of sever, creation of folder structure, creation of user.
@@ -2762,8 +2673,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-24 17:04:31.0"|""|""|""|""|"2011-10-24 17:04:30.0"
-"#294"|"Build Switch 11 on the new Build Machines"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-24 17:04:31.0"|""|""|""|""|"2011-10-24 17:04:30.0""#294"|"Build Switch 11 on the new Build Machines"|"h2. Narrative
 
 
 As a  I can  to DEV 2 + QA 5
@@ -2797,8 +2707,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-18 17:34:29.0"|"2011-10-18 17:34:24.0"|"2011-10-21 15:30:22.0"|""|""|""|"2011-10-18 17:34:24.0"
-"#238"|"Tests for PDF Certification info module Scripting API"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-18 17:34:29.0"|"2011-10-18 17:34:24.0"|"2011-10-21 15:30:22.0"|""|""|""|"2011-10-18 17:34:24.0""#238"|"Tests for PDF Certification info module Scripting API"|"h2. Narrative
 
 
 As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
@@ -2821,8 +2730,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:47:07.0"|"2011-09-26 14:51:00.0"|""|""|""|""|"2011-09-26 14:51:00.0"
-"#247"|"Tests for Metadata  module Scripting API"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:47:07.0"|"2011-09-26 14:51:00.0"|""|""|""|""|"2011-09-26 14:51:00.0""#247"|"Tests for Metadata  module Scripting API"|"h2. Narrative
 
 
 As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
@@ -2844,8 +2752,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:23.0"|"2011-09-27 10:29:11.0"|""|""|""|""|"2011-09-27 10:29:11.0"
-"#2115"|"total file size of job queue"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:23.0"|"2011-09-27 10:29:11.0"|""|""|""|""|"2011-09-27 10:29:11.0""#2115"|"total file size of job queue"|"h2. Narrative
 
 
 As a an administrator I can not only see the number of jobs waiting in a folder before a processor but i can also see the total file size of the queue to to spot bottlenecks more easily and improve flow performanceh2. Notes
@@ -2873,8 +2780,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 14:19:12.0"|"2011-10-28 11:16:59.0"|""|""|""|""|"2011-10-28 11:16:59.0"
-"#297"|"Windows error reporting"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 14:19:12.0"|"2011-10-28 11:16:59.0"|""|""|""|""|"2011-10-28 11:16:59.0""#297"|"Windows error reporting"|"h2. Narrative
 
 
 As a  I can  to Generate dump information when having crashes on windows and and send this info to Enfocus. These dump files can be used afterwards to see what caused the crash and fix it without first having to reproduce the problem or do a remote login
@@ -2894,8 +2800,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-21 16:36:10.0"|""|""|""|""|"2011-10-21 16:36:10.0"
-"#2126"|"Uncompress / compress docx file"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-21 16:36:10.0"|""|""|""|""|"2011-10-21 16:36:10.0""#2126"|"Uncompress / compress docx file"|"h2. Narrative
 
 
 As a a flow designer I can use the uncompress  and compress tools on docx files to create flows for document processing marketThe change in scripting API is working as expected–addition of  “remove_existing_archive” parameter in compress function.
@@ -2917,8 +2822,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-04 13:54:57.0"|"2011-11-04 13:54:51.0"|""|""|""|""|"2011-11-04 13:54:51.0"
-"#250"|"Tests for File module Scripting API"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-04 13:54:57.0"|"2011-11-04 13:54:51.0"|""|""|""|""|"2011-11-04 13:54:51.0""#250"|"Tests for File module Scripting API"|"h2. Narrative
 
 
 As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
@@ -2945,8 +2849,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:14.0"|"2011-09-27 10:31:52.0"|""|""|""|""|"2011-09-27 10:31:52.0"
-"#253"|"Remove link to PackManager"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:14.0"|"2011-09-27 10:31:52.0"|""|""|""|""|"2011-09-27 10:31:52.0""#253"|"Remove link to PackManager"|"h2. Narrative
 
 
 As a an operator I can cannot longer manage configurators if the configurator module is not active to not be overloaded with features that are not useful.DEV 0 + QA 1h2. Acceptance Criteria
@@ -2974,8 +2877,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-28 14:58:25.0"|"2011-09-28 14:58:21.0"|"2011-11-04 15:13:39.0"|""|""|""|"2011-09-28 14:58:21.0"
-"#2127"|"Designer SOAP API security"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-28 14:58:25.0"|"2011-09-28 14:58:21.0"|"2011-11-04 15:13:39.0"|""|""|""|"2011-09-28 14:58:21.0""#2127"|"Designer SOAP API security"|"h2. Narrative
 
 
 As a  I can  to h2. Notes
@@ -3002,8 +2904,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-11-04 14:39:55.0"|""|""|""|""|"2011-11-04 14:39:54.0"
-"#2116"|"Multi line text entry"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-11-04 14:39:55.0"|""|""|""|""|"2011-11-04 14:39:54.0""#2116"|"Multi line text entry"|"h2. Narrative
 
 
 As a a SwitchClient user I can type text in a multi line editor to be able to insert multi line comments in a user friendly way. Like making it possible to overview the text i just enteredh2. Notes
@@ -3032,8 +2933,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 12:35:45.0"|"2011-10-28 12:35:39.0"|""|""|""|""|"2011-10-28 12:35:39.0"
-"#2119"|"Accept aditional Client licenses"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 12:35:45.0"|"2011-10-28 12:35:39.0"|""|""|""|""|"2011-10-28 12:35:39.0""#2119"|"Accept aditional Client licenses"|"h2. Narrative
 
 
 As a Enfocus sales administrator I can more easily make Additional Client license keys to have less hassle with those keys as they will behave like every other module keyDEV 3 + QA 2h2. Notes
@@ -3071,8 +2971,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-02 15:37:49.0"|"2011-11-02 12:07:51.0"|"2011-11-04 15:16:27.0"|""|""|""|"2011-11-02 12:07:51.0"
-"#248"|"Tests for Database module Scripting API"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-02 15:37:49.0"|"2011-11-02 12:07:51.0"|"2011-11-04 15:16:27.0"|""|""|""|"2011-11-02 12:07:51.0""#248"|"Tests for Database module Scripting API"|"h2. Narrative
 
 
 As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
@@ -3096,8 +2995,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:18.0"|"2011-09-27 10:30:10.0"|""|""|""|""|"2011-09-27 10:30:10.0"
-"#249"|"Tests for Xml  module Scripting API"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:18.0"|"2011-09-27 10:30:10.0"|""|""|""|""|"2011-09-27 10:30:10.0""#249"|"Tests for Xml  module Scripting API"|"h2. Narrative
 
 
 As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
@@ -3123,8 +3021,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:08.0"|"2011-09-27 10:31:16.0"|""|""|""|""|"2011-09-27 10:31:16.0"
-"#2105"|"Move FTP functionality into separate CLI"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:08.0"|"2011-09-27 10:31:16.0"|""|""|""|""|"2011-09-27 10:31:16.0""#2105"|"Move FTP functionality into separate CLI"|"h2. Narrative
 
 
 As a a Switch administrator I can run all FTP tasks in a separate process to have a more reliable Switch and better performing FTP traffich2. Notes
@@ -3152,8 +3049,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-25 09:32:31.0"|"2011-10-25 09:32:19.0"|""|""|""|""|"2011-10-25 09:32:19.0"
-"#2117"|"New product icons"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-25 09:32:31.0"|"2011-10-25 09:32:19.0"|""|""|""|""|"2011-10-25 09:32:19.0""#2117"|"New product icons"|"h2. Narrative
 
 
 As a  I can  to DEV 1 + QA 1h2. Notes
@@ -3181,8 +3077,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 14:25:18.0"|"2011-10-28 14:25:10.0"|"2011-11-04 15:21:02.0"|""|""|""|"2011-10-28 14:25:10.0"
-"#275"|"Update readme"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 14:25:18.0"|"2011-10-28 14:25:10.0"|"2011-11-04 15:21:02.0"|""|""|""|"2011-10-28 14:25:10.0""#275"|"Update readme"|"h2. Narrative
 
 
 As a  I can  to 
@@ -3202,8 +3097,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-06 15:16:46.0"|""|""|""|""|"2011-10-06 15:16:46.0"
-"#2106"|"Get rid of existing copying dialog in Designer"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-06 15:16:46.0"|""|""|""|""|"2011-10-06 15:16:46.0""#2106"|"Get rid of existing copying dialog in Designer"|"h2. Narrative
 
 
 As a a flow designer I can only see the copy dialog when heavy file transfer is going on to not get confused by this dialog popping up when not really necessary.h2. Notes
@@ -3231,8 +3125,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-25 09:43:33.0"|""|""|""|""|"2011-10-25 09:43:33.0"
-"#288"|"No access but still able to submit"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-25 09:43:33.0"|""|""|""|""|"2011-10-25 09:43:33.0""#288"|"No access but still able to submit"|"h2. Narrative
 
 
 As a  I can  to SwitchClient should only show submit point if the user that has logged on with Client is entitled to submit files as set up in the Switch User panel.I noticed that it is possible to select a submit point with both the SDK php sample and regular SwitchClient 10u1, while the user has no access right for that specific submit point. This is very confusing for SwitchClient users as the file seems to be submitted successfully but ends up nowhere.
@@ -3254,8 +3147,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-11 14:43:43.0"|"2011-10-11 14:43:37.0"|""|""|""|""|"2011-10-11 14:43:36.0"
-"#2104"|"Use minimal requirements for FTP Shaker tests"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-11 14:43:43.0"|"2011-10-11 14:43:37.0"|""|""|""|""|"2011-10-11 14:43:36.0""#2104"|"Use minimal requirements for FTP Shaker tests"|"h2. Narrative
 
 
 As a  I can  to Kristof suggests not creating special tests for permissions. Instead he suggests doing all FTP tests using user accounts that only have the
@@ -3279,8 +3171,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-24 17:05:48.0"|""|""|""|""|"2011-10-24 17:05:48.0"
-"#2112"|"hide duplicate values in dropdown list"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-24 17:05:48.0"|""|""|""|""|"2011-10-24 17:05:48.0""#2112"|"hide duplicate values in dropdown list"|"h2. Narrative
 
 
 As a a flow designer I can have to worry about double values in dropdown list if the list is populated with database content to get better behavior of the dropdown list in SwitchClienth2. Notes
@@ -3310,8 +3201,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 11:10:48.0"|"2011-10-28 11:10:03.0"|""|""|""|""|"2011-10-28 11:10:01.0"
-"#2110"|"support officially VM"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-28 11:10:48.0"|"2011-10-28 11:10:03.0"|""|""|""|""|"2011-10-28 11:10:01.0""#2110"|"support officially VM"|"h2. Narrative
 
 
 As a an operator I can use Switch on VM to manage software and systems more easilyh2. Notes
@@ -3336,8 +3226,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-27 11:08:38.0"|"2011-10-27 11:08:28.0"|""|""|""|""|"2011-10-27 11:08:28.0"
-"#245"|"Tests for basic module Scripting API"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-27 11:08:38.0"|"2011-10-27 11:08:28.0"|""|""|""|""|"2011-10-27 11:08:28.0""#245"|"Tests for basic module Scripting API"|"h2. Narrative
 
 
 As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
@@ -3359,8 +3248,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:38.0"|"2011-09-27 10:24:59.0"|""|""|""|""|"2011-09-27 10:24:59.0"
-"#268"|"QA New installer"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:38.0"|"2011-09-27 10:24:59.0"|""|""|""|""|"2011-09-27 10:24:59.0""#268"|"QA New installer"|"h2. Narrative
 
 
 As a an operator I can have an installer that does not refer to old switch flavors anymore but leaves old versions intact to end up with a clean installation of Switch 11 that does not affect previous versionsh2. Notes
@@ -3399,8 +3287,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-06 10:20:24.0"|"2011-10-05 15:27:20.0"|"2011-10-07 14:46:45.0"|""|""|""|"2011-10-05 15:27:20.0"
-"#292"|"DOC Describe Modules conccept of Switch 11"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-10-06 10:20:24.0"|"2011-10-05 15:27:20.0"|"2011-10-07 14:46:45.0"|""|""|""|"2011-10-05 15:27:20.0""#292"|"DOC Describe Modules conccept of Switch 11"|"h2. Narrative
 
 
 As a  I can  to 
@@ -3420,8 +3307,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-17 15:30:52.0"|""|""|""|""|"2011-10-17 15:30:52.0"
-"#246"|"Tests for Process module Scripting API"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-17 15:30:52.0"|""|""|""|""|"2011-10-17 15:30:52.0""#246"|"Tests for Process module Scripting API"|"h2. Narrative
 
 
 As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
@@ -3444,8 +3330,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:34.0"|"2011-09-27 10:26:08.0"|""|""|""|""|"2011-09-27 10:26:08.0"
-"#2123"|"Fix the assert message in Switch logs"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-09-27 10:46:34.0"|"2011-09-27 10:26:08.0"|""|""|""|""|"2011-09-27 10:26:08.0""#2123"|"Fix the assert message in Switch logs"|"h2. Narrative
 
 
 As a  I can  to The message: 'Resource xml file with plugin injected properties could not be opened: RecycleBin'
@@ -3472,8 +3357,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-03 14:50:31.0"|"2011-11-03 14:50:26.0"|"2011-11-04 15:11:52.0"|""|""|""|"2011-11-03 14:50:25.0"
-"#240"|"Shaker tests for Communication category"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|"2011-11-03 14:50:31.0"|"2011-11-03 14:50:26.0"|"2011-11-04 15:11:52.0"|""|""|""|"2011-11-03 14:50:25.0""#240"|"Shaker tests for Communication category"|"h2. Narrative
 
 
 As a  I can  to Todo:
@@ -3523,8 +3407,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-09-26 14:59:52.0"|""|""|""|""|"2011-09-26 14:59:52.0"
-"#293"|"DOC Update documentation for Switch iso Power, Light, Full"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-09-26 14:59:52.0"|""|""|""|""|"2011-09-26 14:59:52.0""#293"|"DOC Update documentation for Switch iso Power, Light, Full"|"h2. Narrative
 
 
 As a  I can  to 
@@ -3544,8 +3427,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-17 15:31:55.0"|""|""|""|""|"2011-10-17 15:31:55.0"
-"#256"|"write Automated tests for Switch Client SDK"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-10-17 15:31:55.0"|""|""|""|""|"2011-10-17 15:31:55.0""#256"|"write Automated tests for Switch Client SDK"|"h2. Narrative
 
 
 As a  I can  to We can use Automated testing framework for this
@@ -3565,8 +3447,7 @@ h2. Tasks
 h2. Defects
 
 
-{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-09-30 16:48:27.0"|""|""|""|""|"2011-09-30 16:48:27.0"
-"#2130"|"Include improved acrivation wizard"|"h2. Narrative
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""|""|"2011-09-30 16:48:27.0"|""|""|""|""|"2011-09-30 16:48:27.0""#2130"|"Include improved acrivation wizard"|"h2. Narrative
 
 
 As a a Switch administrator I can can use the improved activation wizard to get fast access to Switch and start production asap Switch .h2. Notes
