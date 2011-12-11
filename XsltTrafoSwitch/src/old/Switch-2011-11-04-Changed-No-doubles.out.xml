@@ -1,0 +1,3377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+"Number"|"Name"|"Description"|"Type"|"Depend on"|"Roadmap"|"Epic Story"|"Feature"|"Story"|"Product Name"|"Schedule"|"Release"|"Sprint"|"Task"|"Defect"|"Story Points Dev"|"Story Points QA"|"Story Points Total"|"Start Date"|"End Date"|"Status"|"Task Status"
+"#15"|"R1"|""|"Release"|""|"no"|""|""|""|""|"yes"|""|""|""|""|""|""|""|"2011-09-12 00:00:00.0"|"2012-02-08 00:00:00.0"|""|""
+"#16"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-09-12 00:00:00.0"|"2011-09-25 00:00:00.0"|""|""
+"#1110"|"SwitchClient module "|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. SwitchClient, in order to get the most out of my investment.
+
+h2. Notes
+
+
+
+The communication elements (Submit point, Checkpoint and Checkpoint via mail)
+should be licensed separately from Switch. Meaning that only when I use a valid
+key, these elements become available in the Communication section of the
+elements pane.
+Next to the elements also the User panel and the Client Activity and Client
+Connection pane on the Statistics panel should become available whenever
+correctly licensed.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+
+Make the Submit point, Checkpoint and Checkpoint via mail behave like the
+Database connect tool in Switch 10 update1. Meaning that only when they are
+licensed (separately from PowerSwitch), they can be used. Note that the
+Database module only includes 1 tool and the Client module includes 3 elements.
+Make sure the User panel appears according to the licensing status
+Make sure the Client Activity and Client Connection pane on the Statistics
+panel appear according to the licensing status.
+Note that nothing changes to the “5 license included” policy for PowerSwitch so
+if a customer has licensed the SwitchClient module then he or she still gets 5
+licenses, knowing that this number of licenses can be expanded with additional
+Client licensing.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""
+"#254"|"Hide UI elements"|"Description:User panel and the Client Activity and Client Connection pane on the Statistics panel should become available whenever
+correctly licensed. Notes:Next to the elements also the User panel and the Client Activity and Client
+Connection pane on the Statistics panel should become available whenever
+correctly licensed.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate "|"Task"|""|"no"|""|""|"#1110"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#253"|"Add ModuleID to tools"|"Description:Add ModuleID to 'Submit point', 'Checkpoint' and 'Checkpoint via mail' Notes:The communication elements (Submit point, Checkpoint and Checkpoint via mail)
+should be licensed separately from Switch. Meaning that only when I use a valid
+key, these elements become available in the Communication section of the
+elements pane."|"Task"|""|"no"|""|""|"#1110"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#1114"|"Configurator module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Configurators, in order to get the most out of my
+investment.
+
+h2. Notes
+
+
+
+The configurators should be licensed separately from Switch. Meaning that only
+when I use a valid key, the configurators (i.e. elements in Configurator
+section of the elements pane) become available.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+SwitchScripter (Configurator SDK) always puts the configuration module ID in the scripted plug-in. Configurators created with older version of SDK don't have such ID. They should however also be loaded correctly in Switch 11. 
+For our own tools we'll put the ID in the tool manually. SwitchScritper should not overwrite ID's that were added manually.
+
+h2. Acceptance Criteria
+
+
+
+Make the Configurators behave like the Database connect tool in Switch 10
+update1. Meaning that only when they are licensed (separately from
+PowerSwitch), they can be used. Note that the Database module only includes 1
+tool and the Configurator module includes all elements from the Configurator
+section in the elements pane.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""
+"#259"|"Prevent flow from starting when not licensed"|"Description:Prevent flow from starting in case used configurator is not licensed Notes:"|"Task"|""|"no"|""|""|"#1114"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#256"|"Add Module ID to congurators"|"Description:Add module ID to all configurators from Processing category Notes:"|"Task"|""|"no"|""|""|"#1114"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#257"|"Mechanism for checking module license"|"Description:Make common mechanism for checking module license Notes:"|"Task"|""|"no"|""|""|"#1114"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#255"|"Update Scripter to support Module ID"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1114"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#1116"|"Switch (basic) version features"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Switch most basic features (+- LightSwitch), in order to get the most out of my investment.h2. Notes
+
+
+
+Enfocus PowerSwitch contains all LightSwitch functionality but includes the following changes:
+•“Log job info” element is part of the Tools category in the elements pane (instead of the Metadata category. 
+Note that all 3 possible schemes are supported, this is also the case for the Sort job tool 
+•“XSLT transform” element is part of the Tools category in the elements pane (instead of the Metadata category.
+•“Split PDF in pages” is renamed to “Split PDF” and is available in the basic version of Switch.
+•“Merge PDF pages” is renamed to “Merge PDF” and is available in the basic version of Switch.
+
+Note: advanced performance tuning features becomes part of Switch (basic)
+
+Note that datasets are also supported in this basic version.
+E.g. ftp send can create a dataset on the data+log outgoing connection (just like in LightSwitch). If customer has Configurator module then PitStop Server configurator can create dataset with a report and if the customer also has the SwitchClient module the he can see this report in SwitchClient.
+
+Note that private data is also supported for some tools (e.g. group and ungroup) and that the job.PrivatData variable remains part of Switch (basic) (just like in LightSwitch) 
+
+h2. Acceptance Criteria
+
+
+
+The LightSwitch tools + those mentioned above are loaded correctly
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""
+"#252"|"Test dataset availability"|"Description:Make sure that datasets and private data are available in Switch basic Notes:Note that datasets are also supported in this basic version.
+E.g. ftp send can create a dataset on the data+log outgoing connection (just like in LightSwitch). If customer has Configurator module then PitStop Server configurator can create dataset with a report and if the customer also has the SwitchClient module the he can see this report in SwitchClient.
+
+Note that private data is also supported for some tools (e.g. group and ungroup) and that the job.PrivatData variable remains part of Switch (basic) (just like in LightSwitch) 
+"|"Task"|""|"no"|""|""|"#1116"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#251"|"Rename tools"|"Description:Rename 'Split PDF in pages' to 'Split PDF'; and rename 'Merge PDF pages' to 'Merge PDF'. Notes:•“Split PDF in pages” is renamed to “Split PDF” and is available in the basic version of Switch.
+•“Merge PDF pages” is renamed to “Merge PDF” and is available in the basic version of Switch."|"Task"|""|"no"|""|""|"#1116"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#250"|"Move tools"|"Description:Move 'Log job info' and 'XSLT transform' into Tools category. Notes:Enfocus PowerSwitch contains all LightSwitch functionality but includes the following changes:
+•“Log job info” element is part of the Tools category in the elements pane (instead of the Metadata category. 
+Note that all 3 possible schemes are supported, this is also the case for the Sort job tool 
+•“XSLT transform” element is part of the Tools category in the elements pane (instead of the Metadata category."|"Task"|""|"no"|""|""|"#1116"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#258"|"Add Module ID"|"Description:Add Switch Basic module id to 'build-in' configurators Notes:It seems we shouldn't add any module id to basic tools because in this case we will not see them in GUI till Switch will be licensed. So here I will just check that any 3rd-party configurator without module ID isn't loaded in GUI."|"Task"|""|"no"|""|""|"#1116"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#1113"|"Metadata module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Metadata tools and access to the metadata variables and
+possibility to gather content for a SwitchClient dropdown list straight from an
+XML based dataset, in order to get the most out of my investment.
+
+h2. Notes
+
+
+
+•The metadata elements (XML, JDF, XMP and opaque pickup, XMP inject, export
+metadata)
+•The metadata variables 
+•And access to XML based datasets when defining dropdown list as metadata
+fields on Submit and Checkpoints, 
+Should be licensed separately from Switch. Meaning that only when I use a valid
+key, those flow elements become available in the elements pane, the metadata
+group becomes available in the variables panel (i.e. define single/ multi line
+or condition with variables dialog) and  “Define values from dataset” becomes
+available as data value for dropdown list.
+
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+Note about datasets:
+
+h2. Acceptance Criteria
+
+
+
+Make those metadata elements and features behave like the Database connect tool
+and the database variables in Switch 10 update1. Meaning that only when they
+are licensed (separately from PowerSwitch), they appear in the metadata
+category and so can be used.
+Note that XSLT transform and log job info are not included in this module so
+they do not appear/disappear based on license status of this module.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|"Accepted"|""
+"#262"|"Disable dataset dropdown list from metadata fields"|"Description:And access to XML based datasets when defining dropdown list as metadata
+fields on Submit and Checkpoints Notes:"|"Task"|""|"no"|""|""|"#1113"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#260"|"Add Module ID to configurators"|"Description:XML, JDF, XMP and opaque pickup, XMP inject, export metadata Notes:Note that XSLT transform and log job info are not included in this module so
+they do not appear/disappear based on license status of this module"|"Task"|""|"no"|""|""|"#1113"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#261"|"Switch off metadata variables "|"Description:Switch off metadata variables in case Metadata module is not licensed Notes:"|"Task"|""|"no"|""|""|"#1113"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""|""|""|"Done"
+"#17"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-09-26 00:00:00.0"|"2011-10-09 00:00:00.0"|""|""
+"#1152"|"Bugfixes customer bugs"|"h2. Narrative
+
+
+As a  I can  to These are 3  bugs reported by customers against previous versions of Switch:
+
+- BZ 4331: 'Hold' on connection doesn't always work
+
+- BZ 6309 - Switch 10 can't upload to FTP user root folder 
+
+- BZ 6329 - Mail receive can't handle special character like /
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#295"|"BZ 6309 - Switch 10 can't upload to FTP user root folder"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1152"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#296"|"BZ 6329 - Mail receive can't handle special character like /"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1152"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#294"|"BZ 4331: 'Hold' on connection doesn't always work"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1152"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#1112"|"Database module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Database tool, access to the database variables and
+possibility to gather content for a SwitchClient dropdown list straight from a
+database, in order to get the most out of my investment.
+
+h2. Notes
+
+
+
+•The Database connect element
+•The database variables 
+•And access to ODBC data sources when defining dropdown list as metadata fields
+on Submit and Checkpoints 
+Should be licensed separately from Switch. Meaning that only when I use a valid
+key, this flow element and its new category title (Database) become available
+in the elements pane, the database group becomes available in the variables
+panel (i.e. define single/ multi line or condition with variables dialog) and
+“Define values from ODBC data source” becomes available as data value for
+dropdown list.
+
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+
+This feature was already implemented in Switch 10 update 1. Only thing that
+needs to be taken care of is that the Database connect elements appears in it’s
+own category instead of being part of the metadata category.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#278"|"Add Database key to Database connector element"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1112"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#279"|"Check that Database features are not available without licence"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1112"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#286"|"Move Database tool into new category"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1112"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#1142"|"Betatester reported bugs"|"h2. Narrative
+
+
+As a  I can  to 5308 - Fixed (Dmitry)
+These bugs were all logged by our Spanish distributor. Most of them are related to SwitchClient.
+
+5382 - In progress: Dmitry
+6203 - Fixed (Kirill)
+6216 - Assigned To: Bhargavi Manjunath
+6221 - Assigned To: Bhargavi Manjunath
+6222
+6241
+6246 - Fixed (Dmitry)
+6248
+6252 - Fixed (Vitali)
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#293"|"BZ 6248"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1142"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#292"|"BZ 6241"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1142"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#1122"|"WoodWing Configurator "|"h2. Narrative
+
+
+As a  I can  to 6274
+6275
+6277
+5612
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#271"|"BZ 5612"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1122"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#270"|"BZ 6277"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1122"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#290"|"Include 'Generic application' element into Configurator module"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1122"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#268"|"BZ 6274"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1122"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#269"|"BZ 6275"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1122"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#1134"|"A key for every module"|"h2. Narrative
+
+
+As a an operator I can activate every module individuality to end up with a Switch installation that only contains the tools i really need.h2. Notes
+
+
+
+Every module has its specific key. Each key only includes one feature that matches the module.
+
+h2. Acceptance Criteria
+
+
+
+Database module, SwitchClient module, SwitchClient SDK, scripting module, metadata module and configurator module functionality is unlocked with an individual key.
+Additional SwitchClient licenses are added with a specific product key (same as it used to be)
+
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#273"|"Check that each module depends on its own key"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1134"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#272"|"Add real keys to modules in Switch"|"Description: Notes:I cannot move this story to Done because I cannot submit my changes unless we have the keys with many possible activations."|"Task"|""|"no"|""|""|"#1134"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#1136"|"New installer"|"h2. Narrative
+
+
+As a an operator I can have an installer that does not refer to old switch flavors anymore but leaves old versions intact to end up with a clean installation of Switch 11 that does not affect previous versionsh2. Notes
+
+
+
+Create a new installer for this new product.
+
+h2. Acceptance Criteria
+
+
+
+The installer is re-branded. (except for the artwork everything refers to 'Switch)
+Old versions are *not* longer removed as it used to be (i.e. on win uninstall, on Mac clean up if we can find it)
+So a user that has an old LightSwitch 10 and FullSwitch 10 actually ends up with 3 versions (LightSwitch 10, FullSwitch 10 and Switch 11)
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#285"|"Create new installer"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1136"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#1117"|"Switch name change"|"h2. Narrative
+
+
+As a an operator I can only see one product name 'Switch' and no more Light, Full or PowerSwitch to not be confused about possible property sets, flavors and modules.h2. Notes
+
+
+
+Change the names LightSwitch, FullSwitch and PowerSwitch to Switch.
+
+(artwork' about panel, splash screen, product icon is not part of this story. This artwork needs to be created first by marketing.)
+
+h2. Acceptance Criteria
+
+
+
+changes in:
+Application name
+titles in toolbars and dialogs
+name in messages
+all server components
+all folders on the system (application folder, library, ...)
+all files on a system (executable, .plist, ...)
+build system
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#282"|"Remove flavors from Switch code"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1117"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#288"|"Refactor SwitchCommon\GSCSwitchFeatures.h"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1117"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#289"|"Make sure AppleScript works after removing flavors"|"Description:The problem is that for AppleScripts we use
+
+'tell application PowerSwitch_Service'
+
+This should be somehow resolved. Then we need to make sure that after flavors are removed the AppleScripts (existing and new) works fine Notes:"|"Task"|""|"no"|""|""|"#1117"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#284"|"Check UI strings"|"Description:Don't mention Flavor in UI Notes:"|"Task"|""|"no"|""|""|"#1117"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#283"|"Refactor License manager"|"Description:Change pair SwitchFlavor - LicenseManager Notes:"|"Task"|""|"no"|""|""|"#1117"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#281"|"Update Switch build"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1117"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#1111"|"Scripting module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Scripting, in order to get the most out of my investment.
+
+h2. Notes
+
+
+
+The script element and property editor “Define script expression” should be
+licensed separately from Switch. Meaning that only when I use a valid key, this
+flow element and its category title (Scripting) become available in the
+elements pane and the script expression property editor becomes available in
+the properties pane.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+
+Make the script element and features behave like the Database connect tool in
+PowerSwitch 10 update1. Meaning that only when it is licensed (separately from
+PowerSwitch), it can be used.
+Make sure the property editor “Define script expression” is only available if
+correctly licensed with a scripting module key.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#266"|"Add license checking mechanism for Scripting module"|"Description:Make sure Switch checks for separate license when loading Script element and Script features such as script expressions in UI Notes:"|"Task"|""|"no"|""|""|"#1111"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#267"|"Move Script element to Scripting module"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1111"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#1115"|"SwitchProxy module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. SwitchProxy module, in order to get the most out of my
+investment.
+
+h2. Notes
+
+
+
+The SwitchProxy module is separate product and released with Switch 10 but from
+Switch 11 on it will be “commercially” considered as a module.
+No development effort required, just writing this story for completeness and to
+make sure it gets tested by QA 
+
+h2. Acceptance Criteria
+
+
+
+SwitchProxy works fine with Switch 11
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#275"|"Check SwitchProxy is not able to connect to Switch if not licensed"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1115"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#274"|"Add real key to Switch"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1115"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#119"|"Client SDK module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I don’t want to pay twice for the
+same features, so when I have purchased the Client SDK module I need the
+SwitchClient module included. 
+
+h2. Notes
+
+
+
+The Client SDK is already a separate module (with its own license key) and
+released with Switch 10 but from Switch 11 on it will be “commercially”
+considered as a module.
+Whoever buys this module is automatically entitled to use the SwitchClient
+module. 
+
+h2. Acceptance Criteria
+
+
+
+Using only 1 key, the one for Client SDK, the same features and connection
+rights as in the SwitchClient module become available.
+Note that in such case the customer does not get separate keys for Client SDK
+and SwitchClient module.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|"Accepted"|""
+"#280"|"Check that connecitons from Client and SDK based clients"|"Description:Check different variations of Client and SDK licenses - Client should be able to connect with both licenses, SDK based Client should be able to connect only with ClientSDK license;
+
+Make sure that number of availble connections is calculated correctly according to license installed. Notes:"|"Task"|""|"no"|""|""|"#119"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#277"|"Make sure Client SDK enables Client license"|"Description: Notes:"|"Task"|""|"no"|""|""|"#119"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#287"|"Add Switch Client SDK license key"|"Description:Make sure Switch allow connection of ClientSDK based apps only when key is activated Notes:"|"Task"|""|"no"|""|""|"#119"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#298"|"Fix failing Merge PDF/Metadata Test"|"Description:Hello Davy,
+
+I’ve investigated the problem of Merge PDF/Metadata Test. It has wrong test logic that should be reworked. Eugene Volkorez will fix this test tomorrow. 
+...
+
+Best regards,
+Denis Koleda
+--------------------------------------------------
+You can access the virtual machine through remote desktop:
+
+Address = 10.13.133.79
+
+Username = Shaker
+
+Password = 123
+
+ 
+
+There is already a Switch installed. You can find TestDrive and the Shaker tests on the desktop. Let me know if you have any questions or problems. I will temporarily disable cruisecontrol until you are ready with your investigations, please let me know when I should enable cruisecontrol again.
+
+ 
+
+
+ 
+
+ Notes:18:34:18	Shaker log:	Error	FAILED Test 'MergePDF_Metadata' (Actual test output does not match reference output)18:34:20	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/Merge PDF pages/MetadataTest' Detected error string: FAILED
+----------------------------------------------------------------------------------------------
+09:44:50	Shaker log:	Error	FAILED Test 'Assemble Job Scheme Arbitrary Files' (Actual test output does not match reference output)09:44:50	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Basics/Assemble job/Arbitrary files' 12:01:35	Shaker log:	Error	FAILED Test 'MergePDF_Metadata' (Actual test output does not match reference output)12:01:37	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/Merge PDF pages/MetadataTest' Detected error string: FAILED
+-----------------------------------------------------------------------------------------------
+ Errors/Warnings: (12)  
+19:53:31	Shaker log:	Error	FAILED Test 'Connection_Priority' (Actual test output does not match reference outputUnexpected error message in log)19:53:31	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/hold job/Connection_Priority' 19:55:07	Shaker log:	Error	FAILED Test 'Connection_SpaceJobsApart' (Actual test output does not match reference output)19:55:07	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/hold job/Connection_SpaceJobsApart' 20:12:54	Shaker log:	Error	FAILED Test 'MergePDF_Metadata' (Actual test output does not match reference output)20:12:55	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/Merge PDF pages/MetadataTest' Detected error string: FAILED
+------------------------------------------------------------------------------------------------
+05:39:12	Shaker log:	Error	FAILED Test 'MergePDF_Metadata' (Actual test output does not match reference output)05:39:13	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/Merge PDF pages/MetadataTest' 06:37:04	Shaker log:	Error	FAILED Test '3_1 FileStatistics class' (Actual test output does not match reference outputNot all expected errors are in log)06:37:05	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Other/Scripting/Metadata module/FileStatistics class' Detected error string: FAILED"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#299"|"BZ 6309 - Switch 10 can't upload to FTP user root folder_1"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""|""|""|"Done"
+"#18"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-10-10 00:00:00.0"|"2011-10-23 00:00:00.0"|""|""
+"#1172"|"10u2 QA WoodWing Configurator"|"h2. Narrative
+
+
+As a  I can  to 6274
+6275
+6277
+5612*extra h2. How to test
+
+
+
+test these 4 bugs + general sanity check for download configurator
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|"Accepted"|""
+"#1171"|"10u2 QA Bugfixes customer bugs"|"h2. Narrative
+
+
+As a  I can  to These are 3  bugs reported by customers against previous versions of Switch:
+
+- BZ 4331: 'Hold' on connection doesn't always work
+
+- BZ 6309 - Switch 10 can't upload to FTP user root folder 
+
+- BZ 6329 - Mail receive can't handle special character like /*Extra h2. How to test
+
+
+
+bug 4331: Test on windows laptop of Carine were she already reproduced bug 4331. Don't put too much time in it, let customers test. Run some stress tests with hold job and run over night.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|"Accepted"|""
+"#1120"|"DEV Info on missing elements"|"h2. Narrative
+
+
+As a a Switch Administrator I can see to which module a tool, property editor or variable group belongs if i import a flow to know exactly what is missing and make it easy to extend Switch, buy or try  additional moduleh2. Notes
+
+
+ / h2. Acceptance Criteria
+
+
+
+
+When importing a flow with missing element a warning message appears mentioning 'Unsupported flow element xxx was detected when importing this flow” instead of 'Skipped unsupported flow element xxx”
+Once imported and when hoovering over such element on the canvas the message still says: 'The flow element cannot be found by Switch.' (nevertheless it's a missing configurator or an unlicensed tool, we always give the same message.)
+
+When importing a flow that uses script expression editor and scripting module is not active, the message says: 'Unsupported property editor 'define script expression' was detected when importing this flow'. 
+Once imported, flow validation fails just like when importing such flow from PowerSwitch in LightSwitch
+
+When importing a flow that uses a variable from a non supported group (i.e. metadata or database), the message says: 'Unsupported variable was detected when importing this flow'. 
+Once imported, flow validation fails. Currently it is not clear to me what happens if you import such flow from PowerSwitch in LightSwitch so this behavior should be improved
+
+h2. How to test
+
+
+
+Create separate flows for each element to test flow validation and error message
+Test on one version of Mac and windows
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|"Accepted"|""
+"#2117"|"Add license check for Scripting module"|"Description:When importing a flow that uses script expression editor and scripting module is not active, the message says: 'Unsupported property editor “define script expression” was detected when importing this flow'. 
+Once imported, flow validation fails just like when importing such flow from PowerSwitch in LightSwitch Notes:"|"Task"|""|"no"|""|""|"#1120"|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2129"|"Add license checking for variables_1"|"Description:When importing a flow that uses a variable from a non supported group (i.e. metadata or database), the message says: “Unsupported variable was detected when importing this flow”. 
+Once imported, flow validation fails. Currently it is not clear to me what happens if you import such flow from PowerSwitch in LightSwitch so this behavior should be improved Notes:"|"Task"|""|"no"|""|""|"#1120"|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2116"|"Change warning message"|"Description:When importing a flow with missing element a warning message appears mentioning 'Unsupported flow element xxx was detected when importing this flow” instead of 'Skipped unsupported flow element xxx” Notes:"|"Task"|""|"no"|""|""|"#1120"|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2142"|"Bug 6356 - CROSSROADS: new callas configurator"|"Description:We will probably not include this configurator in the update 2 anymore, but we have to get it on crossroads on time as the new script was already uploaded since October 6. Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2136"|"bz6295"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2106"|"bug 6226 Assemble job"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2141"|"Support question BGZ 6401"|"Description:Bug 6401 - Invalid syntax of xmp path 'dc:title/*[@xml:lang='x-default']' Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2122"|"Support question BGZ 6359"|"Description:Bug 6359 - Switch Photoshop CS5 open commands sometimes changes clipping path Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2104"|"Bug　6295 - ftp-send 'ignores' transfer as binary property"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2125"|"Create wizard prototype"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2128"|"10u2 bz 6382 : metadate 'no-yes list' fields default value is not remembered"|"Description:http://87.118.100.46/bugzilla/show_bug.cgi?id=6382 Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2107"|"Don't show unnecessary preferences in UI"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2153"|"Bug 6216 - Betatester - PitStop Server only allows PDF files"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2155"|"Bug 6222 - Betatester - Metadata should be aligned at the left-hand side"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2120"|"Shaker tests for properties of FTP Receive"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2159"|"Bug 6252 - Betatester - Error appears when Database connect module is not licensed nor used!"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2119"|"Shaker tests for properties of FTP Send"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2139"|"Support question BGZ 6398"|"Description:Bug 6398 - 'Can't lock user global data' error in Assemble Tool Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2112"|"Move data from old location into new one"|"Description:Including upgrade of paths inside tickets Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2110"|"Create Upgrade application template"|"Description:Create app template and add it into Installer Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2137"|"bz6251"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2156"|"Bug 6241 - Betatester - Wrong warning message when selecting 1 job"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2103"|"Bug　6338 - ftp-receive and ftp-send have different password settings"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2126"|"10u2 bz 5308 : SwitchClient resets its dialog size to default"|"Description:BETATESTER - http://87.118.100.46/bugzilla/show_bug.cgi?id=5308 Notes:still reproducible on certain systems. please read the comments on bz"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2150"|"Support question BGZ 6415"|"Description:Bug 6415 - FTPS (FTP over SSL) vs. SFTP (SSH File Transfer Protocol): Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2105"|"Bug　6251 - FTP problem: Can't download file '/h:/ftp/test/DO1_0001.090.PDF';"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2109"|"Preserve hidden properties so they aren't missed"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2152"|"Bug 6203 - Betatester - Pitstop configurator error message when files are submitted as one jobs "|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2114"|"10u2 Documentation bugs"|"Description:6216
+6221  Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2127"|"10u2 bz 6222 : Metadata should be aligned at the left"|"Description:Betatster - http://87.118.100.46/bugzilla/show_bug.cgi?id=6222 Notes:I wasn't looking at the right place when I verified this as fixed.
+Turns out it isn't fixed at all.
+
+Betatester noticed this.
+please read comments in bz
+
+--Toon"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2140"|"10u2 Strings"|"Description:Send for translation and put reviewed strings back to depot Notes:Reviewed strings were put on Perforce. Still waiting for translations."|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2138"|"bz6226"|"Description: Notes:waiting on a comment from Jared"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2132"|"10u2 bz6394 	Can't have more the one metadata drop down list with a required value "|"Description:http://87.118.100.46/bugzilla/show_bug.cgi?id=6394
+
+When a submit/checkpoint has more than one dropdown list with a required value
+and you submit a job ,changing the value of only one of the drop down list is
+enough to submit it. The other drop down lists no longer need a value. Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2113"|"Conditional license - support maintanance key"|"Description: Notes:Here is no support of maintenance key but support of Switch 09 and 10 keys in Switch 11"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2115"|"Show upgrade progress"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2151"|"Bug 5382 - Betatester - When submitting multiple jobs into 1 job - icon not ok"|"Description:
+
+ Notes:comment from Dieter on bugzilla :
+This is an improvement / feature request and I like the suggestion from Kirill. 
+Raising priority but moving away from update 2 so it can be picked up as a
+story for a next sprint in Switch 11 project.
+
+I'll put this task on 'done' because there is nothing I can do for this bug for 10u2"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2157"|"Bug 6246 - Betatester - Not possible to deselect a job in table view"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2111"|"Search for installed Switch versions"|"Description:Perform search in registry and in default app data root Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2158"|"Bug 6248 - CHECKED - Betatester - Switch service is constantly crashing"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#2134"|"bz6338"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""|""|""|"Done"
+"#19"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-10-24 00:00:00.0"|"2011-11-05 23:00:00.0"|""|""
+"#1174"|"QA Switch name change"|"h2. Narrative
+
+
+As a an operator I can only see one product name 'Switch' and no more Light, Full or PowerSwitch to not be confused about possible property sets, flavors and modules.h2. Notes
+
+
+
+Change the names LightSwitch, FullSwitch and PowerSwitch to Switch.
+
+(artwork' about panel, splash screen, product icon is not part of this story. This artwork needs to be created first by marketing.)
+
+h2. Acceptance Criteria
+
+
+
+changes in:
+Application name
+titles in toolbars and dialogs
+name in messages
+all server components
+all folders on the system (application folder, library, ...)
+all files on a system (executable, .plist, ...)
+build system
+
+* h2. How to test
+
+
+
+Should be tested on one MacOS version and one Windows version.
+Folders and files on disk can be checked using clean install procedure
+Can be tested after user story for Switch installer
+ 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""
+"#2171"|"Testing names on Windows and mac"|"Description: Notes:Update 1: Mac OSX 10.6.8 build 279320 Ok
+Update 2: Windows Vista Business Service Pack 1 build 279230 OK
+
+No old names (PowerSwitch,...) found."|"Task"|""|"no"|""|""|"#1174"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#1161"|"QA Metadata module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Metadata tools and access to the metadata variables and
+possibility to gather content for a SwitchClient dropdown list straight from an
+XML based dataset, in order to get the most out of my investment.
+
+h2. Notes
+
+
+
+•The metadata elements (XML, JDF, XMP and opaque pickup, XMP inject, export
+metadata)
+•The metadata variables 
+•And access to XML based datasets when defining dropdown list as metadata
+fields on Submit and Checkpoints, 
+Should be licensed separately from Switch. Meaning that only when I use a valid
+key, those flow elements become available in the elements pane, the metadata
+group becomes available in the variables panel (i.e. define single/ multi line
+or condition with variables dialog) and  “Define values from dataset” becomes
+available as data value for dropdown list.
+
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+Note about datasets:
+
+h2. Acceptance Criteria
+
+
+
+Make those metadata elements and features behave like the Database connect tool
+and the database variables in Switch 10 update1. Meaning that only when they
+are licensed (separately from PowerSwitch), they appear in the metadata
+category and so can be used.
+Note that XSLT transform and log job info are not included in this module so
+they do not appear/disappear based on license status of this module.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#2177"|"test elements  on a windows machine"|"Description:ONLY after licensing the metadata module :
+The metadata elements (XML, JDF, XMP and opaque pickup, XMP inject, export
+metadata)
+are available
+ Notes:"|"Task"|""|"no"|""|""|"#1161"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2181"|"test xml based datasets as meta data dropdown sources on a windows machine"|"Description:only after the metadata module is licensed the user should have access to XML based datasets when defining dropdown list as metadata fields on Submit and Checkpoints Notes:Oké this was tested on a Windows vista business Service pack 2 machine with build 279320."|"Task"|""|"no"|""|""|"#1161"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2178"|"test elements  on a Mac osX machine"|"Description:ONLY after licensing the metadata module :
+The metadata elements (XML, JDF, XMP and opaque pickup, XMP inject, export
+metadata)
+are available
+ Notes:Checked only available after licensing the metadata-license on Mac OSX 10.6.8 and build 279649."|"Task"|""|"no"|""|""|"#1161"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2179"|"test metadata variables on a windows machine"|"Description:ONLY after the metadata module is licensed the metadata variables are available. Notes:Ok tested on:
+Windows vista business Service pack 2 build 279320"|"Task"|""|"no"|""|""|"#1161"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2180"|"test metadata variables on a mac osX machine"|"Description:ONLY after the metadata module is licensed the metadata variables are available. Notes:OK tested on a Mac OSX 10.6.8 Build 279649"|"Task"|""|"no"|""|""|"#1161"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2182"|"test xml based datasets as meta data dropdown sources on a mac osX machine"|"Description:only after the metadata module is licensed the user should have access to XML based datasets when defining dropdown list as metadata fields on Submit and Checkpoints Notes:Oke tested on a Mac OSX 10.6.8 with Build 279649 installed"|"Task"|""|"no"|""|""|"#1161"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#11100"|"Upgrade"|"h2. Narrative
+
+
+As a an operator I can easily upgrade my old Switch 09 or Switch 10 to Switch 11  to start production again right away with the new version, without having to worry  loosing data or settingsDEV 20 + QA 8h2. Notes
+
+
+'*
+Any Switch flavor should be easily upgraded to the new modular Switch.
+Therefore we have a conditional license feature checking.
+Note that we only need to support upgrade from 09 or 10.
+
+h2. Acceptance Criteria
+
+
+
+Upgrading is like it used to be (e.g. from 09 to 10) meaning all flows, preferences, settings are preserved and the old version is removed.
+
+In case 2 switch flavors are found on the same system. The user will get notification and must decide which version he wishes to update at first start-up of Switch 11.
+
+h2. How to test
+
+
+
+* test upgrade from power, light, full for 09u3 and 10u2 to Switch 11 on one version of SnowLeopard/Leopard and windows XP/Vista
+* power-&gt;Switch on windows 2008 Server R2, XP, SnowLeopard 
+* full-&gt;Switch on Lion, Leopard
+* Light-&gt;Switch on Windows 7, 2003 Server
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#2163"|"add scrollbar to the label on the report page"|"Description:review messages and GUI in general 
+- add scrollbar to the label on the report page 
+- test upgrade from different flavors and versions 
+- check upgrade starting from installer Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2217"|"QA Test Upgrade when Switch data root in not in default location"|"Description:In this case the Switch data root will not be renamed or moved. During the upgrade all the data should be preserved: flows, jobs, GUI layouts, preference values Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2207"|"Verify Upgrade functionality"|"Description:- test that settings and data are correctly picked up from Power/Full/Light 09 and 10
+- test Win and Mac Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2162"|"review messages and GUI in general "|"Description: Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2218"|"QA Test Upgrade on Win 7 and Lion"|"Description:Test these platforms to make sure there are no permissions issues. Notes:Bugs pointed out:
+
+Bug 6506
+Bug 6508
+"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2147"|"QA Test Upgrade"|"Description:Test upgrade from different flavors and versions:
+- Running Upgrade from installer
+- Running Upgrade from Designer as first run after install Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2232"|"Uninstall previous Switch versions"|"Description:Installer of Switch 11 should automatically uninstall Switch 09 and 10. Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"New"
+"#2215"|"QA Test Upgrade from Power/Full/Light 09 on Mac and Win"|"Description:During the upgrade all the data should be preserved: flows, jobs, GUI layouts, preference values Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2225"|"Investigate BGZ 6497"|"Description:Bug 6497 - Switch cannot start if it is launched twice
+
+Investigate this bug to check if it is somehow related to Upgrade Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2209"|"Fix issue with ports when upgrading from Light or Full"|"Description:Default ports in Light and Full are not equal to default ports in Switch 11, so after the upgrade Switch 11 will not launch if the ports issue is not resolved. Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2220"|"Fix problem that wizard window appears in background on Mac"|"Description: Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2216"|"QA Test Upgrade from Power/Full/Light 10 on Win and Mac"|"Description:During the upgrade all the data should be preserved: flows, jobs, GUI layouts, preference values Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2219"|"QA Test Upgrade features"|"Description:To test:
+- see h2. How to test
+
+
+ from the User story description
+- test that upgrade is performed only once on given system
+- test that upgrade is not performed the second time if the Upgrade wizard is started manually
+- check Wizard GUI and messages Notes:"|"Task"|""|"no"|""|""|"#11100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"New"
+"#11102"|"10u2 Required bugfixes for update 2_1_1"|"h2. Narrative
+
+
+As a  I can  to DEV 13 + QA 2
+
+- Bug　6349 - application error after ftp stresstesting
+- Bug　6338 - ftp-receive and ftp-send have different password settings
+- Bug　6295 - ftp-send 'ignores' transfer as binary property
+- Bug　6251 - FTP problem: Can't download file '/h:/ftp/test/DO1_0001.090.PDF'; error message: Operation interrupted or timeout
+- bug 6226 Assemble job
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""
+"#2135"|"bz6349"|"Description: Notes:"|"Task"|""|"no"|""|""|"#11102"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2102"|"Bug　6349 - application error after ftp stresstesting"|"Description:This is task was replaced in done because bug 6349 changed status on 'RESOLVED WORKSFORME' Notes:"|"Task"|""|"no"|""|""|"#11102"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#1184"|"QA Info on missing elements"|"h2. Narrative
+
+
+As a a Switch Administrator I can see to which module a tool, property editor or variable group belongs if i import a flow to know exactly what is missing and make it easy to extend Switch, buy or try  additional moduleh2. Notes
+
+
+ / h2. Acceptance Criteria
+
+
+
+
+When importing a flow with missing element a warning message appears mentioning 'Unsupported flow element xxx was detected when importing this flow” instead of 'Skipped unsupported flow element xxx”
+Once imported and when hoovering over such element on the canvas the message still says: 'The flow element cannot be found by Switch.' (nevertheless it's a missing configurator or an unlicensed tool, we always give the same message.)
+
+When importing a flow that uses script expression editor and scripting module is not active, the message says: 'Unsupported property editor 'define script expression' was detected when importing this flow'. 
+Once imported, flow validation fails just like when importing such flow from PowerSwitch in LightSwitch
+
+When importing a flow that uses a variable from a non supported group (i.e. metadata or database), the message says: 'Unsupported variable was detected when importing this flow'. 
+Once imported, flow validation fails. Currently it is not clear to me what happens if you import such flow from PowerSwitch in LightSwitch so this behavior should be improved
+
+h2. How to test
+
+
+
+Create separate flows for each element to test flow validation and error message
+Test on one version of Mac and windows
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#2144"|"QA - Test Info on missing elements"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1184"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#1198"|"Add files to compressed package"|"h2. Narrative
+
+
+As a  I can  to DEV 7 + QA  1
+Allow to add files to a compressed archive according to bz 2431*Notes for development*
+- test with password protected file
+- Write extra shaker tests for compress and uncompress functionality to have full coverage
+- Add shaker tests for new functionality from this user story
+
+h2. How to test
+
+
+
+- check new shaker tests, test on one version of Mac and one version on Windows
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""
+"#2167"|"Investigate problems with folder hierarchy"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1198"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2168"|"Create Shaker tests"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1198"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2166"|"Extend Swtich scripting API"|"Description:Make it possible to add/update files into existing archive Notes:"|"Task"|""|"no"|""|""|"#1198"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2174"|"QA - Test updated compress functionality"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1198"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#11101"|"Preferences match my installation."|"h2. Narrative
+
+
+As a a Switch Administrator I can only set preferences that are related to the modules i have to have a clear overview of relevant preferences and not be overloaded with irrelevant settingsDEV 8 + QA 1h2. Acceptance Criteria
+
+
+
+Preferences mention correct product name.
+
+ODBC data sources is only available for the database module
+
+Internal communication settings: Port for SwitchClient, Compress SwitchClient jobs, Max nr of mobile SwitchCients and Enable Push notifications is only available for the SwitchClient and/or SwitchClient SDK module
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""
+"#2146"|"QA Test Preferences match my installation"|"Description: Notes:"|"Task"|""|"no"|""|""|"#11101"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2108"|"Refactoring Preferences classes"|"Description: Notes:"|"Task"|""|"no"|""|""|"#11101"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#1162"|"QA SwitchClient module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. SwitchClient, in order to get the most out of my investment.
+
+h2. Notes
+
+
+
+The communication elements (Submit point, Checkpoint and Checkpoint via mail)
+should be licensed separately from Switch. Meaning that only when I use a valid
+key, these elements become available in the Communication section of the
+elements pane.
+Next to the elements also the User panel and the Client Activity and Client
+Connection pane on the Statistics panel should become available whenever
+correctly licensed.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+
+Make the Submit point, Checkpoint and Checkpoint via mail behave like the
+Database connect tool in Switch 10 update1. Meaning that only when they are
+licensed (separately from PowerSwitch), they can be used. Note that the
+Database module only includes 1 tool and the Client module includes 3 elements.
+Make sure the User panel appears according to the licensing status
+Make sure the Client Activity and Client Connection pane on the Statistics
+panel appear according to the licensing status.
+Note that nothing changes to the “5 license included” policy for PowerSwitch so
+if a customer has licensed the SwitchClient module then he or she still gets 5
+licenses, knowing that this number of licenses can be expanded with additional
+Client licensing.
+
+h2. How to test
+
+
+
+Mac and Windows
+Different users/roles/groups
+Test if number of client licenses respected
+
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""
+"#2173"|"Testing Client Panes"|"Description: Notes:Testing if you can't see client panes when not activated and if you can when it is activated on mac and windows.
+
+Mac OSX 10.6.8 and Switch build 279320 Ok
+Windows Vista Business Service Pack 1, build 279320 Ok.
+
+Users are shown when license activated and not shown when deactivated (you do have to restart the program for this)."|"Task"|""|"no"|""|""|"#1162"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#1169"|"10u2 QA Betatester reported bugs"|"h2. Narrative
+
+
+As a  I can  to 5308 - Fixed (Dmitry)
+These bugs were all logged by our Spanish distributor. Most of them are related to SwitchClient.
+
+5382 - In progress: Dmitry
+6203 - Fixed (Kirill)
+6216 - Assigned To: Bhargavi Manjunath
+6221 - Assigned To: Bhargavi Manjunath
+6222
+6241
+6246 - Fixed (Dmitry)
+6248
+6252 - Fixed (Vitali)h2. How to test
+
+
+
+Test on Mac and Windows
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""
+"#2154"|"Bug 6221 - How does the variable group 'Connection' work? "|"Description: Notes:"|"Task"|""|"no"|""|""|"#1169"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2145"|"QA Test Betatester reported bugs"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1169"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#1178"|"10u2 Shaker tests for FTP"|"h2. Narrative
+
+
+As a  I can  to For the moment I am extending shaker to make it possible to run the same Shaker tests for different FTP servers without having to duplicate the tests/flows.
+
+Because FTP is so important for update 2 I suggest that we also add an extra story for the next sprint to create the necessary feature and regression tests for FTP. This means making tests for all different properties of the FTP receive and send + extra tests for special cases like permissions or special file names.   
+The tests can already be created for one FTP server. Once I am ready with my extension we can change the tests to run them for all available FTP servers that we have internally.
+
+h2. Acceptance Criteria
+
+
+ Show tests that were created and that they run on the server that is setup in Minsk
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#2143"|"Bugfix bgz 6410"|"Description:Bugfix bgz 6410 - 'FTP Receive' - zero length resource fork file created on windows.
+http://87.118.100.46/bugzilla/show_bug.cgi?id=6410 Notes:"|"Task"|""|"no"|""|""|"#1178"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"New"
+"#2121"|"Shaker tests for permissions of FTP folders"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1178"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#1165"|"QA A key for every module"|"h2. Narrative
+
+
+As a an operator I can activate every module individuality to end up with a Switch installation that only contains the tools i really need.h2. Notes
+
+
+
+Every module has its specific key. Each key only includes one feature that matches the module.
+
+h2. Acceptance Criteria
+
+
+
+Database module, SwitchClient module, SwitchClient SDK, scripting module, metadata module and configurator module functionality is unlocked with an individual key.
+Additional SwitchClient licenses are added with a specific product key (same as it used to be)
+
+h2. How to test
+
+
+
+Necessary to test each key separatly: test if features are locked/unlocked + test if functionality still works.
+Necessary to test combinations: Test if features are locked/unlocked for combination from old Light, Full, PowerSwitch, PowerSwitch + DB
+Test on one version on Mac and Windows
+Shaker tests can be used to test functionality by using TestDrive as UI application by QA.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""
+"#2195"|"test switchclient SDK module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2205"|"test keys on mac and win"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2199"|"test metadata module Key + functionality on a mac machine"|"Description: Notes:Oké tested on a Mac osX 10.6.8 with build 279649."|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2202"|"test configurator module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2194"|"test switchclient module Key + functionality on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2198"|"test scripting module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2203"|"test additional switchclient licenses on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2201"|"test configurator module Key + functionality on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2196"|"test switchclient SDK module Key + functionality on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2200"|"test metadata module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2193"|"test switchclient module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2197"|"test scripting module Key + functionality on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2191"|"test database module Key + functionallity on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2192"|"test database module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#1165"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#1164"|"QA Switch (basic) version features"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Switch most basic features (+- LightSwitch), in order to get the most out of my investment.h2. Notes
+
+
+
+Enfocus Switch contains all LightSwitch functionality but includes the following changes:
+•“Log job info” element is part of the Tools category in the elements pane (instead of the Metadata category. 
+Note that all 3 possible schemes are supported, this is also the case for the Sort job tool 
+•“XSLT transform” element is part of the Tools category in the elements pane (instead of the Metadata category.
+•“Split PDF in pages” is renamed to “Split PDF” and is available in the basic version of Switch.
+•“Merge PDF pages” is renamed to “Merge PDF” and is available in the basic version of Switch.
+
+Note: advanced performance tuning features becomes part of Switch (basic)
+
+Note that datasets are also supported in this basic version.
+E.g. ftp send can create a dataset on the data+log outgoing connection (just like in LightSwitch). If customer has Configurator module then PitStop Server configurator can create dataset with a report and if the customer also has the SwitchClient module the he can see this report in SwitchClient.
+
+Note that private data is also supported for some tools (e.g. group and ungroup) and that the job.PrivatData variable remains part of Switch (basic) (just like in LightSwitch) 
+
+h2. Acceptance Criteria
+
+
+
+The LightSwitch tools + those mentioned above are loaded correctly
+
+h2. How to test
+
+
+
+Install Switch on one version of Mac and Windows. Check if necessary tools are available and other ones are blocked
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"Accepted"|""
+"#2170"|"Test on a windows machine"|"Description:Test on a windows machine Notes:"|"Task"|""|"no"|""|""|"#1164"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#1121"|"Module license expires"|"h2. Narrative
+
+
+As a a Switch administrator / prepress manager I can not use features and tools that are not longer licensed to not break my license agreement20 DEV +1 QAh2. Notes
+
+
+
+We need a mechanism to prevent Switch running with unlicensed features. 
+
+h2. Acceptance Criteria
+
+
+
+use case: database module trial expires.
+1) before Switch service is restarted:
+Flows can still be imported without missing element notification and flows can still be created because the database element is still in the elements pane. These flows can however not be validated anymore and the unlicensed tool gets the exclamation mark and message 'Invalid license'.
+
+Flows that are running on the moment license expires keep running. There is however a daily check (every 24h). After this check -the flow keeps running but the unlicensed element or the element that uses some database variable (or in case of metadata module uses a script expression property editor) is market as a problem element. Jobs arriving at such element go to the problem jobs.-
+*UPDATE: The flow does not keep running and we do not mark the element as a problem element. we just DEACTIVATE the whole flow. There should be a clear log message explaining which flow element is not functional anymore and which module is required to make it functional again* 
+
+2) after the service is restarted:
+The elements or features are not available in GUI anymore so customer cannot create flows with them anymore. When importing flows we indicate that features or elements are missing. 
+Also existing flows will indicate missing elements. 
+No flow can be activated anymore because validation will fail on missing features.
+
+h2. How to test
+
+
+
+Use time bombed key or trial key. 
+one version on mac and windows
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#2186"|"Extra - Add event indicating that license info is changed"|"Description:Make it possible to inform all interested objects that license informaiton is changed, so Switch will be able to react on chenges fast Notes:"|"Task"|""|"no"|""|""|"#1121"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2188"|"Create license validation procedure"|"Description:In Server add procedure that will check all Flow's elements and properties if they are licesensed or not Notes:"|"Task"|""|"no"|""|""|"#1121"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2189"|"Extra - Add License Manager's event handler "|"Description:Make Switch server able to catch event sent by License Manager indicating that license information has been changed. By this event Switch will validate flows. Notes:"|"Task"|""|"no"|""|""|"#1121"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2185"|"Add flag indicating that license info has been changed"|"Description:Make it possible to check is licenses changed to avoid unnecessary checks Notes:"|"Task"|""|"no"|""|""|"#1121"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2190"|"QA - check that Switch reacts on expires licenses"|"Description:Do the following tests:
+- Check that after Server restart expired elements are missed in Elements pane and marked on canvas
+- Check that Switch fails expired elements in the running flows
+- Check that it is possible to import/create flow with expired elements in case Switch has not been restarted
+- Check that it is impossible to import/create flow with expired elements in case Switch has been restarted
+ Notes:"|"Task"|""|"no"|""|""|"#1121"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"New"
+"#2214"|"Refresh cache after activation or deactivation via Designer GUI"|"Description:The cache can be refreshed immediately after activation/deactivation/repair was performed via Designer GUI. In this case Designer can send a request to Server to refresh the cache. Notes:"|"Task"|""|"no"|""|""|"#1121"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2187"|"Update Flow manager so it check flow's elements validity"|"Description:Let Switch server check all running flows by timer - license state of used elements/properties should be checked Notes:"|"Task"|""|"no"|""|""|"#1121"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"New"
+"#2184"|"Create licenses cache"|"Description:Update License Manager so license information is stored in cache, and cache will be updated by timer. Notes:"|"Task"|""|"no"|""|""|"#1121"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2161"|"Investigate problems on Lion"|"Description:Carine will add the necessary info in the task notes Notes:Kirill:
+My investigation shown that Switch hung when calling to Flex service. Is reinstall will not help, let's ask Halewijn to investigate it.
+Kirill:
+Flex is not officially compatible with Lion, therefore we need to involve Halewijn, he might know workaround."|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2149"|"Support question BGZ 6413"|"Description:Bug 6413 - Adding a file to a flow changes modification date. Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2213"|"Support issue with French InDesign"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"New"
+"#2229"|"Fix Designer hunging when running it twice"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2148"|"Investigation BGZ 5942"|"Description:Bug 5942 - Mac aliases from mounted volumes becomes copied files Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2221"|"Support question BGZ 6484"|"Description:Bug 6484 - how to construct a Date object from an XMP metadata value? Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2172"|"10u2 bz 6444 ftp error Betatester"|"Description:all details available on bz.
+http://87.118.100.46/bugzilla/show_bug.cgi?id=6444
+
+let me know If I should ask the customer more question. Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2206"|"Support question BGZ 6331"|"Description:Bug 6331 - Persistent execution thread for 'PitStop Server' was started Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2228"|"Review - BZ 5433 - Rename file for FTP &amp; SFTP"|"Description:It is necessary to review changes done by JOPA and submit it into NetworkSupport.Main. Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2226"|"Question about getting flow status from Server"|"Description:The question from the customer about possible ways to get information about flow status from Server Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2230"|"Fix problem with security of Designer SOAP API"|"Description: Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2175"|"10u2 Translations"|"Description:The strings that were not translated yet are sent to the translation agency. Once we get the translated strings back we need to put them in the software. 
+
+Update: we got the translations back today. I have sent all info to Kirill.  Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2212"|"Support question BGZ 6479"|"Description:Bug 6479 - -Problems with ODBC connection Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"New"
+"#297"|"Fix randomly failing Shaker tests"|"Description:Some tests are still failing randomly on the virtual machine where Shaker is running (see notes). I have created a separate task to fix the 'MergePDF_Metadata' test. Please investigate what the problem is for the other failing tests and try to fix it. 
+
+You can access the virtual machine through remote desktop:
+
+Address = 10.13.133.79
+
+Username = Shaker
+
+Password = 123
+
+ 
+
+There is already a Switch installed. You can find TestDrive and the Shaker tests on the desktop. Let me know if you have any questions or problems. I will temporarily disable cruisecontrol until you are ready with your investigations, please let me know when I should enable cruisecontrol again.
+
+ 
+
+I will add an extra task to the icescrum taskboard to investigate this further.
+
+In the mean time I will start investigating why not everybody is receiving the mails about failing tests.
+
+ 
+
+ Notes:18:34:18	Shaker log:	Error	FAILED Test 'MergePDF_Metadata' (Actual test output does not match reference output)18:34:20	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/Merge PDF pages/MetadataTest' Detected error string: FAILED
+----------------------------------------------------------------------------------------------
+09:44:50	Shaker log:	Error	FAILED Test 'Assemble Job Scheme Arbitrary Files' (Actual test output does not match reference output)09:44:50	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Basics/Assemble job/Arbitrary files' 12:01:35	Shaker log:	Error	FAILED Test 'MergePDF_Metadata' (Actual test output does not match reference output)12:01:37	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/Merge PDF pages/MetadataTest' Detected error string: FAILED
+-----------------------------------------------------------------------------------------------
+ Errors/Warnings: (12)  
+19:53:31	Shaker log:	Error	FAILED Test 'Connection_Priority' (Actual test output does not match reference outputUnexpected error message in log)19:53:31	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/hold job/Connection_Priority' 19:55:07	Shaker log:	Error	FAILED Test 'Connection_SpaceJobsApart' (Actual test output does not match reference output)19:55:07	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/hold job/Connection_SpaceJobsApart' 20:12:54	Shaker log:	Error	FAILED Test 'MergePDF_Metadata' (Actual test output does not match reference output)20:12:55	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/Merge PDF pages/MetadataTest' Detected error string: FAILED
+------------------------------------------------------------------------------------------------
+05:39:12	Shaker log:	Error	FAILED Test 'MergePDF_Metadata' (Actual test output does not match reference output)05:39:13	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Elements/Tools/Merge PDF pages/MetadataTest' 06:37:04	Shaker log:	Error	FAILED Test '3_1 FileStatistics class' (Actual test output does not match reference outputNot all expected errors are in log)06:37:05	Shaker log:	Inform	FAILED Test case 'D:/build-development/Switch_10.x/Depot/Shaker Tests/NoSetupRequired/FeatureTests/Other/Scripting/Metadata module/FileStatistics class' Detected error string: FAILED"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"New"
+"#2211"|"Support question BGZ 6386"|"Description:Bug 6386 - Can we check the attached messages and crash logs? Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"New"
+"#2210"|"10u2 remove 'beta' from version"|"Description:Bug 6473 - 10.2 builds still say BETA in version / about window
+
+http://87.118.100.46/bugzilla/show_bug.cgi?id=6473
+
+
+please fix this as this is our release branch Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2222"|"Fix problem with log messages"|"Description:There are log messages about unavailable functionality which appear during flow import in case required modules are not licensed. In some cases the messages are not complete: there is no module name mentioned in the message. The message should clearly indicate which module is required to enable the functionality.
+
+This happens for example when importing a flow with script expression and Scripting module is missing. Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#2223"|"Bugfix for BGZ 6398"|"Description:Bug 6398 - 'Can't lock user global data' error in Assemble Tool Notes:"|"Task"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""|""|""|"Done"
+"#20"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-11-06 23:00:00.0"|"2011-11-19 23:00:00.0"|""|""
+"#21"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-11-20 23:00:00.0"|"2011-12-03 23:00:00.0"|""|""
+"#22"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-12-04 23:00:00.0"|"2011-12-17 23:00:00.0"|""|""
+"#23"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2011-12-18 23:00:00.0"|"2011-12-31 23:00:00.0"|""|""
+"#24"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2012-01-01 23:00:00.0"|"2012-01-14 23:00:00.0"|""|""
+"#25"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|""|"yes"|"#15"|""|""|""|""|""|""|"2012-01-15 23:00:00.0"|"2012-01-28 23:00:00.0"|""|""
+"#1189"|"Tab based property pane"|"h2. Narrative
+
+
+As a a flow designer I can get a clear overview all properties of a tool to get a better view of all functionality that tools offers and to set up the tool more easilyh2. Notes
+
+
+
+1) Add tabs to the property pane.
+In Scripter this could result in some kind of property grouping feature. If no groups are made, then tools looks like it used to look. If groups are defined, the group name is shown as tab title.
+
+2) second attempt to clean up the property pane GUI. Where for Switch 10 we tried to get some kind of form layout in a table we could now use a real form. This would also not affect the preferences table GUI.
+
+h2. Acceptance Criteria
+
+
+
+property pane looks like image in attachment
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1135"|"New product, new artwork"|"h2. Narrative
+
+
+As a an operator I can only see one product name 'Switch' in the artwork to not be confused about possible property sets, flavors and modulesh2. Notes
+
+
+
+
+update artwork
+
+h2. Acceptance Criteria
+
+
+
+about panel
+splash screen
+
+Splash and abouts for Switch, Client and Scripter.
+Also for installers on win, there we use the same image as for the about panel. This is for Switch, Client, Scripter and for Proxy installers
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1170"|"QA Scripting module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Scripting, in order to get the most out of my investment.
+
+h2. Notes
+
+
+
+The script element and property editor “Define script expression” should be
+licensed separately from Switch. Meaning that only when I use a valid key, this
+flow element and its category title (Scripting) become available in the
+elements pane and the script expression property editor becomes available in
+the properties pane.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+
+Make the script element and features behave like the Database connect tool in
+PowerSwitch 10 update1. Meaning that only when it is licensed (separately from
+PowerSwitch), it can be used.
+Make sure the property editor “Define script expression” is only available if
+correctly licensed with a scripting module key.
+
+h2. How to test
+
+
+
+Will be tested with correct keys for the scripting Module
+Need to be check if the scripting features are enabled/disabled when key is (de)activated.
+Test on Mac and Windows, one version
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1126"|"Check license in installer"|"h2. Narrative
+
+
+As a Switch administrator I can not run the installer of a new version (especially major release version) to find out that (after installing) i cannot use that new version because of the maintenance policy and have to revert my installation to a previous versionDEV 13 + QA 2h2. Notes
+
+
+
+Create a CLI that checks the license state (i.e. valid product feature AND valid MAINTENANCE feature) and reports it.
+Use that CLI in the installer
+
+h2. Acceptance Criteria
+
+
+
+In an early phase of the installation procedure i get a warning that this version cannot be installed because the date of the build i like to install is older than the end date of my maintenance contract. e.g. 'No valid maintenance key was found on your system. After installation you will not be able to use this version until a valid maintenance key was activated.'
+DVW: After the user gets the warning he has the choice to continue the installation or not. If he has a valid maintenance key he can activate it after the installation. This story is only about Switch 11, we need to create a different story for Switch Proxy.
+
+h2. How to test
+
+
+
+* Test on Mac and windows. Test on one version of Mac. Test on different versions of windows because of problems with manifests for example. 
+* Test clean install
+* Test with Switch 11 key with expired end date
+* Test with Switch 11 key with valid end date
+* Test with Switch 11 key with expired end date + Switch 11 maintenance key with expired end date
+* Test with Switch 11 key with expired end date + Switch 11 maintenance key valid end date
+* Test one of light, full, power 09 and 10 without maintenance
+* Test one of light, full, power 09 and 10 with maintenance that has expired
+
+
+==============================================================================================
+For development:
+We would only show a warning if there was already a valid Power/Light/Full/Switch key was found for which the maintenance is expired. Customers that never have installed a Switch before will not get this warning and won’t get confused.
+We need to create a custom command line tool for Switch to check the license on the system to find out if we should give a warning or not. The command line tool can be built together with Switch and contain the same build number as Switch. This tool will have approximately the same license checking as we will have in Switch it self and can use his own build number to check the licensing.
+It looks like we won’t need the help for the licensing team for this and that our team can implement everything them self.
+The warning message can be shown by the installer and we probably don’t have to create our own UI. Using the installer UI prevents problems like focus problems or the problem that the warning panel is hidden behind the installer window like we had with PackManager in the past (but were solved in the mean time). 
+
+ Note about showing custom warning messages in the installer on mac:
+'Software Distribution Legacy Guide'
+http://www.filibeto.org/unix/macos/lib/dev/documentation/DeveloperTools/Conc
+eptual/SoftwareDistribution4/SoftwareDistribution4.pdf
+'String Files for the InstallationCheck Executable' on page 134.
+==================================================================================================
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1141"|"Shaker tests for Configurators category"|"h2. Narrative
+
+
+As a  I can  to Only write tests for configurators that Enfocus is responsible for, e.g. Adobe configurators, word, ...
+
+Todo:
+- reorganize existing tests according to new structure. In the story notes you can find a part of a mail that was sent begin september 2011.
+- add new tests for elements, properties and values that were not tested yetTo have a more agile way of working we really need to get Shaker up and running again. Switch is a complex product with a lot of features. This makes it a lot of work to test everything manually and because of the complexity it is also easy for developers to introduce new bugs. Automated testing and test driven development is the only way to lower the number of new bugs and to ensure stable releases. I am convinced that these automated tests will be a big help for us during the refactoring and other work that we will do in the future.
+
+ 
+
+Automated testing is only useful if the test run constantly and we make sure that the tests keep passing. I already setup a test machine in Ghent to continuously run Shaker tests. The tests are performed on a virtual machine that is reset every time to a clean state. For now we only test on windows and we only:
+- run tests from 'Shaker Tests/NoSetupRequired/FeatureTests' on the Switch 10.x continuous and nightly builds.
+- run tests from 'Shaker Tests/NoSetupRequired/RegressionTests' on the Switch 10.x nightly builds during the night
+
+ The coming weeks I will setup test machines on Mac and also run the other Shaker tests.
+
+Currently we are moving to a new structure for our Shaker tests. There are five main categories of tests:
+1. Processing: tests for configurators which require the installation of the 3rd party application for that configurator.
+2. SetupRequired: Tests without any configurators that require changes to the system before they can be used. E.g. mapping network drives, installing ODBC drivers or changing host files to map the name of ftp servers to the right IP address. We should try to have as much tests as possible that don't require any setup but for some tests this might not be possible.
+3. NoSetupRequired: tests that should always pass on any system without having to setup something first. The idea is that every developer should be able to run these tests on his own machine in case he changed something. The test should only fail if something got broken and not because you first have to setup something.
+4. RelationshipTests: contain published flows, e.g. sample flows that are included with Switch
+5. Stress tests: for testing the behavior of Switch under heavy load
+
+The Processing, SetupRequired and NoSetupRequired tests are split up in FeatureTests and RegressionTests. The ultimate goal of the FeatureTests is to have full coverage on the functionality in Switch. The ultimate goal of the RegressionTests is to have a test for each bug that was logged in BugZilla.
+
+We will move to a new structure for the feature tests: The folder structure should first mention the category that the element belongs to in the Switch UI, then the name of the element, then the name of the property. E.g. Shaker Tests/NoSetupRequired/FeatureTests/Elements/Basics/Connection/IncludeTheseFolders for the 'Include these folders' property of the Connection element. This test should test all possible values for the 'Include these files' property: All files, All Other files, .... 
+
+In some cases it might be handy to make a separate test for each possible value of a property, but in most cases we can limit the number of shaker tests by creating one test for all possible values of each property. Please also try to avoid using spaces in folder and filenames as much as possible.
+
+For the moment we are far behind on the number of tests for our test driven development, it is difficult to see what is already tested and some test are failing. Therefore I would like everyone to: 
+- Fix all existing tests that are currently failing. From now on you will all get mails the moment that the tests start failing.
+- Add a test for each property of each element according to the new folder structure for our test files. If you want to reuse existing tests, you can rename/move them according to the new folder structure by doing a rename/move operation in p4v. 
+
+From then on we will make sure that all tests keep passing and require that new Shaker test are written for every new feature (where possible). I already want to thank you for the effort and I am sure it will be a great help in the future.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1127"|"Start Switch trial and start module trial"|"h2. Narrative
+
+
+As a a Switch administrator I can not activate a module trial as long as Switch is not licensed (trial or permanent) to 1) keep an overview on the basic feature set and the modular feature set and not get overloaded with all features right from the start 
+2) not loose module trial time because i cannot use the features because Switch is not licensedDEV 5 + QA  2h2. Notes
+
+
+
+It is not possible to license the trial of a module if Switch (basic) itself is not licensed (either trial or permanent)
+This automatically means that if Switch is launched for the first time and the license panel is brought up, i will be able to activate Switch trial (and no other module as trial buttons will be grayed out!) or to enter a license file (which can include keys for Switch and modules).
+If i choose for trial, then the activation procedure is started to activate Switch build in trial key. After activation i don't need to restart.
+
+Since Switch is licensed now (either trial or permanent), it is possible to start the trial (because the buttons become active now) of one or multiple modules but i need to go to the license panel manually.
+
+h2. Acceptance Criteria
+
+
+
+Module trial buttons are grayed out if Switch itself is not in trial or permanent license state.
+
+h2. How to test
+
+
+
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1154"|"bug 5382 job icon in SwitchClient"|"h2. Narrative
+
+
+As a a SwitchClient user I can see either the main job in a jobfolder or if there's no main job, a job folder icon to have a better view on which job's need my attention.Bug 5382 - Betatester - When submitting multiple jobs into 1 job - icon not ok.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1196"|"Woodwing configurator improvements"|"h2. Narrative
+
+
+As a  I can  to -  bz 6355 : woodwing download change metadata
+- There was also a feature request logged somewhere concerning WW that we would handle together with bz 6355
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1139"|"Show passed and failed Shaker tests with cruisecontrol"|"h2. Narrative
+
+
+As a  I can  to As a Switch developer or QA tester I want to easily see which Shaker tests passed and failed so I know that all tests are still running every day without having to dig into the log file every time.Cruisecontrol has support to show test results by mail and on the dashboard. See http://cruisecontrol.sourceforge.net/main/configxml.html#merge
+
+- Currently we only see the failing tests in the mails sent by cruisecontrol but it should also show which tests passed.
+- Also the “test” tab on the cruisecontrol dashboard page shows “Test Suites (0)” for the moment.
+
+This can probably be solved by making the format of the Shaker log files compatible with the junit format from Ant which is in xml. More info on the format can be found on http://mail-archives.apache.org/mod_mbox/ant-dev/200902.mbox/%3Cdffc72020902241548l4316d645w2e98caf5f0aac770@mail.gmail.com%3E
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11114"|"Distribute SwitchClient settings"|"h2. Narrative
+
+
+As a a Switch administrator I can can export and import SwitchClient settings to save time because it takes lot's of time to sync all SwitchClients so all operators use the same settingsh2. Notes
+
+
+ / h2. Acceptance Criteria
+
+
+
+The custom filters and the customized table view settings can be exported and imported again in another SwitchClient.
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1199"|"SwitchProxy Maintenance"|"h2. Narrative
+
+
+As a  I can  to h2. Notes
+
+
+
+SwitchProxy has the same licensing policy as Switch for maintenance.
+
+h2. Acceptance Criteria
+
+
+
+If maintenance expires it's no longer possible to update/upgrade proxy
+Maintenance date is checked by the installer.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1166"|"QA SwitchProxy module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. SwitchProxy module, in order to get the most out of my
+investment.
+
+h2. Notes
+
+
+
+The SwitchProxy module is separate product and released with Switch 10 but from
+Switch 11 on it will be “commercially” considered as a module.
+No development effort required, just writing this story for completeness and to
+make sure it gets tested by QA 
+
+h2. Acceptance Criteria
+
+
+
+SwitchProxy works fine with Switch 11
+
+*extra h2. How to test
+
+
+
+Check if possible to connect and submit file through proxy.
+Test on Mac and Windows. 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11108"|"Woodwing Bug 6456 "|"h2. Narrative
+
+
+As a  I can  to asset does not get downloaded when set to checked out without choosing a specific user
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11125"|"Switch 11Shaker Needs"|"h2. Narrative
+
+
+As a  I can  to In Switch 11 we don't have flavors anymore and we introduced the concept of modules instead. So we can remove the support for the need of Power or Full in Shaker and replace them with needs for a certain module.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11120"|"Variables in PitStop Server"|"h2. Narrative
+
+
+As a a PitStop Server user I can use metadata to drive preflight and actions to get faster, better and more intelligent workflows in PitStop Server h2. Notes
+
+
+
+It will be possible in PitStop Server 11 to use metadata coming from xml files to drive dynamic preflight.
+The xml pickup mechanism and the variables from the metadata group will be used in PitStop Server.
+This might require some refactoring.
+
+h2. Acceptance Criteria
+
+
+
+to be confirmed by PitStop team
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11111"|"userfriendly defining dependency"|"h2. Narrative
+
+
+As a a flow desigener I can more easily define dependent metadata fields for SwitchClient to make flows faster as behavior is more straight forwardh2. Notes
+
+
+
+When defining dependency in metadata fields user get confused how to define the 'show if parent equals' field.
+We already have a mechanism where the property editor fore the default value gets automatically adjusted to the type of the field. a same mechanism where the 'show if parent equals' property editor is automatically. adjusted to the type of the parent field would be most convenient.
+
+e.g. parent: No-yes list type, then the dependent field 'show if parent equals' field should also be a No-yes list.
+
+Next to the automatically adjusted type, it would also be nice to have more property editors for this condition field (e.e.g single line text with var and script expression.
+
+h2. Acceptance Criteria
+
+
+
+The 'show if parent equals' fields of a dependent field behaves like the 'default value' field. Where the editor of 'default value' matches the type of it's own field type, the 'show if parent equals' editor matches the type of not it's own but it's parent field.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#118"|"Use license files instead of license keys"|"h2. Narrative
+
+
+As a  I can  to As a Switch administrator I like to have an easy mechanism to license Switch
+and one or multiple modules in order not to waste time and effort while
+hassling with multiple keys.
+
+h2. Notes
+
+
+
+Use Esko’s licensing mechanism with licensing files (i.e. files that contain
+key(s))
+Check how files can be applied on the mechanism (drag and drop and/or browse to
+a file). No need to reinvent the wheel so if only drag and drop or only browse
+to works then that’s fine for me.
+
+h2. Acceptance Criteria
+
+
+
+Use such license file in an activation wizard that accepts them (either via a
+drag and drop mechanism and/or via a browse to file feature). Use files
+containing only 1 key and files containing multiple keys.
+
+Also allow to still use the old keys from Switch 09 and 10
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1190"|"FTP: Concurrent up and download"|"h2. Narrative
+
+
+As a a Switch administrator I can fine tune the upload and download setting separately to get a more transparent FTP behaviorh2. Notes
+
+
+
+BZ 6263
+
+create a 2nd property for FTP in the Processing preferences.
+Resulting in 
+1) Concurrent upload transfers to the same site
+2) Concurrent download transfers to the same site
+
+h2. Acceptance Criteria
+
+
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11109"|"Clean up installer"|"h2. Narrative
+
+
+As a a Switch administator I can get faster access to the application because the installation procedure is reduced to the absolute minimum to get production up to speed asap or to test the software asaph2. Notes
+
+
+
+Enfocus product's installers are cleaned up and some steps of the wizard are removed.
+At the end of the procedure the application is launched automatically.
+
+h2. Acceptance Criteria
+
+
+
+Cleaned up procedure according to Andrew's instruction.
+Application is launched
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11124"|"Check 3rd party libaries if they support all OS versions supported by Switch 11"|"h2. Narrative
+
+
+As a  I can  to 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11123"|"Fix the assert message in Switch logs"|"h2. Narrative
+
+
+As a  I can  to The message: 'Resource xml file with plugin injected properties could not be opened: RecycleBin'
+
+This task is for Sergey
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1153"|"Remove link to PackManager"|"h2. Narrative
+
+
+As a an operator I can cannot longer manage configurators if the configurator module is not active to not be overloaded with features that are not useful.h2. Acceptance Criteria
+
+
+
+The help menu item 'Manage configurators ...' is not available until the configurator module is active.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1191"|"Update Word configurator"|"h2. Narrative
+
+
+As a an operator I can use latest Word version on win and mac to handle files in up to date Microsoft Word.h2. Notes
+
+
+
+Support latest version of Microsoft Word. 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11103"|"Automatically setup local (S)FTP server for Shaker"|"h2. Narrative
+
+
+As a  I can  to write a scripts for automatic configuration of an (S)FTP server to run on the system where Shaker is running: automatic installation of sever, creation of folder structure, creation of user.
+Similar functionality is already available in unit tests for 'Network  
+Support Layer'.
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1167"|"QA Client SDK module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I don’t want to pay twice for the
+same features, so when I have purchased the Client SDK module I need the
+SwitchClient module included. 
+
+h2. Notes
+
+
+
+The Client SDK is already a separate module (with its own license key) and
+released with Switch 10 but from Switch 11 on it will be “commercially”
+considered as a module.
+Whoever buys this module is automatically entitled to use the SwitchClient
+module. 
+
+h2. Acceptance Criteria
+
+
+
+Using only 1 key, the one for Client SDK, the same features and connection
+rights as in the SwitchClient module become available.
+Note that in such case the customer does not get separate keys for Client SDK
+and SwitchClient module.
+
+h2. How to test
+
+
+
+test with Switch Client, iPad Client, Switch Proxy, sample from Client SDK
+test on Mac and windows. 
+
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1173"|"QA Database module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Database tool, access to the database variables and
+possibility to gather content for a SwitchClient dropdown list straight from a
+database, in order to get the most out of my investment.
+
+h2. Notes
+
+
+
+•The Database connect element
+•The database variables 
+•And access to ODBC data sources when defining dropdown list as metadata fields
+on Submit and Checkpoints 
+Should be licensed separately from Switch. Meaning that only when I use a valid
+key, this flow element and its new category title (Database) become available
+in the elements pane, the database group becomes available in the variables
+panel (i.e. define single/ multi line or condition with variables dialog) and
+“Define values from ODBC data source” becomes available as data value for
+dropdown list.
+
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+
+This feature was already implemented in Switch 10 update 1. Only thing that
+needs to be taken care of is that the Database connect elements appears in it’s
+own category instead of being part of the metadata category.
+
+h2. How to test
+
+
+
+Story is only about configurator in right category
+test on Mac and Windows
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1194"|"Build Switch 11 on the new Build Machines"|"h2. Narrative
+
+
+As a  I can  to DEV 2 + QA 5
+To have the nightly builds on time for QA we first need to use the new FlexNet 11.10 for Switch 11.
+Afterwards we need to stop building Switch Main on the buildmacpro and start building on the macbuild03 instead.
+Notes for development:
+try to build after switching and do one activation/deactivation on both mac and windows before submitting
+
+h2. How to test
+
+
+
+As we switch to a new version of FlexNet we might have to completely retest activation itself on different OS versions and platforms. It is not necessary to retest the whole modules mechanism by checking each individual place where a module is used. To be evaluated if QA needs the help of development to test this on different versions.
+
+* have to test on both Windows and Mac: test on Lion and (Snow)Leopard + 2008 R2 and Windows 7.
+* different kind of keys: NFR, Commercial, trial keys. Upgrade and Full keys. 
+* activating/deactivating, online/offline.
+* upgrade from one flavor of Switch 09 and Switch 10 to Switch 11 + clean install of Switch 11.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1138"|"Tests for PDF Certification info module Scripting API"|"h2. Narrative
+
+
+As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
+
+For this story we need tests forClasses: Certificate, CertificateList, User, UserList, Session, SessionList, DataMap, AltText, AltTextList
+We will first have to think what's the best way to setup these tests.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11115"|"total file size of job queue"|"h2. Narrative
+
+
+As a an administrator I can not only see the number of jobs waiting in a folder before a processor but i can also see the total file size of the queue to to spot bottlenecks more easily and improve flow performanceh2. Notes
+
+
+
+The new Switch 10 job info panel only shows the number of jobs waiting before a specific element but number of jobs is not always a good benchmark for spotting bottle necks. The total size of all jobs says more.
+
+h2. Acceptance Criteria
+
+
+
+The job information pane has a 4th column showing the total file size.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11122"|"Links to Switch 11 web pages"|"h2. Narrative
+
+
+As a a Switch administrator I can find information in a few clicks to buy the application easily, check for updates or read documentationh2. Notes
+
+
+ / h2. Acceptance Criteria
+
+
+
+new links for:
+“Buy now” = 
+“Online documentation” = 
+“Check for updates” =
+
+to be completed, links requested from marketing
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1147"|"Tests for Metadata  module Scripting API"|"h2. Narrative
+
+
+As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
+
+For this story we need tests for Classes: Codec, Dataset, DatasetOpaque, DatasetXML, DatasetJDF, DatasetXMP, DatasetEmbeddedXMP, ByteArray, FileStatisticsWe will first have to think what's the best way to setup these tests.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11119"|"Accept aditional Client licenses"|"h2. Narrative
+
+
+As a Enfocus sales administrator I can more easily make Additional Client license keys to have less hassle with those keys as they will behave like every other module keyh2. Notes
+
+
+
+Additional Client licenses used to have their own keys (product keys) and for each amount of additional licenses we had a separate features in those keys.
+To make things easier we would like to have module keys (instead of product keys) and make the number of connections variable.
+
+So a user would start with 5 connections coming from the Client module and can later on add 3 connections and later on 11 connections and later on ... connections. For every additional number we will provide a key.
+
+h2. Acceptance Criteria
+
+
+.
+I can add extra client licenses multiple times with those new keys.
+Old keys are not accepted anymore.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1125"|"New licens panel"|"h2. Narrative
+
+
+As a a Switch administrator I can  see all modules their licensing state to activate trial or permanent licenses easilyQA 1 + DEV  20h2. Notes
+
+
+
+Create a new licensing panel that is no longer part of the about panel.
+
+h2. Acceptance Criteria
+
+
+
+1) New GUI looks like ... (to be completed)
+2) This panel is shown at start-up:
+   as long as some part of Switch is in trial mode.
+   if Switch (basic) has no valid license anymore (i.e trial or permanent)
+   whenever maintenance will expire in the next 30 days
+3) This panel is shown via help - manage language
+4) All license info is removed from the about panel
+5) The new feature to export license files is included
+
+h2. How to test
+
+
+
+- Test only functionality of this panel
+- Test on Mac and Windows XP and Windows 7 (Aero)
+- Test for different situations for keys: expired, trial, multiple keys for same product/module
+- Test with enough keys to make sure that scroll bars and scaling works correctly.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11121"|"PitStop Pro is a SwitchClient"|"h2. Narrative
+
+
+As a a prepress operator I can submit files straight from Acrobat (PitStop Pro) into Switch to streamline the production workflow and fasten up processing because i don't have to switch anymore from Acrobat to SwitchClient and vice versah2. Notes
+
+
+
+PitStop Pro 11 will become a SwitchClient. *Acting like a regular Client*, a connection license will be taken. So not like PitStop Connect or instant PDF, those do not take a connection license
+Next to making sure Switch can handle communication with this new client we also need to do some refactoring to make the Acrobat plug-in. There fore we'll need to:
+
+Factor out connection pane (not dialog, just the pane, no business logic) to be reused in PitStop Preferences window
+
+Factor out “Discover” functionality
+
+Allow a PitStop Pro SwitchClient ID in Switch as a regular client connection
+
+Factor out SwitchClient business logic to a shared layer
+
+Factor out SwitchClient UI and business logic for “Submit File” and “Enter Metadata”
+
+Factor out SwitchClient UI and business logic for “Submit to checkpoint”.  For the UI we only want to reuse the list of outgoing connections.
+
+Factor out SwitchClient UI and business logic for creating Job filters
+
+Factor out SwitchClient business logic for applying a filter on a list of Jobs
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1197"|"Windows error reporting"|"h2. Narrative
+
+
+As a  I can  to Generate dump information when having crashes on windows and and send this info to Enfocus. These dump files can be used afterwards to see what caused the crash and fix it without first having to reproduce the problem or do a remote login
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1150"|"Tests for File module Scripting API"|"h2. Narrative
+
+
+As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
+
+For this story we need tests for Classes: File (and static functions), Dir (and static functions)
+
+
+
+
+We will first have to think what's the best way to setup these tests.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11116"|"Multi line text entry"|"h2. Narrative
+
+
+As a a SwitchClient user I can type text in a multi line editor to be able to insert multi line comments in a user friendly way. Like making it possible to overview the text i just enteredh2. Notes
+
+
+
+Now it is very user unfriendly to type a more elaborate text in SwitchClient metadata entry. A larger entry box would be most convenient so user can have like a 'Comment' entry on the metadata form.
+
+h2. Acceptance Criteria
+
+
+
+The data type has one more editor, being multi line text (other properties for defining this field on the server side are the same as for single-line text). resulting in a multi line entry box on the SwitchClient side. 
+Number of lines to be defined (must be user friendly and still look good in the form). i guess 5 to 6 lines by default should do and then add vertical scroll bars.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1148"|"Tests for Database module Scripting API"|"h2. Narrative
+
+
+As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
+
+For this story we need tests for Classes: DataSource, Statement
+
+We will first have to think what's the best way to setup these tests.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11117"|"New product icons"|"h2. Narrative
+
+
+As a  I can  to 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1149"|"Tests for Xml  module Scripting API"|"h2. Narrative
+
+
+As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
+
+For this story we need tests for Classes:  Map, Node, NodeList, Element, Text, Comment, Attribute, AttributeList, Document
+
+
+
+We will first have to think what's the best way to setup these tests.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11105"|"Move FTP functionality into separate CLI"|"h2. Narrative
+
+
+As a a Switch administrator I can run all FTP tasks in a separate process to have a more reliable Switch and better performing FTP traffich2. Notes
+
+
+
+Artem: 'I think this is mentioned somewhere on wiki pages. Currently there is the FTP crashing issue which is very hard to reproduce and thus fix. Taras and QA spend a lot of their working time on it. Having FTPExecutors similar to ScriptExecutors would allow to substantially lower the severity of the problem. I remember we had blocker FTP crashing problem right before the Switch 10 release, so I predict that such difficult FTP issues may arise from time to time. Creating FTPExecutors may be quite a big piece of work, especially if to work on this keeping in mind other possible kinds of Executors (MailExecutor?) we may need in future. But the benefits could be valuable enough so it worth spending time on this.'
+
+h2. Acceptance Criteria
+
+
+
+FTP runs in a separate process
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1175"|"Update readme"|"h2. Narrative
+
+
+As a  I can  to 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11106"|"Get rid of existing copying dialog in Designer"|"h2. Narrative
+
+
+As a a flow designer I can only see the copy dialog when heavy file transfer is going on to not get confused by this dialog popping up when not really necessary.h2. Notes
+
+
+
+Artem:'There is the copying dialog in Designer that appears in case copying takes more than couple seconds. The dialog looks quite advanced, but frankly speaking I don't think all these progresses are really useful. It is too overloaded and I think customers rarely see it because Designer is not usually used when flows are in production. The problem is that the dialog copies files by transferring file content and not by using platform copy methods. This gives problems like lost attributes, missing resource forks and Finder info, incorrect file modification and creation date. The dialog comes from old Qt solution that is not supported anymore. Fixing it looks complicated so I would suggest just drop it away and use some very simple copy dialog with indefinite progress bar. This way we could use the same copying as used in Server and this should gradually allow solving the problems.'
+
+h2. Acceptance Criteria
+
+
+
+Old dialog does not appear anymore. A new dialog (with indefinite progress bar) appears only when 'heavy file copying is going on. So it does not appear as quickly as the old dialog.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1188"|"No access but still able to submit"|"h2. Narrative
+
+
+As a  I can  to SwitchClient should only show submit point if the user that has logged on with Client is entitled to submit files as set up in the Switch User panel.I noticed that it is possible to select a submit point with both the SDK php sample and regular SwitchClient 10u1, while the user has no access right for that specific submit point. This is very confusing for SwitchClient users as the file seems to be submitted successfully but ends up nowhere.
+
+Next to this quite some customers complained that is possible to submit files to inactive flows. Here we need an extra property on a submitpoint where a flow designer can set if it is allowed to submit files if the flow is inactive. If not allowed, the submitpoint should not be offered in SwithcClient
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11112"|"hide duplicate values in dropdown list"|"h2. Narrative
+
+
+As a a flow designer I can have to worry about double values in dropdown list if the list is populated with database content to get better behavior of the dropdown list in SwitchClienth2. Notes
+
+
+
+Mostly people want to populate dropdown list with only unique values from a database. Therefore another checkbox in the sql dialog for variables is required.
+The checkbox should be checked by default and mention something like 'Hide duplicate values'
+This will result in a SELECT DISTINCT statement by default. By turning this of the statement becomes just SELECT again.
+
+h2. Acceptance Criteria
+
+
+
+when checked, statement is SELECT DISTINCT, resulting in only unique items in the dropdown lists in SwitchClient.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11104"|"Use minimal requirements for FTP Shaker tests"|"h2. Narrative
+
+
+As a  I can  to Kristof suggests not creating special tests for permissions. Instead he suggests doing all FTP tests using user accounts that only have the
+minimal rights that should be needed to perform the tests.
+This way we don't have to create/maintain extra tests + there will be
+less tests which will require less time to run the tests also.
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#11110"|"support officially VM"|"h2. Narrative
+
+
+As a an operator I can use Switch on VM to manage software and systems more easilyh2. Notes
+
+
+ / h2. Acceptance Criteria
+
+
+
+Support Switch on VM
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1145"|"Tests for basic module Scripting API"|"h2. Narrative
+
+
+As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
+
+For this story we need tests for Classes: Switch, Environment, Connection, ConnectionList, Job, JobList, ClientConnection, Occurrence, OccurrenceListWe will first have to think what's the best way to setup these tests.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1168"|"QA New installer"|"h2. Narrative
+
+
+As a an operator I can have an installer that does not refer to old switch flavors anymore but leaves old versions intact to end up with a clean installation of Switch 11 that does not affect previous versionsh2. Notes
+
+
+
+Create a new installer for this new product.
+
+h2. Acceptance Criteria
+
+
+
+The installer is re-branded. (except for the artwork everything refers to 'Switch)
+Old versions are *not* longer removed as it used to be (i.e. on win uninstall, on Mac clean up if we can find it)
+So a user that has an old LightSwitch 10 and FullSwitch 10 actually ends up with 3 versions (LightSwitch 10, FullSwitch 10 and Switch 11)
+
+h2. How to test
+
+
+
+Packs and configurators that are installed need to be checked
+Test install and uninstall
+Test on Mac and Windows: Lion and either Leopard or SnowLeopard. Windows 2008 R2 64bit and XP 32-bit. Will be tested on English systems.
+Still message on windows about disabling UAC
+To be tesed as Administrator and non-Admin account
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1163"|"QA Configurator module"|"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Configurators, in order to get the most out of my
+investment.
+
+h2. Notes
+
+
+
+The configurators should be licensed separately from Switch. Meaning that only
+when I use a valid key, the configurators (i.e. elements in Configurator
+section of the elements pane) become available.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+SwitchScripter (Configurator SDK) always puts the configuration module ID in the scripted plug-in. Configurators created with older version of SDK don't have such ID. They should however also be loaded correctly in Switch 11. 
+For our own tools we'll put the ID in the tool manually. SwitchScritper should not overwrite ID's that were added manually.
+
+h2. Acceptance Criteria
+
+
+
+Make the Configurators behave like the Database connect tool in Switch 10
+update1. Meaning that only when they are licensed (separately from
+PowerSwitch), they can be used. Note that the Database module only includes 1
+tool and the Configurator module includes all elements from the Configurator
+section in the elements pane.
+
+h2. How to test
+
+
+
+Test on one version on Mac and Windows
+Test if custom category still works
+Sanity check for each configurator. Test only one version of the 3rd party application per platform
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1192"|"DOC Describe Modules conccept of Switch 11"|"h2. Narrative
+
+
+As a  I can  to 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1180"|"Maintenance expires"|"h2. Narrative
+
+
+As a a Switch administrator I can choose not to renew my maintenance contract to save some money (on the short term and loose productivity in the long term :-))DEV 3 + QA 1h2. Notes
+
+
+
+From Switch 11 on we have a new maintenance policy that mainly comes down to: If you have a valid maintenance, then you can install any upgrade / update. If you don't have valid maintenance, you cannot install any upgrade / update anymore so you stay on a specific version forever.
+
+We will add some warning in the Switch installer but a user might still install a version that is build after the contract expired. If a customer install such version, it can run in trial but after the trial expires Switch should not run anymore. Therefore we need a mechanism that checks the build date against the date in the maintenance feature of the key.
+If build date is later then contract expiration date, then Switch behaves a being not licensed (e.g. cannot activate flows anymore, ...|)
+
+h2. Acceptance Criteria
+
+
+
+Create a mechanism that checks the build date against the date in the maintenance feature.
+Version with build date later then date in key cannot be activated.
+Also warn via log messages that maintenance is going to expire within 30 days. If maintenance expired, log a message at every start-up
+
+Latest specification about the overall licensing mechanism can be found in S:\ENFOCUS-Team\Product-Management\Source Documents\11\SS - Switch (Server)\Switch Modules Licensingv4.doc. Chapter 6 explains the maintenance licensing mechanism
+
+This story is only about Switch 11, we need to create a different story for Switch Proxy.
+
+h2. How to test
+
+
+
+* Test with maintenance key that has end date that has already past and an end date with a date in the future.
+* Test if if with only activating an old full, light or power 09 or 10 key, Switch 11 doesn't work until a valid maintenance key was entered
+* Test only one one version of Mac and one version of Windows.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1146"|"Tests for Process module Scripting API"|"h2. Narrative
+
+
+As a  I can  to To make sure that everything works correctly we also need internal automated testing on the current scripting API. The ultimate goal is to have a test for each function in the scripting API.
+
+For this story we need tests for Classes: Process (and static functions)
+We will first have to think what's the best way to setup these tests. 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1140"|"Shaker tests for Communication category"|"h2. Narrative
+
+
+As a  I can  to Todo:
+- organize existing tests according to new structure. In the story notes you can find a part of a mail that was sent begin september 2011.
+- add new tests for elements, properties and values that were not tested yet
+- setup tests for different kinds of servers, e.g. for FTP, SFTP and email. We have added extra options to Shaker so that the same test can be done on different servers without having to duplicate and adjust the test each time.To have a more agile way of working we really need to get Shaker up and running again. Switch is a complex product with a lot of features. This makes it a lot of work to test everything manually and because of the complexity it is also easy for developers to introduce new bugs. Automated testing and test driven development is the only way to lower the number of new bugs and to ensure stable releases. I am convinced that these automated tests will be a big help for us during the refactoring and other work that we will do in the future.
+
+ 
+
+Automated testing is only useful if the test run constantly and we make sure that the tests keep passing. I already setup a test machine in Ghent to continuously run Shaker tests. The tests are performed on a virtual machine that is reset every time to a clean state. For now we only test on windows and we only:
+- run tests from 'Shaker Tests/NoSetupRequired/FeatureTests' on the Switch 10.x continuous and nightly builds.
+- run tests from 'Shaker Tests/NoSetupRequired/RegressionTests' on the Switch 10.x nightly builds during the night
+
+ The coming weeks I will setup test machines on Mac and also run the other Shaker tests.
+
+Currently we are moving to a new structure for our Shaker tests. There are five main categories of tests:
+1. Processing: tests for configurators which require the installation of the 3rd party application for that configurator.
+2. SetupRequired: Tests without any configurators that require changes to the system before they can be used. E.g. mapping network drives, installing ODBC drivers or changing host files to map the name of ftp servers to the right IP address. We should try to have as much tests as possible that don't require any setup but for some tests this might not be possible.
+3. NoSetupRequired: tests that should always pass on any system without having to setup something first. The idea is that every developer should be able to run these tests on his own machine in case he changed something. The test should only fail if something got broken and not because you first have to setup something.
+4. RelationshipTests: contain published flows, e.g. sample flows that are included with Switch
+5. Stress tests: for testing the behavior of Switch under heavy load
+
+The Processing, SetupRequired and NoSetupRequired tests are split up in FeatureTests and RegressionTests. The ultimate goal of the FeatureTests is to have full coverage on the functionality in Switch. The ultimate goal of the RegressionTests is to have a test for each bug that was logged in BugZilla.
+
+We will move to a new structure for the feature tests: The folder structure should first mention the category that the element belongs to in the Switch UI, then the name of the element, then the name of the property. E.g. Shaker Tests/NoSetupRequired/FeatureTests/Elements/Basics/Connection/IncludeTheseFolders for the 'Include these folders' property of the Connection element. This test should test all possible values for the 'Include these files' property: All files, All Other files, .... 
+
+In some cases it might be handy to make a separate test for each possible value of a property, but in most cases we can limit the number of shaker tests by creating one test for all possible values of each property. Please also try to avoid using spaces in folder and filenames as much as possible.
+
+For the moment we are far behind on the number of tests for our test driven development, it is difficult to see what is already tested and some test are failing. Therefore I would like everyone to: 
+- Fix all existing tests that are currently failing. From now on you will all get mails the moment that the tests start failing.
+- Add a test for each property of each element according to the new folder structure for our test files. If you want to reuse existing tests, you can rename/move them according to the new folder structure by doing a rename/move operation in p4v. 
+
+From then on we will make sure that all tests keep passing and require that new Shaker test are written for every new feature (where possible). I already want to thank you for the effort and I am sure it will be a great help in the future.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1193"|"DOC Update documentation for Switch iso Power, Light, Full"|"h2. Narrative
+
+
+As a  I can  to 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""
+"#1156"|"write Automated tests for Switch Client SDK"|"h2. Narrative
+
+
+As a  I can  to We can use Automated testing framework for this
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""|""|"In Product Backlog"|""

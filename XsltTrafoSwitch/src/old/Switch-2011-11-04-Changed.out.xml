@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+"Number"|"Name"|"Description"|"Type"|"Depend on"|"Roadmap"|"Epic Story"|"Feature"|"Story"|"Product Name"|"Schedule"|"Release"|"Sprint"|"Task"|"Defect"|"Status"|"Story Points Dev"|"Story Points QA"|"Story Points Total"
+"#15"|"R1"|""|"Release"|""|"no"|""|""|""|"Switch11"|"yes"|""|""|""|""|""|""|""|""
+"#16"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
+"#10"|"SwitchClient module "|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. SwitchClient, in order to get the most out of my investment.
+
+ Narrative: Notes:*Conversation*
+The communication elements (Submit point, Checkpoint and Checkpoint via mail)
+should be licensed separately from Switch. Meaning that only when I use a valid
+key, these elements become available in the Communication section of the
+elements pane.
+Next to the elements also the User panel and the Client Activity and Client
+Connection pane on the Statistics panel should become available whenever
+correctly licensed.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+*Acceptance criteria*
+Make the Submit point, Checkpoint and Checkpoint via mail behave like the
+Database connect tool in Switch 10 update1. Meaning that only when they are
+licensed (separately from PowerSwitch), they can be used. Note that the
+Database module only includes 1 tool and the Client module includes 3 elements.
+Make sure the User panel appears according to the licensing status
+Make sure the Client Activity and Client Connection pane on the Statistics
+panel appear according to the licensing status.
+Note that nothing changes to the “5 license included” policy for PowerSwitch so
+if a customer has licensed the SwitchClient module then he or she still gets 5
+licenses, knowing that this number of licenses can be expanded with additional
+Client licensing."|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#54"|"Hide UI elements"|"Description:User panel and the Client Activity and Client Connection pane on the Statistics panel should become available whenever
+correctly licensed. Notes:Next to the elements also the User panel and the Client Activity and Client
+Connection pane on the Statistics panel should become available whenever
+correctly licensed.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate "|"Task"|""|"no"|""|""|"#10"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#53"|"Add ModuleID to tools"|"Description:Add ModuleID to 'Submit point', 'Checkpoint' and 'Checkpoint via mail' Notes:The communication elements (Submit point, Checkpoint and Checkpoint via mail)
+should be licensed separately from Switch. Meaning that only when I use a valid
+key, these elements become available in the Communication section of the
+elements pane."|"Task"|""|"no"|""|""|"#10"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#14"|"Configurator module"|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Configurators, in order to get the most out of my
+investment.
+
+ Narrative: Notes:*Conversation*
+The configurators should be licensed separately from Switch. Meaning that only
+when I use a valid key, the configurators (i.e. elements in Configurator
+section of the elements pane) become available.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+SwitchScripter (Configurator SDK) always puts the configuration module ID in the scripted plug-in. Configurators created with older version of SDK don't have such ID. They should however also be loaded correctly in Switch 11. 
+For our own tools we'll put the ID in the tool manually. SwitchScritper should not overwrite ID's that were added manually.
+
+*Acceptance criteria*
+Make the Configurators behave like the Database connect tool in Switch 10
+update1. Meaning that only when they are licensed (separately from
+PowerSwitch), they can be used. Note that the Database module only includes 1
+tool and the Configurator module includes all elements from the Configurator
+section in the elements pane."|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#59"|"Prevent flow from starting when not licensed"|"Description:Prevent flow from starting in case used configurator is not licensed Notes:"|"Task"|""|"no"|""|""|"#14"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#56"|"Add Module ID to congurators"|"Description:Add module ID to all configurators from Processing category Notes:"|"Task"|""|"no"|""|""|"#14"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#57"|"Mechanism for checking module license"|"Description:Make common mechanism for checking module license Notes:"|"Task"|""|"no"|""|""|"#14"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#55"|"Update Scripter to support Module ID"|"Description: Notes:"|"Task"|""|"no"|""|""|"#14"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#16"|"Switch (basic) version features"|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Switch most basic features (+- LightSwitch), in order to get the most out of my investment. Narrative: Notes:*Conversation*
+Enfocus PowerSwitch contains all LightSwitch functionality but includes the following changes:
+•“Log job info” element is part of the Tools category in the elements pane (instead of the Metadata category. 
+Note that all 3 possible schemes are supported, this is also the case for the Sort job tool 
+•“XSLT transform” element is part of the Tools category in the elements pane (instead of the Metadata category.
+•“Split PDF in pages” is renamed to “Split PDF” and is available in the basic version of Switch.
+•“Merge PDF pages” is renamed to “Merge PDF” and is available in the basic version of Switch.
+
+Note: advanced performance tuning features becomes part of Switch (basic)
+
+Note that datasets are also supported in this basic version.
+E.g. ftp send can create a dataset on the data+log outgoing connection (just like in LightSwitch). If customer has Configurator module then PitStop Server configurator can create dataset with a report and if the customer also has the SwitchClient module the he can see this report in SwitchClient.
+
+Note that private data is also supported for some tools (e.g. group and ungroup) and that the job.PrivatData variable remains part of Switch (basic) (just like in LightSwitch) 
+
+*Acceptance criteria*
+The LightSwitch tools + those mentioned above are loaded correctly"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#52"|"Test dataset availability"|"Description:Make sure that datasets and private data are available in Switch basic Notes:Note that datasets are also supported in this basic version.
+E.g. ftp send can create a dataset on the data+log outgoing connection (just like in LightSwitch). If customer has Configurator module then PitStop Server configurator can create dataset with a report and if the customer also has the SwitchClient module the he can see this report in SwitchClient.
+
+Note that private data is also supported for some tools (e.g. group and ungroup) and that the job.PrivatData variable remains part of Switch (basic) (just like in LightSwitch) 
+"|"Task"|""|"no"|""|""|"#16"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#51"|"Rename tools"|"Description:Rename 'Split PDF in pages' to 'Split PDF'; and rename 'Merge PDF pages' to 'Merge PDF'. Notes:•“Split PDF in pages” is renamed to “Split PDF” and is available in the basic version of Switch.
+•“Merge PDF pages” is renamed to “Merge PDF” and is available in the basic version of Switch."|"Task"|""|"no"|""|""|"#16"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#50"|"Move tools"|"Description:Move 'Log job info' and 'XSLT transform' into Tools category. Notes:Enfocus PowerSwitch contains all LightSwitch functionality but includes the following changes:
+•“Log job info” element is part of the Tools category in the elements pane (instead of the Metadata category. 
+Note that all 3 possible schemes are supported, this is also the case for the Sort job tool 
+•“XSLT transform” element is part of the Tools category in the elements pane (instead of the Metadata category."|"Task"|""|"no"|""|""|"#16"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#58"|"Add Module ID"|"Description:Add Switch Basic module id to 'build-in' configurators Notes:It seems we shouldn't add any module id to basic tools because in this case we will not see them in GUI till Switch will be licensed. So here I will just check that any 3rd-party configurator without module ID isn't loaded in GUI."|"Task"|""|"no"|""|""|"#16"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#13"|"Metadata module"|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Metadata tools and access to the metadata variables and
+possibility to gather content for a SwitchClient dropdown list straight from an
+XML based dataset, in order to get the most out of my investment.
+
+ Narrative: Notes:*Conversation*
+•The metadata elements (XML, JDF, XMP and opaque pickup, XMP inject, export
+metadata)
+•The metadata variables 
+•And access to XML based datasets when defining dropdown list as metadata
+fields on Submit and Checkpoints, 
+Should be licensed separately from Switch. Meaning that only when I use a valid
+key, those flow elements become available in the elements pane, the metadata
+group becomes available in the variables panel (i.e. define single/ multi line
+or condition with variables dialog) and  “Define values from dataset” becomes
+available as data value for dropdown list.
+
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+Note about datasets:
+
+*Acceptance criteria*
+Make those metadata elements and features behave like the Database connect tool
+and the database variables in Switch 10 update1. Meaning that only when they
+are licensed (separately from PowerSwitch), they appear in the metadata
+category and so can be used.
+Note that XSLT transform and log job info are not included in this module so
+they do not appear/disappear based on license status of this module."|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#62"|"Disable dataset dropdown list from metadata fields"|"Description:And access to XML based datasets when defining dropdown list as metadata
+fields on Submit and Checkpoints Notes:"|"Task"|""|"no"|""|""|"#13"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#60"|"Add Module ID to configurators"|"Description:XML, JDF, XMP and opaque pickup, XMP inject, export metadata Notes:Note that XSLT transform and log job info are not included in this module so
+they do not appear/disappear based on license status of this module"|"Task"|""|"no"|""|""|"#13"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#61"|"Switch off metadata variables "|"Description:Switch off metadata variables in case Metadata module is not licensed Notes:"|"Task"|""|"no"|""|""|"#13"|"Switch11"|"yes"|"#15"|"#16"|""|""|""|""|""|""
+"#17"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
+"#52"|"Bugfixes customer bugs"|"Description:These are 3  bugs reported by customers against previous versions of Switch:
+
+- BZ 4331: 'Hold' on connection doesn't always work
+
+- BZ 6309 - Switch 10 can't upload to FTP user root folder 
+
+- BZ 6329 - Mail receive can't handle special character like / Narrative: Notes:"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#95"|"BZ 6309 - Switch 10 can't upload to FTP user root folder"|"Description: Notes:"|"Task"|""|"no"|""|""|"#52"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#96"|"BZ 6329 - Mail receive can't handle special character like /"|"Description: Notes:"|"Task"|""|"no"|""|""|"#52"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#94"|"BZ 4331: 'Hold' on connection doesn't always work"|"Description: Notes:"|"Task"|""|"no"|""|""|"#52"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#12"|"Database module"|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Database tool, access to the database variables and
+possibility to gather content for a SwitchClient dropdown list straight from a
+database, in order to get the most out of my investment.
+
+ Narrative: Notes:*Conversation*
+•The Database connect element
+•The database variables 
+•And access to ODBC data sources when defining dropdown list as metadata fields
+on Submit and Checkpoints 
+Should be licensed separately from Switch. Meaning that only when I use a valid
+key, this flow element and its new category title (Database) become available
+in the elements pane, the database group becomes available in the variables
+panel (i.e. define single/ multi line or condition with variables dialog) and
+“Define values from ODBC data source” becomes available as data value for
+dropdown list.
+
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+*Acceptance criteria*
+This feature was already implemented in Switch 10 update 1. Only thing that
+needs to be taken care of is that the Database connect elements appears in it’s
+own category instead of being part of the metadata category."|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#78"|"Add Database key to Database connector element"|"Description: Notes:"|"Task"|""|"no"|""|""|"#12"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#79"|"Check that Database features are not available without licence"|"Description: Notes:"|"Task"|""|"no"|""|""|"#12"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#86"|"Move Database tool into new category"|"Description: Notes:"|"Task"|""|"no"|""|""|"#12"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#42"|"Betatester reported bugs"|"Description:5308 - Fixed (Dmitry)
+These bugs were all logged by our Spanish distributor. Most of them are related to SwitchClient.
+
+5382 - In progress: Dmitry
+6203 - Fixed (Kirill)
+6216 - Assigned To: Bhargavi Manjunath
+6221 - Assigned To: Bhargavi Manjunath
+6222
+6241
+6246 - Fixed (Dmitry)
+6248
+6252 - Fixed (Vitali) Narrative: Notes:"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#93"|"BZ 6248"|"Description: Notes:"|"Task"|""|"no"|""|""|"#42"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#92"|"BZ 6241"|"Description: Notes:"|"Task"|""|"no"|""|""|"#42"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#22"|"WoodWing Configurator "|"Description:6274
+6275
+6277
+5612 Narrative: Notes:"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#71"|"BZ 5612"|"Description: Notes:"|"Task"|""|"no"|""|""|"#22"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#70"|"BZ 6277"|"Description: Notes:"|"Task"|""|"no"|""|""|"#22"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#90"|"Include 'Generic application' element into Configurator module"|"Description: Notes:"|"Task"|""|"no"|""|""|"#22"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#68"|"BZ 6274"|"Description: Notes:"|"Task"|""|"no"|""|""|"#22"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#69"|"BZ 6275"|"Description: Notes:"|"Task"|""|"no"|""|""|"#22"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#34"|"A key for every module"|"Description: Narrative:an operatoractivate every module individualityend up with a Switch installation that only contains the tools i really need. Notes:*Conversation:*
+Every module has its specific key. Each key only includes one feature that matches the module.
+
+*Acceptance criteria*
+Database module, SwitchClient module, SwitchClient SDK, scripting module, metadata module and configurator module functionality is unlocked with an individual key.
+Additional SwitchClient licenses are added with a specific product key (same as it used to be)
+
+"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#73"|"Check that each module depends on its own key"|"Description: Notes:"|"Task"|""|"no"|""|""|"#34"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#72"|"Add real keys to modules in Switch"|"Description: Notes:I cannot move this story to Done because I cannot submit my changes unless we have the keys with many possible activations."|"Task"|""|"no"|""|""|"#34"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#36"|"New installer"|"Description: Narrative:an operatorhave an installer that does not refer to old switch flavors anymore but leaves old versions intactend up with a clean installation of Switch 11 that does not affect previous versions Notes:*Conversation:*
+Create a new installer for this new product.
+
+*Acceptance criteria:*
+The installer is re-branded. (except for the artwork everything refers to 'Switch)
+Old versions are *not* longer removed as it used to be (i.e. on win uninstall, on Mac clean up if we can find it)
+So a user that has an old LightSwitch 10 and FullSwitch 10 actually ends up with 3 versions (LightSwitch 10, FullSwitch 10 and Switch 11)"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#85"|"Create new installer"|"Description: Notes:"|"Task"|""|"no"|""|""|"#36"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#17"|"Switch name change"|"Description: Narrative:an operatoronly see one product name 'Switch' and no more Light, Full or PowerSwitchnot be confused about possible property sets, flavors and modules. Notes:*Conversation:*
+Change the names LightSwitch, FullSwitch and PowerSwitch to Switch.
+
+(artwork' about panel, splash screen, product icon is not part of this story. This artwork needs to be created first by marketing.)
+
+*Acceptance criteria:*
+changes in:
+Application name
+titles in toolbars and dialogs
+name in messages
+all server components
+all folders on the system (application folder, library, ...)
+all files on a system (executable, .plist, ...)
+build system"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#82"|"Remove flavors from Switch code"|"Description: Notes:"|"Task"|""|"no"|""|""|"#17"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#88"|"Refactor SwitchCommon\GSCSwitchFeatures.h"|"Description: Notes:"|"Task"|""|"no"|""|""|"#17"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#89"|"Make sure AppleScript works after removing flavors"|"Description:The problem is that for AppleScripts we use
+
+'tell application PowerSwitch_Service'
+
+This should be somehow resolved. Then we need to make sure that after flavors are removed the AppleScripts (existing and new) works fine Notes:"|"Task"|""|"no"|""|""|"#17"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#84"|"Check UI strings"|"Description:Don't mention Flavor in UI Notes:"|"Task"|""|"no"|""|""|"#17"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#83"|"Refactor License manager"|"Description:Change pair SwitchFlavor - LicenseManager Notes:"|"Task"|""|"no"|""|""|"#17"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#81"|"Update Switch build"|"Description: Notes:"|"Task"|""|"no"|""|""|"#17"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#11"|"Scripting module"|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Scripting, in order to get the most out of my investment.
+
+ Narrative: Notes:*Conversation*
+The script element and property editor “Define script expression” should be
+licensed separately from Switch. Meaning that only when I use a valid key, this
+flow element and its category title (Scripting) become available in the
+elements pane and the script expression property editor becomes available in
+the properties pane.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+*Acceptance criteria*
+Make the script element and features behave like the Database connect tool in
+PowerSwitch 10 update1. Meaning that only when it is licensed (separately from
+PowerSwitch), it can be used.
+Make sure the property editor “Define script expression” is only available if
+correctly licensed with a scripting module key."|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#66"|"Add license checking mechanism for Scripting module"|"Description:Make sure Switch checks for separate license when loading Script element and Script features such as script expressions in UI Notes:"|"Task"|""|"no"|""|""|"#11"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#67"|"Move Script element to Scripting module"|"Description: Notes:"|"Task"|""|"no"|""|""|"#11"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#15"|"SwitchProxy module"|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. SwitchProxy module, in order to get the most out of my
+investment.
+
+ Narrative: Notes:*Conversation*
+The SwitchProxy module is separate product and released with Switch 10 but from
+Switch 11 on it will be “commercially” considered as a module.
+No development effort required, just writing this story for completeness and to
+make sure it gets tested by QA 
+
+*Acceptance criteria*
+SwitchProxy works fine with Switch 11"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#75"|"Check SwitchProxy is not able to connect to Switch if not licensed"|"Description: Notes:"|"Task"|""|"no"|""|""|"#15"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#74"|"Add real key to Switch"|"Description: Notes:"|"Task"|""|"no"|""|""|"#15"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#9"|"Client SDK module"|"Description:As a (prepress) manager on a tight budget I don’t want to pay twice for the
+same features, so when I have purchased the Client SDK module I need the
+SwitchClient module included. 
+
+ Narrative: Notes:*Conversation*
+The Client SDK is already a separate module (with its own license key) and
+released with Switch 10 but from Switch 11 on it will be “commercially”
+considered as a module.
+Whoever buys this module is automatically entitled to use the SwitchClient
+module. 
+
+*Acceptance criteria*
+Using only 1 key, the one for Client SDK, the same features and connection
+rights as in the SwitchClient module become available.
+Note that in such case the customer does not get separate keys for Client SDK
+and SwitchClient module."|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#80"|"Check that connecitons from Client and SDK based clients"|"Description:Check different variations of Client and SDK licenses - Client should be able to connect with both licenses, SDK based Client should be able to connect only with ClientSDK license;
+
+Make sure that number of availble connections is calculated correctly according to license installed. Notes:"|"Task"|""|"no"|""|""|"#9"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#77"|"Make sure Client SDK enables Client license"|"Description: Notes:"|"Task"|""|"no"|""|""|"#9"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#87"|"Add Switch Client SDK license key"|"Description:Make sure Switch allow connection of ClientSDK based apps only when key is activated Notes:"|"Task"|""|"no"|""|""|"#9"|"Switch11"|"yes"|"#15"|"#17"|""|""|""|""|""|""
+"#18"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
+"#72"|"10u2 QA WoodWing Configurator"|"Description:6274
+6275
+6277
+5612 Narrative: Notes:*extra notes for testing*
+test these 4 bugs + general sanity check for download configurator"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""
+"#71"|"10u2 QA Bugfixes customer bugs"|"Description:These are 3  bugs reported by customers against previous versions of Switch:
+
+- BZ 4331: 'Hold' on connection doesn't always work
+
+- BZ 6309 - Switch 10 can't upload to FTP user root folder 
+
+- BZ 6329 - Mail receive can't handle special character like / Narrative: Notes:*Extra notes for testing*
+bug 4331: Test on windows laptop of Carine were she already reproduced bug 4331. Don't put too much time in it, let customers test. Run some stress tests with hold job and run over night."|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""
+"#20"|"DEV Info on missing elements"|"Description: Narrative:a Switch Administratorsee to which module a tool, property editor or variable group belongs if i import a flowknow exactly what is missing and make it easy to extend Switch, buy or try  additional module Notes:*Conversation / Acceptance criteria*
+
+When importing a flow with missing element a warning message appears mentioning 'Unsupported flow element xxx was detected when importing this flow” instead of 'Skipped unsupported flow element xxx”
+Once imported and when hoovering over such element on the canvas the message still says: 'The flow element cannot be found by Switch.' (nevertheless it's a missing configurator or an unlicensed tool, we always give the same message.)
+
+When importing a flow that uses script expression editor and scripting module is not active, the message says: 'Unsupported property editor 'define script expression' was detected when importing this flow'. 
+Once imported, flow validation fails just like when importing such flow from PowerSwitch in LightSwitch
+
+When importing a flow that uses a variable from a non supported group (i.e. metadata or database), the message says: 'Unsupported variable was detected when importing this flow'. 
+Once imported, flow validation fails. Currently it is not clear to me what happens if you import such flow from PowerSwitch in LightSwitch so this behavior should be improved
+
+*Notes for testing*
+Create separate flows for each element to test flow validation and error message
+Test on one version of Mac and windows"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""
+"#117"|"Add license check for Scripting module"|"Description:When importing a flow that uses script expression editor and scripting module is not active, the message says: 'Unsupported property editor “define script expression” was detected when importing this flow'. 
+Once imported, flow validation fails just like when importing such flow from PowerSwitch in LightSwitch Notes:"|"Task"|""|"no"|""|""|"#20"|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""
+"#129"|"Add license checking for variables_1"|"Description:When importing a flow that uses a variable from a non supported group (i.e. metadata or database), the message says: “Unsupported variable was detected when importing this flow”. 
+Once imported, flow validation fails. Currently it is not clear to me what happens if you import such flow from PowerSwitch in LightSwitch so this behavior should be improved Notes:"|"Task"|""|"no"|""|""|"#20"|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""
+"#116"|"Change warning message"|"Description:When importing a flow with missing element a warning message appears mentioning 'Unsupported flow element xxx was detected when importing this flow” instead of 'Skipped unsupported flow element xxx” Notes:"|"Task"|""|"no"|""|""|"#20"|"Switch11"|"yes"|"#15"|"#18"|""|""|""|""|""|""
+"#19"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
+"#74"|"QA Switch name change"|"Description: Narrative:an operatoronly see one product name 'Switch' and no more Light, Full or PowerSwitchnot be confused about possible property sets, flavors and modules. Notes:*Conversation:*
+Change the names LightSwitch, FullSwitch and PowerSwitch to Switch.
+
+(artwork' about panel, splash screen, product icon is not part of this story. This artwork needs to be created first by marketing.)
+
+*Acceptance criteria:*
+changes in:
+Application name
+titles in toolbars and dialogs
+name in messages
+all server components
+all folders on the system (application folder, library, ...)
+all files on a system (executable, .plist, ...)
+build system
+
+* Notes for testing:
+Should be tested on one MacOS version and one Windows version.
+Folders and files on disk can be checked using clean install procedure
+Can be tested after user story for Switch installer
+ "|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#171"|"Testing names on Windows and mac"|"Description: Notes:Update 1: Mac OSX 10.6.8 build 279320 Ok
+Update 2: Windows Vista Business Service Pack 1 build 279230 OK
+
+No old names (PowerSwitch,...) found."|"Task"|""|"no"|""|""|"#74"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#61"|"QA Metadata module"|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Metadata tools and access to the metadata variables and
+possibility to gather content for a SwitchClient dropdown list straight from an
+XML based dataset, in order to get the most out of my investment.
+
+ Narrative: Notes:*Conversation*
+•The metadata elements (XML, JDF, XMP and opaque pickup, XMP inject, export
+metadata)
+•The metadata variables 
+•And access to XML based datasets when defining dropdown list as metadata
+fields on Submit and Checkpoints, 
+Should be licensed separately from Switch. Meaning that only when I use a valid
+key, those flow elements become available in the elements pane, the metadata
+group becomes available in the variables panel (i.e. define single/ multi line
+or condition with variables dialog) and  “Define values from dataset” becomes
+available as data value for dropdown list.
+
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+Note about datasets:
+
+*Acceptance criteria*
+Make those metadata elements and features behave like the Database connect tool
+and the database variables in Switch 10 update1. Meaning that only when they
+are licensed (separately from PowerSwitch), they appear in the metadata
+category and so can be used.
+Note that XSLT transform and log job info are not included in this module so
+they do not appear/disappear based on license status of this module."|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#177"|"test elements  on a windows machine"|"Description:ONLY after licensing the metadata module :
+The metadata elements (XML, JDF, XMP and opaque pickup, XMP inject, export
+metadata)
+are available
+ Notes:"|"Task"|""|"no"|""|""|"#61"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#181"|"test xml based datasets as meta data dropdown sources on a windows machine"|"Description:only after the metadata module is licensed the user should have access to XML based datasets when defining dropdown list as metadata fields on Submit and Checkpoints Notes:Oké this was tested on a Windows vista business Service pack 2 machine with build 279320."|"Task"|""|"no"|""|""|"#61"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#178"|"test elements  on a Mac osX machine"|"Description:ONLY after licensing the metadata module :
+The metadata elements (XML, JDF, XMP and opaque pickup, XMP inject, export
+metadata)
+are available
+ Notes:Checked only available after licensing the metadata-license on Mac OSX 10.6.8 and build 279649."|"Task"|""|"no"|""|""|"#61"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#179"|"test metadata variables on a windows machine"|"Description:ONLY after the metadata module is licensed the metadata variables are available. Notes:Ok tested on:
+Windows vista business Service pack 2 build 279320"|"Task"|""|"no"|""|""|"#61"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#180"|"test metadata variables on a mac osX machine"|"Description:ONLY after the metadata module is licensed the metadata variables are available. Notes:OK tested on a Mac OSX 10.6.8 Build 279649"|"Task"|""|"no"|""|""|"#61"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#182"|"test xml based datasets as meta data dropdown sources on a mac osX machine"|"Description:only after the metadata module is licensed the user should have access to XML based datasets when defining dropdown list as metadata fields on Submit and Checkpoints Notes:Oke tested on a Mac OSX 10.6.8 with Build 279649 installed"|"Task"|""|"no"|""|""|"#61"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#100"|"Upgrade"|"Description:DEV 20 + QA 8 Narrative:an operatoreasily upgrade my old Switch 09 or Switch 10 to Switch 11 start production again right away with the new version, without having to worry  loosing data or settings Notes:*Conversation'*
+Any Switch flavor should be easily upgraded to the new modular Switch.
+Therefore we have a conditional license feature checking.
+Note that we only need to support upgrade from 09 or 10.
+
+*Acceptance criteria:*
+Upgrading is like it used to be (e.g. from 09 to 10) meaning all flows, preferences, settings are preserved and the old version is removed.
+
+In case 2 switch flavors are found on the same system. The user will get notification and must decide which version he wishes to update at first start-up of Switch 11.
+
+*notes for testing*
+* test upgrade from power, light, full for 09u3 and 10u2 to Switch 11 on one version of SnowLeopard/Leopard and windows XP/Vista
+* power-&gt;Switch on windows 2008 Server R2, XP, SnowLeopard 
+* full-&gt;Switch on Lion, Leopard
+* Light-&gt;Switch on Windows 7, 2003 Server"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#163"|"add scrollbar to the label on the report page"|"Description:review messages and GUI in general 
+- add scrollbar to the label on the report page 
+- test upgrade from different flavors and versions 
+- check upgrade starting from installer Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#217"|"QA Test Upgrade when Switch data root in not in default location"|"Description:In this case the Switch data root will not be renamed or moved. During the upgrade all the data should be preserved: flows, jobs, GUI layouts, preference values Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#207"|"Verify Upgrade functionality"|"Description:- test that settings and data are correctly picked up from Power/Full/Light 09 and 10
+- test Win and Mac Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#162"|"review messages and GUI in general "|"Description: Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#218"|"QA Test Upgrade on Win 7 and Lion"|"Description:Test these platforms to make sure there are no permissions issues. Notes:Bugs pointed out:
+
+Bug 6506
+Bug 6508
+"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#147"|"QA Test Upgrade"|"Description:Test upgrade from different flavors and versions:
+- Running Upgrade from installer
+- Running Upgrade from Designer as first run after install Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#232"|"Uninstall previous Switch versions"|"Description:Installer of Switch 11 should automatically uninstall Switch 09 and 10. Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#215"|"QA Test Upgrade from Power/Full/Light 09 on Mac and Win"|"Description:During the upgrade all the data should be preserved: flows, jobs, GUI layouts, preference values Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#225"|"Investigate BGZ 6497"|"Description:Bug 6497 - Switch cannot start if it is launched twice
+
+Investigate this bug to check if it is somehow related to Upgrade Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#209"|"Fix issue with ports when upgrading from Light or Full"|"Description:Default ports in Light and Full are not equal to default ports in Switch 11, so after the upgrade Switch 11 will not launch if the ports issue is not resolved. Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#220"|"Fix problem that wizard window appears in background on Mac"|"Description: Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#216"|"QA Test Upgrade from Power/Full/Light 10 on Win and Mac"|"Description:During the upgrade all the data should be preserved: flows, jobs, GUI layouts, preference values Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#219"|"QA Test Upgrade features"|"Description:To test:
+- see notes for testing from the User story description
+- test that upgrade is performed only once on given system
+- test that upgrade is not performed the second time if the Upgrade wizard is started manually
+- check Wizard GUI and messages Notes:"|"Task"|""|"no"|""|""|"#100"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#102"|"10u2 Required bugfixes for update 2_1_1"|"Description:DEV 13 + QA 2
+
+- Bug　6349 - application error after ftp stresstesting
+- Bug　6338 - ftp-receive and ftp-send have different password settings
+- Bug　6295 - ftp-send 'ignores' transfer as binary property
+- Bug　6251 - FTP problem: Can't download file '/h:/ftp/test/DO1_0001.090.PDF'; error message: Operation interrupted or timeout
+- bug 6226 Assemble job Narrative: Notes:"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#135"|"bz6349"|"Description: Notes:"|"Task"|""|"no"|""|""|"#102"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#102"|"Bug　6349 - application error after ftp stresstesting"|"Description:This is task was replaced in done because bug 6349 changed status on 'RESOLVED WORKSFORME' Notes:"|"Task"|""|"no"|""|""|"#102"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#84"|"QA Info on missing elements"|"Description: Narrative:a Switch Administratorsee to which module a tool, property editor or variable group belongs if i import a flowknow exactly what is missing and make it easy to extend Switch, buy or try  additional module Notes:*Conversation / Acceptance criteria*
+
+When importing a flow with missing element a warning message appears mentioning 'Unsupported flow element xxx was detected when importing this flow” instead of 'Skipped unsupported flow element xxx”
+Once imported and when hoovering over such element on the canvas the message still says: 'The flow element cannot be found by Switch.' (nevertheless it's a missing configurator or an unlicensed tool, we always give the same message.)
+
+When importing a flow that uses script expression editor and scripting module is not active, the message says: 'Unsupported property editor 'define script expression' was detected when importing this flow'. 
+Once imported, flow validation fails just like when importing such flow from PowerSwitch in LightSwitch
+
+When importing a flow that uses a variable from a non supported group (i.e. metadata or database), the message says: 'Unsupported variable was detected when importing this flow'. 
+Once imported, flow validation fails. Currently it is not clear to me what happens if you import such flow from PowerSwitch in LightSwitch so this behavior should be improved
+
+*Notes for testing*
+Create separate flows for each element to test flow validation and error message
+Test on one version of Mac and windows"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#144"|"QA - Test Info on missing elements"|"Description: Notes:"|"Task"|""|"no"|""|""|"#84"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#98"|"Add files to compressed package"|"Description:DEV 7 + QA  1
+Allow to add files to a compressed archive according to bz 2431 Narrative: Notes:*Notes for development*
+- test with password protected file
+- Write extra shaker tests for compress and uncompress functionality to have full coverage
+- Add shaker tests for new functionality from this user story
+
+*Notes for testing*
+- check new shaker tests, test on one version of Mac and one version on Windows"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#167"|"Investigate problems with folder hierarchy"|"Description: Notes:"|"Task"|""|"no"|""|""|"#98"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#168"|"Create Shaker tests"|"Description: Notes:"|"Task"|""|"no"|""|""|"#98"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#166"|"Extend Swtich scripting API"|"Description:Make it possible to add/update files into existing archive Notes:"|"Task"|""|"no"|""|""|"#98"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#174"|"QA - Test updated compress functionality"|"Description: Notes:"|"Task"|""|"no"|""|""|"#98"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#101"|"Preferences match my installation."|"Description:DEV 8 + QA 1 Narrative:a Switch Administratoronly set preferences that are related to the modules i havehave a clear overview of relevant preferences and not be overloaded with irrelevant settings Notes:*Acceptance criteria:*
+Preferences mention correct product name.
+
+ODBC data sources is only available for the database module
+
+Internal communication settings: Port for SwitchClient, Compress SwitchClient jobs, Max nr of mobile SwitchCients and Enable Push notifications is only available for the SwitchClient and/or SwitchClient SDK module"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#146"|"QA Test Preferences match my installation"|"Description: Notes:"|"Task"|""|"no"|""|""|"#101"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#108"|"Refactoring Preferences classes"|"Description: Notes:"|"Task"|""|"no"|""|""|"#101"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#62"|"QA SwitchClient module"|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. SwitchClient, in order to get the most out of my investment.
+
+ Narrative: Notes:*Conversation*
+The communication elements (Submit point, Checkpoint and Checkpoint via mail)
+should be licensed separately from Switch. Meaning that only when I use a valid
+key, these elements become available in the Communication section of the
+elements pane.
+Next to the elements also the User panel and the Client Activity and Client
+Connection pane on the Statistics panel should become available whenever
+correctly licensed.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+*Acceptance criteria*
+Make the Submit point, Checkpoint and Checkpoint via mail behave like the
+Database connect tool in Switch 10 update1. Meaning that only when they are
+licensed (separately from PowerSwitch), they can be used. Note that the
+Database module only includes 1 tool and the Client module includes 3 elements.
+Make sure the User panel appears according to the licensing status
+Make sure the Client Activity and Client Connection pane on the Statistics
+panel appear according to the licensing status.
+Note that nothing changes to the “5 license included” policy for PowerSwitch so
+if a customer has licensed the SwitchClient module then he or she still gets 5
+licenses, knowing that this number of licenses can be expanded with additional
+Client licensing.
+
+*Notes for testing*
+Mac and Windows
+Different users/roles/groups
+Test if number of client licenses respected
+
+"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#173"|"Testing Client Panes"|"Description: Notes:Testing if you can't see client panes when not activated and if you can when it is activated on mac and windows.
+
+Mac OSX 10.6.8 and Switch build 279320 Ok
+Windows Vista Business Service Pack 1, build 279320 Ok.
+
+Users are shown when license activated and not shown when deactivated (you do have to restart the program for this)."|"Task"|""|"no"|""|""|"#62"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#69"|"10u2 QA Betatester reported bugs"|"Description:5308 - Fixed (Dmitry)
+These bugs were all logged by our Spanish distributor. Most of them are related to SwitchClient.
+
+5382 - In progress: Dmitry
+6203 - Fixed (Kirill)
+6216 - Assigned To: Bhargavi Manjunath
+6221 - Assigned To: Bhargavi Manjunath
+6222
+6241
+6246 - Fixed (Dmitry)
+6248
+6252 - Fixed (Vitali) Narrative: Notes:*notes for testing*
+Test on Mac and Windows"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#154"|"Bug 6221 - How does the variable group 'Connection' work? "|"Description: Notes:"|"Task"|""|"no"|""|""|"#69"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#145"|"QA Test Betatester reported bugs"|"Description: Notes:"|"Task"|""|"no"|""|""|"#69"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#78"|"10u2 Shaker tests for FTP"|"Description:For the moment I am extending shaker to make it possible to run the same Shaker tests for different FTP servers without having to duplicate the tests/flows.
+
+Because FTP is so important for update 2 I suggest that we also add an extra story for the next sprint to create the necessary feature and regression tests for FTP. This means making tests for all different properties of the FTP receive and send + extra tests for special cases like permissions or special file names.   
+The tests can already be created for one FTP server. Once I am ready with my extension we can change the tests to run them for all available FTP servers that we have internally.
+
+ Narrative: Notes:Acceptance criteria: Show tests that were created and that they run on the server that is setup in Minsk"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#143"|"Bugfix bgz 6410"|"Description:Bugfix bgz 6410 - 'FTP Receive' - zero length resource fork file created on windows.
+http://87.118.100.46/bugzilla/show_bug.cgi?id=6410 Notes:"|"Task"|""|"no"|""|""|"#78"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#121"|"Shaker tests for permissions of FTP folders"|"Description: Notes:"|"Task"|""|"no"|""|""|"#78"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#65"|"QA A key for every module"|"Description: Narrative:an operatoractivate every module individualityend up with a Switch installation that only contains the tools i really need. Notes:*Conversation:*
+Every module has its specific key. Each key only includes one feature that matches the module.
+
+*Acceptance criteria*
+Database module, SwitchClient module, SwitchClient SDK, scripting module, metadata module and configurator module functionality is unlocked with an individual key.
+Additional SwitchClient licenses are added with a specific product key (same as it used to be)
+
+*Notes for testing*
+Necessary to test each key separatly: test if features are locked/unlocked + test if functionality still works.
+Necessary to test combinations: Test if features are locked/unlocked for combination from old Light, Full, PowerSwitch, PowerSwitch + DB
+Test on one version on Mac and Windows
+Shaker tests can be used to test functionality by using TestDrive as UI application by QA."|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#195"|"test switchclient SDK module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#205"|"test keys on mac and win"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#199"|"test metadata module Key + functionality on a mac machine"|"Description: Notes:Oké tested on a Mac osX 10.6.8 with build 279649."|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#202"|"test configurator module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#194"|"test switchclient module Key + functionality on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#198"|"test scripting module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#203"|"test additional switchclient licenses on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#201"|"test configurator module Key + functionality on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#196"|"test switchclient SDK module Key + functionality on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#200"|"test metadata module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#193"|"test switchclient module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#197"|"test scripting module Key + functionality on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#191"|"test database module Key + functionallity on a mac machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#192"|"test database module Key + functionality on a windows machine"|"Description: Notes:"|"Task"|""|"no"|""|""|"#65"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#64"|"QA Switch (basic) version features"|"Description:As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Switch most basic features (+- LightSwitch), in order to get the most out of my investment. Narrative: Notes:*Conversation*
+Enfocus Switch contains all LightSwitch functionality but includes the following changes:
+•“Log job info” element is part of the Tools category in the elements pane (instead of the Metadata category. 
+Note that all 3 possible schemes are supported, this is also the case for the Sort job tool 
+•“XSLT transform” element is part of the Tools category in the elements pane (instead of the Metadata category.
+•“Split PDF in pages” is renamed to “Split PDF” and is available in the basic version of Switch.
+•“Merge PDF pages” is renamed to “Merge PDF” and is available in the basic version of Switch.
+
+Note: advanced performance tuning features becomes part of Switch (basic)
+
+Note that datasets are also supported in this basic version.
+E.g. ftp send can create a dataset on the data+log outgoing connection (just like in LightSwitch). If customer has Configurator module then PitStop Server configurator can create dataset with a report and if the customer also has the SwitchClient module the he can see this report in SwitchClient.
+
+Note that private data is also supported for some tools (e.g. group and ungroup) and that the job.PrivatData variable remains part of Switch (basic) (just like in LightSwitch) 
+
+*Acceptance criteria*
+The LightSwitch tools + those mentioned above are loaded correctly
+
+*notes for testing*
+Install Switch on one version of Mac and Windows. Check if necessary tools are available and other ones are blocked"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#170"|"Test on a windows machine"|"Description:Test on a windows machine Notes:"|"Task"|""|"no"|""|""|"#64"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#21"|"Module license expires"|"Description:20 DEV +1 QA Narrative:a Switch administrator / prepress managernot use features and tools that are not longer licensednot break my license agreement Notes:*Conversation:*
+We need a mechanism to prevent Switch running with unlicensed features. 
+
+*Acceptance criteria:*
+use case: database module trial expires.
+1) before Switch service is restarted:
+Flows can still be imported without missing element notification and flows can still be created because the database element is still in the elements pane. These flows can however not be validated anymore and the unlicensed tool gets the exclamation mark and message 'Invalid license'.
+
+Flows that are running on the moment license expires keep running. There is however a daily check (every 24h). After this check -the flow keeps running but the unlicensed element or the element that uses some database variable (or in case of metadata module uses a script expression property editor) is market as a problem element. Jobs arriving at such element go to the problem jobs.-
+*UPDATE: The flow does not keep running and we do not mark the element as a problem element. we just DEACTIVATE the whole flow. There should be a clear log message explaining which flow element is not functional anymore and which module is required to make it functional again* 
+
+2) after the service is restarted:
+The elements or features are not available in GUI anymore so customer cannot create flows with them anymore. When importing flows we indicate that features or elements are missing. 
+Also existing flows will indicate missing elements. 
+No flow can be activated anymore because validation will fail on missing features.
+
+*Notes for testing*
+Use time bombed key or trial key. 
+one version on mac and windows"|"Story"|""|"yes"|""|""|""|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#186"|"Extra - Add event indicating that license info is changed"|"Description:Make it possible to inform all interested objects that license informaiton is changed, so Switch will be able to react on chenges fast Notes:"|"Task"|""|"no"|""|""|"#21"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#188"|"Create license validation procedure"|"Description:In Server add procedure that will check all Flow's elements and properties if they are licesensed or not Notes:"|"Task"|""|"no"|""|""|"#21"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#189"|"Extra - Add License Manager's event handler "|"Description:Make Switch server able to catch event sent by License Manager indicating that license information has been changed. By this event Switch will validate flows. Notes:"|"Task"|""|"no"|""|""|"#21"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#185"|"Add flag indicating that license info has been changed"|"Description:Make it possible to check is licenses changed to avoid unnecessary checks Notes:"|"Task"|""|"no"|""|""|"#21"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#190"|"QA - check that Switch reacts on expires licenses"|"Description:Do the following tests:
+- Check that after Server restart expired elements are missed in Elements pane and marked on canvas
+- Check that Switch fails expired elements in the running flows
+- Check that it is possible to import/create flow with expired elements in case Switch has not been restarted
+- Check that it is impossible to import/create flow with expired elements in case Switch has been restarted
+ Notes:"|"Task"|""|"no"|""|""|"#21"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#214"|"Refresh cache after activation or deactivation via Designer GUI"|"Description:The cache can be refreshed immediately after activation/deactivation/repair was performed via Designer GUI. In this case Designer can send a request to Server to refresh the cache. Notes:"|"Task"|""|"no"|""|""|"#21"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#187"|"Update Flow manager so it check flow's elements validity"|"Description:Let Switch server check all running flows by timer - license state of used elements/properties should be checked Notes:"|"Task"|""|"no"|""|""|"#21"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#184"|"Create licenses cache"|"Description:Update License Manager so license information is stored in cache, and cache will be updated by timer. Notes:"|"Task"|""|"no"|""|""|"#21"|"Switch11"|"yes"|"#15"|"#19"|""|""|""|""|""|""
+"#20"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
+"#21"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
+"#22"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
+"#23"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
+"#24"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
+"#25"|"Generated Sprint"|""|"Sprint"|""|"no"|""|""|""|"Switch11"|"yes"|"#15"|""|""|""|""|""|""|""
