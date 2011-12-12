@@ -5,7 +5,7 @@
 <xsl:import href="task.xsl"/>
 <xsl:output method="text"/>
 <xsl:template match="sprints">
-<xsl:for-each select="sprint">"#<xsl:value-of select="@id" />"^"h2. <xsl:value-of select="goal" />-<xsl:value-of select="@id" /><xsl:call-template name="template-sprint"/>"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#<xsl:value-of select="../../@id" />"^""^""^""^""^""^""^"<xsl:value-of select="startDate" />"^"<xsl:value-of select="endDate" />"^""^""^""^""^""^""
+<xsl:for-each select="sprint">"#<xsl:value-of select="@id" />"^"<xsl:value-of select="goal" />-<xsl:value-of select="@id" />"^"<xsl:call-template name="template-sprint"/>"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#<xsl:value-of select="../../@id" />"^""^""^""^""^""^""^"<xsl:value-of select="startDate" />"^"<xsl:value-of select="endDate" />"^""^""^""^""^""^""
 <xsl:apply-templates select="stories"/>
 <xsl:apply-templates select="tasks"/>
 </xsl:for-each>

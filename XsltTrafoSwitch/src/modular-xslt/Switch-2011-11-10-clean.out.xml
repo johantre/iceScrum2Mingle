@@ -134,9 +134,7 @@ h2. Open stories in this release
 
 {{table query: SELECT Number, Name, Status, Sprint, 'Story Points Total' WHERE Type = Story AND Status != Accepted AND Release = THIS CARD ORDER BY Sprint}}
 "^"Release"^""^"no"^""^""^""^""^"yes"^""^""^""^""^""^""^""^"2011-09-12 00:00:00.0"^"2012-02-08 00:00:00.0"^""^""^""^""^""^""
-"#16"^"h2. Generated Sprint-16
-
-h2. Burndown
+"#16"^"Generated Sprint-16"^"h2. Burndown
 
 {{
    data-series-chart
@@ -172,7 +170,7 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-09-12 00:00:00.0"^"2011-09-25 00:00:00.0"^""^""^""^""^""^""
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-09-12 00:00:00.0"^"2011-09-25 00:00:00.0"^""^""^""^""^""^""
 "#210"^"SwitchClient module "^"h2. Narrative
 
 
@@ -367,9 +365,7 @@ fields on Submit and Checkpoints Notes:"^"Task"^""^"no"^""^""^"#213"^"Switch"^"y
 "#360"^"Add Module ID to configurators"^"Description:XML, JDF, XMP and opaque pickup, XMP inject, export metadata Notes:Note that XSLT transform and log job info are not included in this module so
 they do not appear/disappear based on license status of this module"^"Task"^""^"no"^""^""^"#213"^"Switch"^"yes"^"#15"^"#16"^""^""^""^""^""^""^""^""^"Done"^"2011-09-14 15:00:00.0"^"2011-09-26 09:33:49.0"^"2011-09-12 15:01:23.0"^"Int. HIGH"
 "#361"^"Switch off metadata variables "^"Description:Switch off metadata variables in case Metadata module is not licensed Notes:"^"Task"^""^"no"^""^""^"#213"^"Switch"^"yes"^"#15"^"#16"^""^""^""^""^""^""^""^""^"Done"^"2011-09-14 13:22:18.0"^"2011-09-26 09:33:49.0"^"2011-09-12 15:02:16.0"^"Int. HIGH"
-"#17"^"h2. Generated Sprint-17
-
-h2. Burndown
+"#17"^"Generated Sprint-17"^"h2. Burndown
 
 {{
    data-series-chart
@@ -405,7 +401,7 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-09-26 00:00:00.0"^"2011-10-09 00:00:00.0"^""^""^""^""^""^""
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-09-26 00:00:00.0"^"2011-10-09 00:00:00.0"^""^""^""^""^""^""
 "#252"^"Bugfixes customer bugs"^"h2. Narrative
 
 
@@ -820,9 +816,7 @@ There is already a Switch installed. You can find TestDrive and the Shaker tests
 
  Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-30 13:53:32.0"^"2011-09-30 13:53:32.0"^"2011-09-30 09:16:49.0"^"Int. HIGH"
 "#399"^"BZ 6309 - Switch 10 can't upload to FTP user root folder_1"^"Description: Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-10-04 13:02:00.0"^"2011-10-06 09:46:57.0"^"2011-10-04 10:09:14.0"^"Int. HIGH"
-"#18"^"h2. Generated Sprint-18
-
-h2. Burndown
+"#18"^"Generated Sprint-18"^"h2. Burndown
 
 {{
    data-series-chart
@@ -858,7 +852,7 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-10-10 00:00:00.0"^"2011-10-23 00:00:00.0"^""^""^""^""^""^""
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-10-10 00:00:00.0"^"2011-10-23 00:00:00.0"^""^""^""^""^""^""
 "#272"^"10u2 QA WoodWing Configurator"^"h2. Narrative
 
 
@@ -1016,9 +1010,7 @@ I'll put this task on 'done' because there is nothing I can do for this bug for 
 "#3111"^"Search for installed Switch versions"^"Description:Perform search in registry and in default app data root Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#18"^""^""^""^""^""^""^""^""^"Done"^"2011-10-10 16:37:15.0"^"2011-10-12 16:34:35.0"^"2011-10-10 11:42:34.0"^"Int. HIGH"
 "#3158"^"Bug 6248 - CHECKED - Betatester - Switch service is constantly crashing"^"Description: Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#18"^""^""^""^""^""^""^""^""^"Done"^"2011-10-21 11:01:47.0"^"2011-10-21 11:01:47.0"^"2011-10-21 10:51:50.0"^"Int. HIGH"
 "#3134"^"bz6338"^"Description: Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#18"^""^""^""^""^""^""^""^""^"Done"^"2011-10-14 12:59:53.0"^"2011-10-14 13:02:11.0"^"2011-10-14 12:39:52.0"^"Int. HIGH"
-"#19"^"h2. Generated Sprint-19
-
-h2. Burndown
+"#19"^"Generated Sprint-19"^"h2. Burndown
 
 {{
    data-series-chart
@@ -1054,7 +1046,7 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-10-24 00:00:00.0"^"2011-11-05 23:00:00.0"^""^""^""^""^""^""
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-10-24 00:00:00.0"^"2011-11-05 23:00:00.0"^""^""^""^""^""^""
 "#274"^"QA Switch name change"^"h2. Narrative
 
 
@@ -1572,9 +1564,7 @@ Update: we got the translations back today. I have sent all info to Kirill.  Not
 "#3214"^"Refresh cache after activation or deactivation via Designer GUI"^"Description:The cache can be refreshed immediately after activation/deactivation/repair was performed via Designer GUI. In this case Designer can send a request to Server to refresh the cache. Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#19"^""^""^""^""^""^""^""^""^"Done"^"2011-10-31 10:13:23.0"^"2011-11-04 07:51:54.0"^"2011-10-31 09:59:53.0"^"Int. HIGH"
 "#3220"^"Fix problem that wizard window appears in background on Mac"^"Description: Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#19"^""^""^""^""^""^""^""^""^"Done"^"2011-10-31 15:56:23.0"^"2011-10-31 16:34:17.0"^"2011-10-31 15:55:34.0"^"Int. HIGH"
 "#3223"^"Bugfix for BGZ 6398"^"Description:Bug 6398 - 'Can't lock user global data' error in Assemble Tool Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#19"^""^""^""^""^""^""^""^""^"Done"^"2011-11-01 15:54:02.0"^"2011-11-01 16:51:37.0"^"2011-11-01 15:53:30.0"^"Int. HIGH"
-"#20"^"h2. Generated Sprint-20
-
-h2. Burndown
+"#20"^"Generated Sprint-20"^"h2. Burndown
 
 {{
    data-series-chart
@@ -1610,7 +1600,7 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-11-06 23:00:00.0"^"2011-11-19 23:00:00.0"^""^""^""^""^""^""
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-11-06 23:00:00.0"^"2011-11-19 23:00:00.0"^""^""^""^""^""^""
 "#280"^"Maintenance expires"^"h2. Narrative
 
 
@@ -2395,9 +2385,7 @@ In the mean time I will start investigating why not everybody is receiving the m
 Both configurators are circulating so one must disappear. Please start with checking if the 2 (actually 2x5) configurators are unique (except for the ID of course)"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#20"^""^""^""^""^""^""^""^""^"New"^""^""^"2011-11-10 10:17:24.0"^"Int. HIGH"
 "#3234"^"configurator review Elvis"^"Description: Notes:Bug 6496 - CROSSROADS: new Elvis Send and Receive Configurators dd 2011-11-02 
 http://87.118.100.46/bugzilla/show_bug.cgi?id=6496"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#20"^""^""^""^""^""^""^""^""^"Done"^"2011-11-08 14:22:55.0"^"2011-11-08 15:30:22.0"^"2011-11-07 10:24:00.0"^"Int. HIGH"
-"#21"^"h2. Generated Sprint-21
-
-h2. Burndown
+"#21"^"Generated Sprint-21"^"h2. Burndown
 
 {{
    data-series-chart
@@ -2433,10 +2421,8 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-11-20 23:00:00.0"^"2011-12-03 23:00:00.0"^""^""^""^""^""^""
-"#22"^"h2. Generated Sprint-22
-
-h2. Burndown
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-11-20 23:00:00.0"^"2011-12-03 23:00:00.0"^""^""^""^""^""^""
+"#22"^"Generated Sprint-22"^"h2. Burndown
 
 {{
    data-series-chart
@@ -2472,10 +2458,8 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-12-04 23:00:00.0"^"2011-12-17 23:00:00.0"^""^""^""^""^""^""
-"#23"^"h2. Generated Sprint-23
-
-h2. Burndown
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-12-04 23:00:00.0"^"2011-12-17 23:00:00.0"^""^""^""^""^""^""
+"#23"^"Generated Sprint-23"^"h2. Burndown
 
 {{
    data-series-chart
@@ -2511,10 +2495,8 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-12-18 23:00:00.0"^"2011-12-31 23:00:00.0"^""^""^""^""^""^""
-"#24"^"h2. Generated Sprint-24
-
-h2. Burndown
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-12-18 23:00:00.0"^"2011-12-31 23:00:00.0"^""^""^""^""^""^""
+"#24"^"Generated Sprint-24"^"h2. Burndown
 
 {{
    data-series-chart
@@ -2550,10 +2532,8 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2012-01-01 23:00:00.0"^"2012-01-14 23:00:00.0"^""^""^""^""^""^""
-"#25"^"h2. Generated Sprint-25
-
-h2. Burndown
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2012-01-01 23:00:00.0"^"2012-01-14 23:00:00.0"^""^""^""^""^""^""
+"#25"^"Generated Sprint-25"^"h2. Burndown
 
 {{
    data-series-chart
@@ -2589,7 +2569,7 @@ h2. Stories - Dev Complete this Sprint
 
 h2. Other Stories in this Sprint
 
-{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^""^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2012-01-15 23:00:00.0"^"2012-01-28 23:00:00.0"^""^""^""^""^""^""
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2012-01-15 23:00:00.0"^"2012-01-28 23:00:00.0"^""^""^""^""^""^""
 "#289"^"Tab based property pane"^"h2. Narrative
 
 
