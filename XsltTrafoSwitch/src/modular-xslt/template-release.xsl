@@ -79,49 +79,16 @@
       color: black
       data: SELECT 'Sprint', SUM('Story Points Total')
 
-    - label: PitStop Pro Done
-      color: yellow
-      trend: false
-      trend-line-width: 2
-      data: SELECT 'Sprint', SUM('Story Points Total') WHERE Status = 'Accepted' AND 'Product Name' = 'PitStop Pro' AND Release=THIS CARD
-    - label: PitStop Pro
-      color: orange
-      trend: false
-      trend-line-width: 2
-      data: SELECT 'Sprint', SUM('Story Points Total') WHERE 'Product Name' = 'PitStop Pro' AND Release=THIS CARD
-
-    - label: PitStop Server Done
-      color: OrangeRed
-      trend: false
-      trend-line-width: 2
-      data: SELECT 'Sprint', SUM('Story Points Total') WHERE Status = 'Accepted'  AND 'Product Name' = 'PitStop Server' AND Release=THIS CARD
-    - label: PitStop Server
-      color: red
-      trend: false
-      trend-line-width: 2
-      data: SELECT 'Sprint', SUM('Story Points Total') WHERE 'Product Name' = 'PitStop Server' AND Release=THIS CARD
-
-    - label: PitStop Connect Done
+    - label: Switch Done
       color: SkyBlue
       trend: false
       trend-line-width: 2
-      data: SELECT 'Sprint', SUM('Story Points Total') WHERE Status = 'Accepted'  AND 'Product Name' = 'PitStop Connect' AND Release=THIS CARD
-    - label: PitStop Connect
+      data: SELECT 'Sprint', SUM('Story Points Total') WHERE Status = 'Accepted'  AND 'Product Name' = 'Switch' AND Release=THIS CARD
+    - label: Switch
       color: blue
       trend: false
       trend-line-width: 2
-      data: SELECT 'Sprint', SUM('Story Points Total') WHERE 'Product Name' = 'PitStop Connect' AND Release=THIS CARD
-
-    - label: Instant PDF Done
-      color: SpringGreen
-      trend: false
-      trend-line-width: 2
-      data: SELECT 'Sprint', SUM('Story Points Total') WHERE Status = 'Accepted'  AND 'Product Name' = 'Instant PDF' AND Release=THIS CARD
-    - label: Instant PDF
-      color: green
-      trend: false
-      trend-line-width: 2
-      data: SELECT 'Sprint', SUM('Story Points Total') WHERE  'Product Name' = 'Instant PDF' AND Release=THIS CARD
+      data: SELECT 'Sprint', SUM('Story Points Total') WHERE 'Product Name' = 'Switch' AND Release=THIS CARD
 }}
 
  {% panel-content %}
