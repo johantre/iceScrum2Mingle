@@ -1,0 +1,646 @@
+"Number"^"Name"^"Description"^"Type"^"Depend on"^"Roadmap"^"Epic Story"^"Feature"^"Story"^"Product Name"^"Schedule"^"Release"^"Sprint"^"Task"^"Defect"^"Story Points Dev"^"Story Points QA"^"Story Points Total"^"Start Date"^"End Date"^"Status"^"Task Status"^"Moved to In Development on"^"Moved to Accepted on"^"Date Created"^"Commitment level"^"Moved to Sprint Backlog on"
+"#15"^"R1"^"h2. Release Metrics
+
+| &nbsp; | Points | Stories |
+| In Release | {{value query: SELECT SUM('Story Points Total') WHERE Type = Story AND Release = THIS CARD}} | {{value query: SELECT COUNT(*) WHERE Type = Story AND Release = THIS CARD}} |
+| Completed | {{value query: SELECT SUM('Story Points Total') WHERE Type = Story AND Release = THIS CARD AND Status = Accepted}} |  {{value query: SELECT COUNT(*) WHERE Type = Story AND Release = THIS CARD AND Status = Accepted}} |
+
+<br>
+
+{% two-columns %}
+  {% left-column %}
+    {% dashboard-half-panel %}
+ {% panel-heading %}Team Velocity for this release{% panel-heading %}
+ {% panel-content %}
+{{
+  stack-bar-chart
+    chart-height: 300
+    chart-width: 430
+    plot-height: 175
+    plot-width: 285
+    legend-max-width: 100
+    y-title: Done and Total Release
+    x-title: Sprint
+
+    conditions: type = Story
+    labels: SELECT DISTINCT Sprint ORDER BY Sprint
+    three-d: true
+    cumulative: false
+    series: 
+    - label: Total Points not Done
+      combine: overlay-bottom
+      color: red
+      data: SELECT 'Sprint', SUM('Story Points Total') WHERE Release = THIS CARD AND Status < 'Accepted' AND Sprint != NULL
+
+    - label: Total Points Done
+      combine: overlay-bottom
+      color: green
+      data: SELECT 'Sprint', SUM('Story Points Total') WHERE Release = THIS CARD AND Status = 'Accepted' AND Sprint != NULL
+}}
+ {% panel-content %}
+    {% dashboard-half-panel %}
+  {% left-column %}
+  {% right-column %}
+    {% dashboard-half-panel %}
+      {% panel-heading %}Status Percentage of commitment level 'Int. HIGH'{% panel-heading %}
+      {% panel-content %}
+        {{
+          pie-chart
+            data: SELECT status, count(*) WHERE type = story AND 'commitment level'= 'Int. HIGH' AND  release = THIS CARD
+        }}
+      {% panel-content %}
+    {% dashboard-half-panel %}
+  {% right-column %}
+{% two-columns %}
+
+{% dashboard-panel %}
+ {% panel-heading %}Release and Products Burnup - This Release {% panel-heading %}
+ {% panel-content %}
+{{ 
+  data-series-chart  
+    conditions: 'Type' = 'Story' 
+    x-title: Sprint
+    y-title: Total Story Points
+    show-start-label: true
+    data-point-symbol: diamond
+    data-labels: true    
+    cumulative: true
+    chart-height: 500
+    chart-width: 920
+    plot-height: 375
+    plot-width: 730
+    series: 
+    - label: Total Release Done
+      color: grey
+      data: SELECT 'Sprint', SUM('Story Points Total') WHERE Status = 'Accepted' AND Release = THIS CARD
+    - label: Total Release Scope
+      color: black
+      data: SELECT 'Sprint', SUM('Story Points Total')
+
+    - label: Switch Done
+      color: SkyBlue
+      trend: false
+      trend-line-width: 2
+      data: SELECT 'Sprint', SUM('Story Points Total') WHERE Status = 'Accepted'  AND 'Product Name' = 'Switch' AND Release=THIS CARD
+    - label: Switch
+      color: blue
+      trend: false
+      trend-line-width: 2
+      data: SELECT 'Sprint', SUM('Story Points Total') WHERE 'Product Name' = 'Switch' AND Release=THIS CARD
+}}
+
+ {% panel-content %}
+{% dashboard-panel %}
+
+h2. Completed stories in this release
+
+{{table query: SELECT Number, Name, Status, Sprint, 'Story Points Total', 'Sprint Completed' WHERE Type = Story AND Status = Accepted AND Release = THIS CARD}}
+
+
+h2. Open stories in this release
+
+{{table query: SELECT Number, Name, Status, Sprint, 'Story Points Total' WHERE Type = Story AND Status != Accepted AND Release = THIS CARD ORDER BY Sprint}}
+"^"Release"^""^"no"^""^""^""^""^"yes"^""^""^""^""^""^""^""^"2011-09-12 00:00:00.0"^"2012-02-08 00:00:00.0"^""^""^""^""^""^""^""
+"#16"^"Sprint 1: 2011-09-12 -> 2011-09-25"^"h2. Burndown
+
+{{
+   data-series-chart
+    conditions: 'Type' = Story AND 'Sprint' = THIS CARD
+    cumulative: true
+
+    x-labels-start: THIS CARD.Start Date
+    x-labels-end: THIS CARD.End Date
+    x-labels-step: 1
+    chart-width: 800
+    plot-width: 550
+    chart-height: 350
+    series:
+  
+    - label: Stories complete
+      color: red
+      data: SELECT 'Moved to Accepted on', SUM('Story Points Total')
+      trend: true
+      trend-line-width: 1
+      down-from: SELECT SUM('Story Points Total') WHERE Status = 'Accepted'
+}}
+
+
+h2. Stories - Accepted this Sprint
+
+{{table query: SELECT Number, Name, Status, 'Story Points Total', 'Moved to Accepted on' WHERE Type = Story AND Sprint = THIS CARD AND Status = Accepted}}
+
+
+h2. Stories - Dev Complete this Sprint
+
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status > 'In Development' AND Status != Accepted}}
+
+
+h2. Other Stories in this Sprint
+
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-09-12 00:00:00.0"^"2011-09-25 00:00:00.0"^""^""^""^""^""^""^""
+"#210"^"SwitchClient module "^"h2. Narrative
+
+
+As a  I can  to 
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#16"^""^""^"0.5"^"0"^""^""^""^"Accepted"^""^"2011-09-12 15:14:40.0"^"2011-09-26 09:38:11.0"^"2011-09-09 16:54:17.0"^"Int. HIGH"^"2011-09-12 00:00:00.0"
+"#354"^"Hide UI elements"^"Description: Notes:"^"Task"^""^"no"^""^""^"#210"^"Switch"^"yes"^"#15"^"#16"^""^""^""^""^""^""^""^""^"Done"^"2011-09-12 15:15:09.0"^"2011-09-26 09:38:11.0"^"2011-09-12 14:42:40.0"^"Int. HIGH"^""
+"#353"^"Add ModuleID to tools"^"Description: Notes:"^"Task"^""^"no"^""^""^"#210"^"Switch"^"yes"^"#15"^"#16"^""^""^""^""^""^""^""^""^"Done"^"2011-09-13 12:48:57.0"^"2011-09-26 09:38:11.0"^"2011-09-12 14:38:58.0"^"Int. HIGH"^""
+"#17"^"Sprint 2: 2011-09-26 -> 2011-10-09"^"h2. Burndown
+
+{{
+   data-series-chart
+    conditions: 'Type' = Story AND 'Sprint' = THIS CARD
+    cumulative: true
+
+    x-labels-start: THIS CARD.Start Date
+    x-labels-end: THIS CARD.End Date
+    x-labels-step: 1
+    chart-width: 800
+    plot-width: 550
+    chart-height: 350
+    series:
+  
+    - label: Stories complete
+      color: red
+      data: SELECT 'Moved to Accepted on', SUM('Story Points Total')
+      trend: true
+      trend-line-width: 1
+      down-from: SELECT SUM('Story Points Total') WHERE Status = 'Accepted'
+}}
+
+
+h2. Stories - Accepted this Sprint
+
+{{table query: SELECT Number, Name, Status, 'Story Points Total', 'Moved to Accepted on' WHERE Type = Story AND Sprint = THIS CARD AND Status = Accepted}}
+
+
+h2. Stories - Dev Complete this Sprint
+
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status > 'In Development' AND Status != Accepted}}
+
+
+h2. Other Stories in this Sprint
+
+{{table query: SELECT Number, Name, Status, 'Story Points Total' WHERE Type = Story AND Sprint = THIS CARD AND Status < 'Ready for Testing'}}"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#15"^""^""^""^""^""^""^"2011-09-26 00:00:00.0"^"2011-10-09 00:00:00.0"^""^""^""^""^""^""^""
+"#252"^"Bugfixes customer bugs"^"h2. Narrative
+
+
+As a  I can  to These are 3  bugs reported by customers against previous versions of Switch:
+
+- BZ 4331: 'Hold' on connection doesn't always work
+
+- BZ 6309 - Switch 10 can't upload to FTP user root folder 
+
+- BZ 6329 - Mail receive can't handle special character like /
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"8"^"0"^""^""^""^"Accepted"^""^"2011-09-28 13:22:31.0"^"2011-10-04 09:47:13.0"^"2011-09-27 15:22:36.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#395"^"BZ 6309 - Switch 10 can't upload to FTP user root folder"^"Description: Notes:"^"Task"^""^"no"^""^""^"#252"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-29 11:02:00.0"^"2011-10-04 09:47:13.0"^"2011-09-28 15:52:46.0"^"Int. HIGH"^""
+"#396"^"BZ 6329 - Mail receive can't handle special character like /"^"Description: Notes:"^"Task"^""^"no"^""^""^"#252"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-29 16:47:38.0"^"2011-10-04 09:47:13.0"^"2011-09-28 15:52:58.0"^"Int. HIGH"^""
+"#394"^"BZ 4331: 'Hold' on connection doesn't always work"^"Description: Notes:"^"Task"^""^"no"^""^""^"#252"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-30 14:31:03.0"^"2011-10-04 09:47:13.0"^"2011-09-28 15:52:34.0"^"Int. HIGH"^""
+"#212"^"Database module"^"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Database tool, access to the database variables and
+possibility to gather content for a SwitchClient dropdown list straight from a
+database, in order to get the most out of my investment.
+
+h2. Notes
+
+
+•The Database connect element
+•The database variables 
+•And access to ODBC data sources when defining dropdown list as metadata fields
+on Submit and Checkpoints 
+Should be licensed separately from Switch. Meaning that only when I use a valid
+key, this flow element and its new category title (Database) become available
+in the elements pane, the database group becomes available in the variables
+panel (i.e. define single/ multi line or condition with variables dialog) and
+“Define values from ODBC data source” becomes available as data value for
+dropdown list.
+
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+This feature was already implemented in Switch 10 update 1. Only thing that
+needs to be taken care of is that the Database connect elements appears in it’s
+own category instead of being part of the metadata category.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"2"^"0"^""^""^""^"Accepted"^""^"2011-09-26 11:41:25.0"^"2011-10-04 09:56:57.0"^"2011-09-09 16:55:17.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#378"^"Add Database key to Database connector element"^"Description: Notes:"^"Task"^""^"no"^""^""^"#212"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-29 15:10:52.0"^"2011-10-04 09:56:58.0"^"2011-09-26 11:13:20.0"^"Int. HIGH"^""
+"#379"^"Check that Database features are not available without licence"^"Description: Notes:"^"Task"^""^"no"^""^""^"#212"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-26 12:16:20.0"^"2011-10-04 09:56:58.0"^"2011-09-26 11:14:10.0"^"Int. HIGH"^""
+"#386"^"Move Database tool into new category"^"Description: Notes:"^"Task"^""^"no"^""^""^"#212"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-28 15:08:57.0"^"2011-10-04 09:56:58.0"^"2011-09-26 12:04:54.0"^"Int. HIGH"^""
+"#242"^"Betatester reported bugs"^"h2. Narrative
+
+
+As a  I can  to 5308 - Fixed (Dmitry)
+These bugs were all logged by our Spanish distributor. Most of them are related to SwitchClient.
+
+5382 - In progress: Dmitry
+6203 - Fixed (Kirill)
+6216 - Assigned To: Bhargavi Manjunath
+6221 - Assigned To: Bhargavi Manjunath
+6222
+6241
+6246 - Fixed (Dmitry)
+6248
+6252 - Fixed (Vitali)
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"3"^"0"^""^""^""^"Accepted"^""^"2011-09-28 13:22:05.0"^"2011-09-29 11:00:05.0"^"2011-09-26 15:04:32.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#393"^"BZ 6248"^"Description: Notes:"^"Task"^""^"no"^""^""^"#242"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-29 11:00:02.0"^"2011-09-29 11:00:05.0"^"2011-09-28 15:52:01.0"^"Int. HIGH"^""
+"#392"^"BZ 6241"^"Description: Notes:"^"Task"^""^"no"^""^""^"#242"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-28 16:49:32.0"^"2011-09-29 11:00:05.0"^"2011-09-28 15:51:47.0"^"Int. HIGH"^""
+"#222"^"WoodWing Configurator "^"h2. Narrative
+
+
+As a  I can  to 6274
+6275
+6277
+5612
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"3"^"0"^""^""^""^"Accepted"^""^"2011-09-26 11:41:25.0"^"2011-10-04 09:47:30.0"^"2011-09-14 14:33:30.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#371"^"BZ 5612"^"Description: Notes:"^"Task"^""^"no"^""^""^"#222"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-28 08:03:22.0"^"2011-10-04 09:47:30.0"^"2011-09-26 11:02:12.0"^"Int. HIGH"^""
+"#370"^"BZ 6277"^"Description: Notes:"^"Task"^""^"no"^""^""^"#222"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-26 12:24:24.0"^"2011-10-04 09:47:30.0"^"2011-09-26 11:01:53.0"^"Int. HIGH"^""
+"#390"^"Include 'Generic application' element into Configurator module"^"Description: Notes:"^"Task"^""^"no"^""^""^"#222"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-28 16:07:19.0"^"2011-10-04 09:47:30.0"^"2011-09-27 18:27:18.0"^"Int. HIGH"^""
+"#368"^"BZ 6274"^"Description: Notes:"^"Task"^""^"no"^""^""^"#222"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-26 16:26:27.0"^"2011-10-04 09:47:30.0"^"2011-09-26 11:01:19.0"^"Int. HIGH"^""
+"#369"^"BZ 6275"^"Description: Notes:"^"Task"^""^"no"^""^""^"#222"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-26 15:45:03.0"^"2011-10-04 09:47:30.0"^"2011-09-26 11:01:35.0"^"Int. HIGH"^""
+"#234"^"A key for every module"^"h2. Narrative
+
+
+As a an operator I can activate every module individuality to end up with a Switch installation that only contains the tools i really need.h2. Notes
+
+
+Every module has its specific key. Each key only includes one feature that matches the module.
+
+h2. Acceptance Criteria
+
+
+Database module, SwitchClient module, SwitchClient SDK, scripting module, metadata module and configurator module functionality is unlocked with an individual key.
+Additional SwitchClient licenses are added with a specific product key (same as it used to be)
+
+
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"3"^"0"^""^""^""^"Accepted"^""^"2011-09-26 11:41:25.0"^"2011-10-10 11:56:38.0"^"2011-09-21 13:44:22.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#373"^"Check that each module depends on its own key"^"Description: Notes:"^"Task"^""^"no"^""^""^"#234"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-10-04 09:56:15.0"^"2011-10-10 11:56:38.0"^"2011-09-26 11:04:20.0"^"Int. HIGH"^""
+"#372"^"Add real keys to modules in Switch"^"Description: Notes:I cannot move this story to Done because I cannot submit my changes unless we have the keys with many possible activations."^"Task"^""^"no"^""^""^"#234"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-10-03 14:28:25.0"^"2011-10-10 11:56:38.0"^"2011-09-26 11:03:49.0"^"Int. HIGH"^""
+"#236"^"New installer"^"h2. Narrative
+
+
+As a an operator I can have an installer that does not refer to old switch flavors anymore but leaves old versions intact to end up with a clean installation of Switch 11 that does not affect previous versionsh2. Notes
+
+
+Create a new installer for this new product.
+
+h2. Acceptance Criteria
+
+
+The installer is re-branded. (except for the artwork everything refers to 'Switch)
+Old versions are *not* longer removed as it used to be (i.e. on win uninstall, on Mac clean up if we can find it)
+So a user that has an old LightSwitch 10 and FullSwitch 10 actually ends up with 3 versions (LightSwitch 10, FullSwitch 10 and Switch 11)
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"3"^"0"^""^""^""^"Accepted"^""^"2011-09-26 11:41:25.0"^"2011-09-28 15:54:39.0"^"2011-09-22 17:14:15.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#385"^"Create new installer"^"Description: Notes:"^"Task"^""^"no"^""^""^"#236"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-26 13:01:18.0"^"2011-09-28 15:54:39.0"^"2011-09-26 11:24:00.0"^"Int. HIGH"^""
+"#217"^"Switch name change"^"h2. Narrative
+
+
+As a an operator I can only see one product name 'Switch' and no more Light, Full or PowerSwitch to not be confused about possible property sets, flavors and modules.h2. Notes
+
+
+Change the names LightSwitch, FullSwitch and PowerSwitch to Switch.
+
+(artwork' about panel, splash screen, product icon is not part of this story. This artwork needs to be created first by marketing.)
+
+h2. Acceptance Criteria
+
+
+changes in:
+Application name
+titles in toolbars and dialogs
+name in messages
+all server components
+all folders on the system (application folder, library, ...)
+all files on a system (executable, .plist, ...)
+build system
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"20"^"0"^""^""^""^"Accepted"^""^"2011-09-26 11:41:25.0"^"2011-10-05 12:06:32.0"^"2011-09-13 15:12:30.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#382"^"Remove flavors from Switch code"^"Description: Notes:"^"Task"^""^"no"^""^""^"#217"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-27 18:09:59.0"^"2011-10-05 12:06:32.0"^"2011-09-26 11:17:05.0"^"Int. HIGH"^""
+"#388"^"Refactor SwitchCommon\GSCSwitchFeatures.h"^"Description: Notes:"^"Task"^""^"no"^""^""^"#217"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-30 16:21:49.0"^"2011-10-05 12:06:32.0"^"2011-09-27 18:10:28.0"^"Int. HIGH"^""
+"#389"^"Make sure AppleScript works after removing flavors"^"Description:The problem is that for AppleScripts we use
+
+'tell application PowerSwitch_Service'
+
+This should be somehow resolved. Then we need to make sure that after flavors are removed the AppleScripts (existing and new) works fine Notes:"^"Task"^""^"no"^""^""^"#217"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-10-04 08:13:33.0"^"2011-10-05 12:06:32.0"^"2011-09-27 18:13:47.0"^"Int. HIGH"^""
+"#384"^"Check UI strings"^"Description:Don't mention Flavor in UI Notes:"^"Task"^""^"no"^""^""^"#217"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-26 12:23:40.0"^"2011-10-05 12:06:32.0"^"2011-09-26 11:20:22.0"^"Int. HIGH"^""
+"#383"^"Refactor License manager"^"Description:Change pair SwitchFlavor - LicenseManager Notes:"^"Task"^""^"no"^""^""^"#217"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-28 15:50:38.0"^"2011-10-05 12:06:32.0"^"2011-09-26 11:18:21.0"^"Int. HIGH"^""
+"#381"^"Update Switch build"^"Description: Notes:"^"Task"^""^"no"^""^""^"#217"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-26 12:57:14.0"^"2011-10-05 12:06:32.0"^"2011-09-26 11:15:48.0"^"Int. HIGH"^""
+"#211"^"Scripting module"^"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Scripting, in order to get the most out of my investment.
+
+h2. Notes
+
+
+The script element and property editor “Define script expression” should be
+licensed separately from Switch. Meaning that only when I use a valid key, this
+flow element and its category title (Scripting) become available in the
+elements pane and the script expression property editor becomes available in
+the properties pane.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+Make the script element and features behave like the Database connect tool in
+PowerSwitch 10 update1. Meaning that only when it is licensed (separately from
+PowerSwitch), it can be used.
+Make sure the property editor “Define script expression” is only available if
+correctly licensed with a scripting module key.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"5"^"0"^""^""^""^"Accepted"^""^"2011-09-26 11:41:25.0"^"2011-09-29 15:03:07.0"^"2011-09-09 16:54:47.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#366"^"Add license checking mechanism for Scripting module"^"Description:Make sure Switch checks for separate license when loading Script element and Script features such as script expressions in UI Notes:"^"Task"^""^"no"^""^""^"#211"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-26 12:13:35.0"^"2011-09-29 15:03:07.0"^"2011-09-26 10:58:58.0"^"Int. HIGH"^""
+"#367"^"Move Script element to Scripting module"^"Description: Notes:"^"Task"^""^"no"^""^""^"#211"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-27 12:24:05.0"^"2011-09-29 15:03:07.0"^"2011-09-26 10:59:19.0"^"Int. HIGH"^""
+"#215"^"SwitchProxy module"^"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. SwitchProxy module, in order to get the most out of my
+investment.
+
+h2. Notes
+
+
+The SwitchProxy module is separate product and released with Switch 10 but from
+Switch 11 on it will be “commercially” considered as a module.
+No development effort required, just writing this story for completeness and to
+make sure it gets tested by QA 
+
+h2. Acceptance Criteria
+
+
+SwitchProxy works fine with Switch 11
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"1"^"0"^""^""^""^"Accepted"^""^"2011-09-26 11:41:25.0"^"2011-09-28 11:17:19.0"^"2011-09-09 16:56:43.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#375"^"Check SwitchProxy is not able to connect to Switch if not licensed"^"Description: Notes:"^"Task"^""^"no"^""^""^"#215"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-28 09:46:20.0"^"2011-09-28 11:17:19.0"^"2011-09-26 11:05:59.0"^"Int. HIGH"^""
+"#374"^"Add real key to Switch"^"Description: Notes:"^"Task"^""^"no"^""^""^"#215"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-28 08:03:52.0"^"2011-09-28 11:17:19.0"^"2011-09-26 11:05:00.0"^"Int. HIGH"^""
+"#29"^"Client SDK module"^"h2. Narrative
+
+
+As a  I can  to As a (prepress) manager on a tight budget I don’t want to pay twice for the
+same features, so when I have purchased the Client SDK module I need the
+SwitchClient module included. 
+
+h2. Notes
+
+
+The Client SDK is already a separate module (with its own license key) and
+released with Switch 10 but from Switch 11 on it will be “commercially”
+considered as a module.
+Whoever buys this module is automatically entitled to use the SwitchClient
+module. 
+
+h2. Acceptance Criteria
+
+
+Using only 1 key, the one for Client SDK, the same features and connection
+rights as in the SwitchClient module become available.
+Note that in such case the customer does not get separate keys for Client SDK
+and SwitchClient module.
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^"5"^"0"^""^""^""^"Accepted"^""^"2011-09-26 11:41:25.0"^"2011-09-28 15:36:11.0"^"2011-09-09 16:53:40.0"^"Int. HIGH"^"2011-09-26 00:00:00.0"
+"#380"^"Check that connecitons from Client and SDK based clients"^"Description:Check different variations of Client and SDK licenses - Client should be able to connect with both licenses, SDK based Client should be able to connect only with ClientSDK license;
+
+Make sure that number of availble connections is calculated correctly according to license installed. Notes:"^"Task"^""^"no"^""^""^"#29"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-28 11:53:41.0"^"2011-09-28 15:36:11.0"^"2011-09-26 11:15:11.0"^"Int. HIGH"^""
+"#377"^"Make sure Client SDK enables Client license"^"Description: Notes:"^"Task"^""^"no"^""^""^"#29"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-27 14:55:40.0"^"2011-09-28 15:36:11.0"^"2011-09-26 11:09:56.0"^"Int. HIGH"^""
+"#387"^"Add Switch Client SDK license key"^"Description:Make sure Switch allow connection of ClientSDK based apps only when key is activated Notes:"^"Task"^""^"no"^""^""^"#29"^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-27 14:52:45.0"^"2011-09-28 15:36:11.0"^"2011-09-27 14:52:01.0"^"Int. HIGH"^""
+"#398"^"Fix failing Merge PDF/Metadata Test"^"Description:Hello Davy,
+
+I’ve investigated the problem of Merge PDF/Metadata Test. It has wrong test logic that should be reworked. Eugene Volkorez will fix this test tomorrow. 
+...
+
+Best regards,
+Denis Koleda
+--------------------------------------------------
+You can access the virtual machine through remote desktop:
+
+Address = 10.13.133.79
+
+Username = Shaker
+
+Password = 123
+
+ 
+
+There is already a Switch installed. You can find TestDrive and the Shaker tests on the desktop. Let me know if you have any questions or problems. I will temporarily disable cruisecontrol until you are ready with your investigations, please let me know when I should enable cruisecontrol again.
+
+ 
+
+
+ 
+
+ Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-09-30 13:53:32.0"^"2011-09-30 13:53:32.0"^"2011-09-30 09:16:49.0"^"Int. HIGH"^""
+"#399"^"BZ 6309 - Switch 10 can't upload to FTP user root folder_1"^"Description: Notes:"^"Task"^""^"no"^""^""^""^"Switch"^"yes"^"#15"^"#17"^""^""^""^""^""^""^""^""^"Done"^"2011-10-04 13:02:00.0"^"2011-10-06 09:46:57.0"^"2011-10-04 10:09:14.0"^"Int. HIGH"^""
+"#289"^"Tab based property pane"^"h2. Narrative
+
+
+As a a flow designer I can get a clear overview all properties of a tool to get a better view of all functionality that tools offers and to set up the tool more easilyh2. Notes
+
+:
+1) Add tabs to the property pane.
+In Scripter this could result in some kind of property grouping feature. If no groups are made, then tools looks like it used to look. If groups are defined, the group name is shown as tab title.
+
+2) second attempt to clean up the property pane GUI. Where for Switch 10 we tried to get some kind of form layout in a table we could now use a real form. This would also not affect the preferences table GUI.
+
+h2. Acceptance Criteria
+
+
+property pane looks like image in attachment
+
+h2. Related Stories
+
+
+* #0
+
+
+h2. Tasks
+
+
+{{table query: SELECT Number, Name, Owner, 'Hours Remaining', 'Task Status' WHERE Type = Task and Story = THIS CARD}} 
+
+
+h2. Defects
+
+
+{{table query: SELECT Number, Name, Owner, 'Defect Status' WHERE Type = Defect and Story = THIS CARD}}"^"Story"^""^"yes"^""^""^""^"Switch"^"yes"^""^""^""^""^""^"0"^""^""^""^"In Product Backlog"^""^""^""^"2011-10-11 15:17:56.0"^"Int. HIGH"^""

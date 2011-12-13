@@ -1,0 +1,1253 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<product id='14'>
+	<pkey>PROJ2</pkey>
+	<planningPokerGameType>0</planningPokerGameType>
+	<startDate>2011-09-12 00:00:00.0</startDate>
+	<endDate>2012-02-08 00:00:00.0</endDate>
+	<name><![CDATA[Switch 11]]></name>
+	<releases>
+		<release id='15'>
+			<state>2</state>
+			<releaseVelocity>0.0</releaseVelocity>
+			<endDate>2012-02-08 00:00:00.0</endDate>
+			<startDate>2011-09-12 00:00:00.0</startDate>
+			<orderNumber>1</orderNumber>
+			<name><![CDATA[R1]]></name>
+			<vision><![CDATA[]]></vision>
+			<description/>
+			<goal/>
+			<sprints>
+				<sprint id='16'>
+					<state>3</state>
+					<dailyWorkTime>8.0</dailyWorkTime>
+					<velocity>34.0</velocity>
+					<capacity>34.0</capacity>
+					<resource/>
+					<endDate>2011-09-25 00:00:00.0</endDate>
+					<startDate>2011-09-12 00:00:00.0</startDate>
+					<orderNumber>1</orderNumber>
+					<activationDate>2011-09-12 15:14:40.0</activationDate>
+					<closeDate>2011-09-26 10:33:14.0</closeDate>
+					<retrospective/>
+					<doneDefinition/>
+					<description/>
+					<goal><![CDATA[Generated Sprint]]></goal>
+					<tasks/>
+					<stories>
+						<story id='210'>
+							<state>7</state>
+							<suggestedDate>2011-09-09 16:54:17.0</suggestedDate>
+							<acceptedDate>2011-09-09 16:58:03.0</acceptedDate>
+							<estimatedDate>2011-09-12 12:14:51.0</estimatedDate>
+							<plannedDate>2011-09-12 14:26:24.0</plannedDate>
+							<inProgressDate>2011-09-12 15:14:40.0</inProgressDate>7
+							<doneDate>2011-09-26 09:38:11.0</doneDate>
+							<effort>0.6</effort>
+							<value>0</value>
+							<rank>2</rank>
+							<creationDate>2011-09-09 16:54:17.0</creationDate>
+							<type>0</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[SwitchClient module ]]></name>
+							<textAs/>
+							<textICan/>
+							<textTo/>
+							<notes><![CDATA[]]></notes>
+							<description><![CDATA[]]></description>
+							<creator id='2'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='354'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-12 14:42:40.0</creationDate>
+									<inProgressDate>2011-09-12 15:15:09.0</inProgressDate>
+									<doneDate>2011-09-26 09:38:11.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Hide UI elements]]></name>
+									<creator id='10'/>
+									<responsible id='11'/>
+								</task>
+								<task id='353'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>0</rank>
+									<creationDate>2011-09-12 14:38:58.0</creationDate>
+									<inProgressDate>2011-09-13 12:48:57.0</inProgressDate>
+									<doneDate>2011-09-26 09:38:11.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Add ModuleID to tools]]></name>
+									<creator id='10'/>
+									<responsible id='11'/>
+								</task>
+							</tasks>
+						</story>
+					</stories>
+					<cliches>
+						<cliche id='11'>
+							<datePrise>2011-09-12 15:14:43.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>14</tasks><waitTasks>10</waitTasks><inprogressTasks>4</inprogressTasks><doneTasks>0</doneTasks><sprintTasks>1</sprintTasks><recurrentTasks>1</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='12'>
+							<datePrise>2011-09-13 10:03:48.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>6</waitTasks><inprogressTasks>3</inprogressTasks><doneTasks>4</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='17'>
+							<datePrise>2011-09-14 08:57:32.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>2</waitTasks><inprogressTasks>5</inprogressTasks><doneTasks>6</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='20'>
+							<datePrise>2011-09-15 11:22:11.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>1</waitTasks><inprogressTasks>4</inprogressTasks><doneTasks>8</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='21'>
+							<datePrise>2011-09-16 07:22:53.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>4</inprogressTasks><doneTasks>9</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='29'>
+							<datePrise>2011-09-17 07:22:53.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>4</inprogressTasks><doneTasks>9</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='30'>
+							<datePrise>2011-09-18 07:22:53.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>4</inprogressTasks><doneTasks>9</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='31'>
+							<datePrise>2011-09-19 10:30:47.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>2</inprogressTasks><doneTasks>11</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='32'>
+							<datePrise>2011-09-20 08:17:42.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>1</inprogressTasks><doneTasks>12</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='34'>
+							<datePrise>2011-09-21 11:17:50.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>0</inprogressTasks><doneTasks>13</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='38'>
+							<datePrise>2011-09-22 11:17:50.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>0</inprogressTasks><doneTasks>13</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='39'>
+							<datePrise>2011-09-23 11:17:50.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>0</inprogressTasks><doneTasks>13</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='40'>
+							<datePrise>2011-09-24 11:17:50.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>0</inprogressTasks><doneTasks>13</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='41'>
+							<datePrise>2011-09-25 11:17:50.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>4</inprogressStories><doneStories>0</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>0</inprogressTasks><doneTasks>13</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='42'>
+							<datePrise>2011-09-26 09:33:49.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>4</stories><inprogressStories>0</inprogressStories><doneStories>4</doneStories><tasks>13</tasks><waitTasks>0</waitTasks><inprogressTasks>0</inprogressTasks><doneTasks>13</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>13</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+					</cliches>
+				</sprint>
+				<sprint id='17'>
+					<state>3</state>
+					<dailyWorkTime>8.0</dailyWorkTime>
+					<velocity>53.0</velocity>
+					<capacity>42.0</capacity>
+					<resource/>
+					<endDate>2011-10-09 00:00:00.0</endDate>
+					<startDate>2011-09-26 00:00:00.0</startDate>
+					<orderNumber>2</orderNumber>
+					<activationDate>2011-09-26 11:41:25.0</activationDate>
+					<closeDate>2011-10-10 11:56:39.0</closeDate>
+					<retrospective/>
+					<doneDefinition/>
+					<description/>
+					<goal><![CDATA[Generated Sprint]]></goal>
+					<tasks>
+						<task id='398'>
+							<estimation>0</estimation>
+							<type>11</type>
+							<state>2</state>
+							<rank>1</rank>
+							<creationDate>2011-09-30 09:16:49.0</creationDate>
+							<inProgressDate>2011-09-30 13:53:32.0</inProgressDate>
+							<doneDate>2011-09-30 13:53:32.0</doneDate>
+							<blocked>false</blocked>
+							<name><![CDATA[Fix failing Merge PDF/Metadata Test]]></name>
+							<description><![CDATA[Hello Davy,
+
+I’ve investigated the problem of Merge PDF/Metadata Test. It has wrong test logic that should be reworked. Eugene Volkorez will fix this test tomorrow. 
+...
+
+Best regards,
+Denis Koleda
+--------------------------------------------------
+You can access the virtual machine through remote desktop:
+
+Address = 10.13.133.79
+
+Username = Shaker
+
+Password = 123
+
+ 
+
+There is already a Switch installed. You can find TestDrive and the Shaker tests on the desktop. Let me know if you have any questions or problems. I will temporarily disable cruisecontrol until you are ready with your investigations, please let me know when I should enable cruisecontrol again.
+
+ 
+
+
+ 
+
+]]></description>
+							<notes><![CDATA[]]></notes>
+							<creator id='2'/>
+							<responsible id='4'/>
+						</task>
+						<task id='399'>
+							<estimation/>
+							<type>10</type>
+							<state>2</state>
+							<rank>2</rank>
+							<creationDate>2011-10-04 10:09:14.0</creationDate>
+							<inProgressDate>2011-10-04 13:02:00.0</inProgressDate>
+							<doneDate>2011-10-06 09:46:57.0</doneDate>
+							<blocked>false</blocked>
+							<name><![CDATA[BZ 6309 - Switch 10 can't upload to FTP user root folder_1]]></name>
+							<description/>
+							<notes/>
+							<creator id='14'/>
+							<responsible id='14'/>
+						</task>
+					</tasks>
+					<stories>
+						<story id='252'>
+							<state>7</state>
+							<suggestedDate>2011-09-27 15:22:37.0</suggestedDate>
+							<acceptedDate>2011-09-28 09:23:00.0</acceptedDate>
+							<estimatedDate>2011-09-28 13:21:21.0</estimatedDate>
+							<plannedDate>2011-09-28 13:22:31.0</plannedDate>
+							<inProgressDate>2011-09-28 13:22:31.0</inProgressDate>
+							<doneDate>2011-10-04 09:47:13.0</doneDate>
+							<effort>8</effort>
+							<value>0</value>
+							<rank>6</rank>
+							<creationDate>2011-09-27 15:22:36.0</creationDate>
+							<type>3</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[Bugfixes customer bugs]]></name>
+							<textAs/>
+							<textICan/>
+							<textTo/>
+							<notes/>
+							<description><![CDATA[These are 3  bugs reported by customers against previous versions of Switch:
+
+- BZ 4331: 'Hold' on connection doesn't always work
+
+- BZ 6309 - Switch 10 can't upload to FTP user root folder 
+
+- BZ 6329 - Mail receive can't handle special character like /]]></description>
+							<creator id='18'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='395'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-28 15:52:46.0</creationDate>
+									<inProgressDate>2011-09-29 11:02:00.0</inProgressDate>
+									<doneDate>2011-10-04 09:47:13.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[BZ 6309 - Switch 10 can't upload to FTP user root folder]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='14'/>
+								</task>
+								<task id='396'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>1</rank>
+									<creationDate>2011-09-28 15:52:58.0</creationDate>
+									<inProgressDate>2011-09-29 16:47:38.0</inProgressDate>
+									<doneDate>2011-10-04 09:47:13.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[BZ 6329 - Mail receive can't handle special character like /]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='11'/>
+								</task>
+								<task id='394'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>0</rank>
+									<creationDate>2011-09-28 15:52:34.0</creationDate>
+									<inProgressDate>2011-09-30 14:31:03.0</inProgressDate>
+									<doneDate>2011-10-04 09:47:13.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[BZ 4331: 'Hold' on connection doesn't always work]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='5'/>
+								</task>
+							</tasks>
+						</story>
+						<story id='212'>
+							<state>7</state>
+							<suggestedDate>2011-09-09 16:55:17.0</suggestedDate>
+							<acceptedDate>2011-09-09 16:58:00.0</acceptedDate>
+							<estimatedDate>2011-09-12 12:14:05.0</estimatedDate>
+							<plannedDate>2011-09-26 10:33:45.0</plannedDate>
+							<inProgressDate>2011-09-26 11:41:25.0</inProgressDate>
+							<doneDate>2011-10-04 09:56:57.0</doneDate>
+							<effort>2</effort>
+							<value>0</value>
+							<rank>8</rank>
+							<creationDate>2011-09-09 16:55:17.0</creationDate>
+							<type>0</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[Database module]]></name>
+							<textAs/>
+							<textICan/>
+							<textTo/>
+							<notes><![CDATA[h2. Notes
+
+
+•The Database connect element
+•The database variables 
+•And access to ODBC data sources when defining dropdown list as metadata fields
+on Submit and Checkpoints 
+Should be licensed separately from Switch. Meaning that only when I use a valid
+key, this flow element and its new category title (Database) become available
+in the elements pane, the database group becomes available in the variables
+panel (i.e. define single/ multi line or condition with variables dialog) and
+“Define values from ODBC data source” becomes available as data value for
+dropdown list.
+
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+This feature was already implemented in Switch 10 update 1. Only thing that
+needs to be taken care of is that the Database connect elements appears in it’s
+own category instead of being part of the metadata category.]]></notes>
+							<description><![CDATA[As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Database tool, access to the database variables and
+possibility to gather content for a SwitchClient dropdown list straight from a
+database, in order to get the most out of my investment.
+
+]]></description>
+							<creator id='2'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='378'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-26 11:13:20.0</creationDate>
+									<inProgressDate>2011-09-29 15:10:52.0</inProgressDate>
+									<doneDate>2011-10-04 09:56:58.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Add Database key to Database connector element]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='4'/>
+								</task>
+								<task id='379'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-26 11:14:10.0</creationDate>
+									<inProgressDate>2011-09-26 12:16:20.0</inProgressDate>
+									<doneDate>2011-10-04 09:56:58.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Check that Database features are not available without licence]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='4'/>
+								</task>
+								<task id='386'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>0</rank>
+									<creationDate>2011-09-26 12:04:54.0</creationDate>
+									<inProgressDate>2011-09-28 15:08:57.0</inProgressDate>
+									<doneDate>2011-10-04 09:56:58.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Move Database tool into new category]]></name>
+									<description/>
+									<notes/>
+									<creator id='5'/>
+									<responsible id='4'/>
+								</task>
+							</tasks>
+						</story>
+						<story id='242'>
+							<state>7</state>
+							<suggestedDate>2011-09-26 15:04:32.0</suggestedDate>
+							<acceptedDate>2011-09-27 14:24:57.0</acceptedDate>
+							<estimatedDate>2011-09-28 13:21:11.0</estimatedDate>
+							<plannedDate>2011-09-28 13:22:05.0</plannedDate>
+							<inProgressDate>2011-09-28 13:22:05.0</inProgressDate>
+							<doneDate>2011-09-29 11:00:05.0</doneDate>
+							<effort>3</effort>
+							<value>0</value>
+							<rank>4</rank>
+							<creationDate>2011-09-26 15:04:32.0</creationDate>
+							<type>0</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[Betatester reported bugs]]></name>
+							<textAs/>
+							<textICan/>
+							<textTo/>
+							<notes/>
+							<description><![CDATA[5308 - Fixed (Dmitry)
+These bugs were all logged by our Spanish distributor. Most of them are related to SwitchClient.
+
+5382 - In progress: Dmitry
+6203 - Fixed (Kirill)
+6216 - Assigned To: Bhargavi Manjunath
+6221 - Assigned To: Bhargavi Manjunath
+6222
+6241
+6246 - Fixed (Dmitry)
+6248
+6252 - Fixed (Vitali)]]></description>
+							<creator id='2'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='393'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-28 15:52:01.0</creationDate>
+									<inProgressDate>2011-09-29 11:00:02.0</inProgressDate>
+									<doneDate>2011-09-29 11:00:05.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[BZ 6248]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='10'/>
+								</task>
+								<task id='392'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>0</rank>
+									<creationDate>2011-09-28 15:51:47.0</creationDate>
+									<inProgressDate>2011-09-28 16:49:32.0</inProgressDate>
+									<doneDate>2011-09-29 11:00:05.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[BZ 6241]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='3'/>
+								</task>
+							</tasks>
+						</story>
+						<story id='222'>
+							<state>7</state>
+							<suggestedDate>2011-09-14 14:33:30.0</suggestedDate>
+							<acceptedDate>2011-09-26 10:37:31.0</acceptedDate>
+							<estimatedDate>2011-09-26 10:38:50.0</estimatedDate>
+							<plannedDate>2011-09-26 10:39:04.0</plannedDate>
+							<inProgressDate>2011-09-26 11:41:25.0</inProgressDate>
+							<doneDate>2011-10-04 09:47:30.0</doneDate>
+							<effort>3</effort>
+							<value>0</value>
+							<rank>7</rank>
+							<creationDate>2011-09-14 14:33:30.0</creationDate>
+							<type>3</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[WoodWing Configurator ]]></name>
+							<textAs/>
+							<textICan/>
+							<textTo/>
+							<notes/>
+							<description><![CDATA[6274
+6275
+6277
+5612]]></description>
+							<creator id='17'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='371'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-26 11:02:12.0</creationDate>
+									<inProgressDate>2011-09-28 08:03:22.0</inProgressDate>
+									<doneDate>2011-10-04 09:47:30.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[BZ 5612]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='10'/>
+								</task>
+								<task id='370'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>0</rank>
+									<creationDate>2011-09-26 11:01:53.0</creationDate>
+									<inProgressDate>2011-09-26 12:24:24.0</inProgressDate>
+									<doneDate>2011-10-04 09:47:30.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[BZ 6277]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='10'/>
+								</task>
+								<task id='390'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>1</rank>
+									<creationDate>2011-09-27 18:27:18.0</creationDate>
+									<inProgressDate>2011-09-28 16:07:19.0</inProgressDate>
+									<doneDate>2011-10-04 09:47:30.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Include 'Generic application' element into Configurator module]]></name>
+									<description/>
+									<notes/>
+									<creator id='5'/>
+									<responsible id='11'/>
+								</task>
+								<task id='368'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-26 11:01:19.0</creationDate>
+									<inProgressDate>2011-09-26 16:26:27.0</inProgressDate>
+									<doneDate>2011-10-04 09:47:30.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[BZ 6274]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='10'/>
+								</task>
+								<task id='369'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>4</rank>
+									<creationDate>2011-09-26 11:01:35.0</creationDate>
+									<inProgressDate>2011-09-26 15:45:03.0</inProgressDate>
+									<doneDate>2011-10-04 09:47:30.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[BZ 6275]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='10'/>
+								</task>
+							</tasks>
+						</story>
+						<story id='234'>
+							<state>7</state>
+							<suggestedDate>2011-09-21 13:44:22.0</suggestedDate>
+							<acceptedDate>2011-09-21 13:44:28.0</acceptedDate>
+							<estimatedDate>2011-09-22 17:00:55.0</estimatedDate>
+							<plannedDate>2011-09-26 10:33:25.0</plannedDate>
+							<inProgressDate>2011-09-26 11:41:25.0</inProgressDate>
+							<doneDate>2011-10-10 11:56:38.0</doneDate>
+							<effort>3</effort>
+							<value>0</value>
+							<rank>10</rank>
+							<creationDate>2011-09-21 13:44:22.0</creationDate>
+							<type>0</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[A key for every module]]></name>
+							<textAs><![CDATA[an operator]]></textAs>
+							<textICan><![CDATA[activate every module individuality]]></textICan>
+							<textTo><![CDATA[end up with a Switch installation that only contains the tools i really need.]]></textTo>
+							<notes><![CDATA[h2. Notes
+
+
+Every module has its specific key. Each key only includes one feature that matches the module.
+
+h2. Acceptance Criteria
+
+
+Database module, SwitchClient module, SwitchClient SDK, scripting module, metadata module and configurator module functionality is unlocked with an individual key.
+Additional SwitchClient licenses are added with a specific product key (same as it used to be)
+
+]]></notes>
+							<description/>
+							<creator id='17'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='373'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>1</rank>
+									<creationDate>2011-09-26 11:04:20.0</creationDate>
+									<inProgressDate>2011-10-04 09:56:15.0</inProgressDate>
+									<doneDate>2011-10-10 11:56:38.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Check that each module depends on its own key]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='14'/>
+								</task>
+								<task id='372'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>1</rank>
+									<creationDate>2011-09-26 11:03:49.0</creationDate>
+									<inProgressDate>2011-10-03 14:28:25.0</inProgressDate>
+									<doneDate>2011-10-10 11:56:38.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Add real keys to modules in Switch]]></name>
+									<description/>
+									<notes><![CDATA[I cannot move this story to Done because I cannot submit my changes unless we have the keys with many possible activations.]]></notes>
+									<creator id='10'/>
+									<responsible id='14'/>
+								</task>
+							</tasks>
+						</story>
+						<story id='236'>
+							<state>7</state>
+							<suggestedDate>2011-09-22 17:14:15.0</suggestedDate>
+							<acceptedDate>2011-09-26 10:25:08.0</acceptedDate>
+							<estimatedDate>2011-09-26 11:22:37.0</estimatedDate>
+							<plannedDate>2011-09-26 11:23:33.0</plannedDate>
+							<inProgressDate>2011-09-26 11:41:25.0</inProgressDate>
+							<doneDate>2011-09-28 15:54:39.0</doneDate>
+							<effort>3</effort>
+							<value>0</value>
+							<rank>3</rank>
+							<creationDate>2011-09-22 17:14:15.0</creationDate>
+							<type>0</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[New installer]]></name>
+							<textAs><![CDATA[an operator]]></textAs>
+							<textICan><![CDATA[have an installer that does not refer to old switch flavors anymore but leaves old versions intact]]></textICan>
+							<textTo><![CDATA[end up with a clean installation of Switch 11 that does not affect previous versions]]></textTo>
+							<notes><![CDATA[h2. Notes
+
+
+Create a new installer for this new product.
+
+h2. Acceptance Criteria
+
+
+The installer is re-branded. (except for the artwork everything refers to 'Switch)
+Old versions are *not* longer removed as it used to be (i.e. on win uninstall, on Mac clean up if we can find it)
+So a user that has an old LightSwitch 10 and FullSwitch 10 actually ends up with 3 versions (LightSwitch 10, FullSwitch 10 and Switch 11)]]></notes>
+							<description/>
+							<creator id='17'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='385'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>1</rank>
+									<creationDate>2011-09-26 11:24:00.0</creationDate>
+									<inProgressDate>2011-09-26 13:01:18.0</inProgressDate>
+									<doneDate>2011-09-28 15:54:39.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Create new installer]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='14'/>
+								</task>
+							</tasks>
+						</story>
+						<story id='217'>
+							<state>7</state>
+							<suggestedDate>2011-09-13 15:12:30.0</suggestedDate>
+							<acceptedDate>2011-09-14 14:19:27.0</acceptedDate>
+							<estimatedDate>2011-09-22 17:16:07.0</estimatedDate>
+							<plannedDate>2011-09-26 10:33:53.0</plannedDate>
+							<inProgressDate>2011-09-26 11:41:25.0</inProgressDate>
+							<doneDate>2011-10-05 12:06:32.0</doneDate>
+							<effort>20</effort>
+							<value>0</value>
+							<rank>9</rank>
+							<creationDate>2011-09-13 15:12:30.0</creationDate>
+							<type>0</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[Switch name change]]></name>
+							<textAs><![CDATA[an operator]]></textAs>
+							<textICan><![CDATA[only see one product name 'Switch' and no more Light, Full or PowerSwitch]]></textICan>
+							<textTo><![CDATA[not be confused about possible property sets, flavors and modules.]]></textTo>
+							<notes><![CDATA[h2. Notes
+
+
+Change the names LightSwitch, FullSwitch and PowerSwitch to Switch.
+
+(artwork' about panel, splash screen, product icon is not part of this story. This artwork needs to be created first by marketing.)
+
+h2. Acceptance Criteria
+
+
+changes in:
+Application name
+titles in toolbars and dialogs
+name in messages
+all server components
+all folders on the system (application folder, library, ...)
+all files on a system (executable, .plist, ...)
+build system]]></notes>
+							<description/>
+							<creator id='17'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='382'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>4</rank>
+									<creationDate>2011-09-26 11:17:05.0</creationDate>
+									<inProgressDate>2011-09-27 18:09:59.0</inProgressDate>
+									<doneDate>2011-10-05 12:06:32.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Remove flavors from Switch code]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='5'/>
+								</task>
+								<task id='388'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-27 18:10:28.0</creationDate>
+									<inProgressDate>2011-09-30 16:21:49.0</inProgressDate>
+									<doneDate>2011-10-05 12:06:32.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Refactor SwitchCommon\GSCSwitchFeatures.h]]></name>
+									<description/>
+									<notes/>
+									<creator id='5'/>
+									<responsible id='10'/>
+								</task>
+								<task id='389'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-27 18:13:47.0</creationDate>
+									<inProgressDate>2011-10-04 08:13:33.0</inProgressDate>
+									<doneDate>2011-10-05 12:06:32.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Make sure AppleScript works after removing flavors]]></name>
+									<description><![CDATA[The problem is that for AppleScripts we use
+
+'tell application PowerSwitch_Service'
+
+This should be somehow resolved. Then we need to make sure that after flavors are removed the AppleScripts (existing and new) works fine]]></description>
+									<notes/>
+									<creator id='5'/>
+									<responsible id='10'/>
+								</task>
+								<task id='384'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>1</rank>
+									<creationDate>2011-09-26 11:20:22.0</creationDate>
+									<inProgressDate>2011-09-26 12:23:40.0</inProgressDate>
+									<doneDate>2011-10-05 12:06:32.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Check UI strings]]></name>
+									<description><![CDATA[Don't mention Flavor in UI]]></description>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='5'/>
+								</task>
+								<task id='383'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>5</rank>
+									<creationDate>2011-09-26 11:18:21.0</creationDate>
+									<inProgressDate>2011-09-28 15:50:38.0</inProgressDate>
+									<doneDate>2011-10-05 12:06:32.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Refactor License manager]]></name>
+									<description><![CDATA[Change pair SwitchFlavor - LicenseManager]]></description>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='10'/>
+								</task>
+								<task id='381'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>0</rank>
+									<creationDate>2011-09-26 11:15:48.0</creationDate>
+									<inProgressDate>2011-09-26 12:57:14.0</inProgressDate>
+									<doneDate>2011-10-05 12:06:32.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Update Switch build]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='14'/>
+								</task>
+							</tasks>
+						</story>
+						<story id='211'>
+							<state>7</state>
+							<suggestedDate>2011-09-09 16:54:47.0</suggestedDate>
+							<acceptedDate>2011-09-09 16:58:01.0</acceptedDate>
+							<estimatedDate>2011-09-12 11:57:04.0</estimatedDate>
+							<plannedDate>2011-09-26 10:33:39.0</plannedDate>
+							<inProgressDate>2011-09-26 11:41:25.0</inProgressDate>
+							<doneDate>2011-09-29 15:03:07.0</doneDate>
+							<effort>5</effort>
+							<value>0</value>
+							<rank>5</rank>
+							<creationDate>2011-09-09 16:54:47.0</creationDate>
+							<type>0</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[Scripting module]]></name>
+							<textAs/>
+							<textICan/>
+							<textTo/>
+							<notes><![CDATA[h2. Notes
+
+
+The script element and property editor “Define script expression” should be
+licensed separately from Switch. Meaning that only when I use a valid key, this
+flow element and its category title (Scripting) become available in the
+elements pane and the script expression property editor becomes available in
+the properties pane.
+The key can either be a permanent or trial key. Both keys have the same result,
+however a trial key is time bombed so when it expires, functionality cannot be
+used anymore. Same thing when you deactivate a key.
+
+h2. Acceptance Criteria
+
+
+Make the script element and features behave like the Database connect tool in
+PowerSwitch 10 update1. Meaning that only when it is licensed (separately from
+PowerSwitch), it can be used.
+Make sure the property editor “Define script expression” is only available if
+correctly licensed with a scripting module key.]]></notes>
+							<description><![CDATA[As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. Scripting, in order to get the most out of my investment.
+
+]]></description>
+							<creator id='2'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='366'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>1</rank>
+									<creationDate>2011-09-26 10:58:58.0</creationDate>
+									<inProgressDate>2011-09-26 12:13:35.0</inProgressDate>
+									<doneDate>2011-09-29 15:03:07.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Add license checking mechanism for Scripting module]]></name>
+									<description><![CDATA[Make sure Switch checks for separate license when loading Script element and Script features such as script expressions in UI]]></description>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='9'/>
+								</task>
+								<task id='367'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-26 10:59:19.0</creationDate>
+									<inProgressDate>2011-09-27 12:24:05.0</inProgressDate>
+									<doneDate>2011-09-29 15:03:07.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Move Script element to Scripting module]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='9'/>
+								</task>
+							</tasks>
+						</story>
+						<story id='215'>
+							<state>7</state>
+							<suggestedDate>2011-09-09 16:56:43.0</suggestedDate>
+							<acceptedDate>2011-09-09 16:57:53.0</acceptedDate>
+							<estimatedDate>2011-09-12 11:08:31.0</estimatedDate>
+							<plannedDate>2011-09-26 10:33:29.0</plannedDate>
+							<inProgressDate>2011-09-26 11:41:25.0</inProgressDate>
+							<doneDate>2011-09-28 11:17:19.0</doneDate>
+							<effort>1</effort>
+							<value>0</value>
+							<rank>1</rank>
+							<creationDate>2011-09-09 16:56:43.0</creationDate>
+							<type>0</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[SwitchProxy module]]></name>
+							<textAs/>
+							<textICan/>
+							<textTo/>
+							<notes><![CDATA[h2. Notes
+
+
+The SwitchProxy module is separate product and released with Switch 10 but from
+Switch 11 on it will be “commercially” considered as a module.
+No development effort required, just writing this story for completeness and to
+make sure it gets tested by QA 
+
+h2. Acceptance Criteria
+
+
+SwitchProxy works fine with Switch 11]]></notes>
+							<description><![CDATA[As a (prepress) manager on a tight budget I only want to pay for features I
+actually use, i.e. SwitchProxy module, in order to get the most out of my
+investment.
+
+]]></description>
+							<creator id='2'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='375'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>2</rank>
+									<creationDate>2011-09-26 11:05:59.0</creationDate>
+									<inProgressDate>2011-09-28 09:46:20.0</inProgressDate>
+									<doneDate>2011-09-28 11:17:19.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Check SwitchProxy is not able to connect to Switch if not licensed]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='10'/>
+								</task>
+								<task id='374'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>1</rank>
+									<creationDate>2011-09-26 11:05:00.0</creationDate>
+									<inProgressDate>2011-09-28 08:03:52.0</inProgressDate>
+									<doneDate>2011-09-28 11:17:19.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Add real key to Switch]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='10'/>
+								</task>
+							</tasks>
+						</story>
+						<story id='29'>
+							<state>7</state>
+							<suggestedDate>2011-09-09 16:53:40.0</suggestedDate>
+							<acceptedDate>2011-09-09 16:58:05.0</acceptedDate>
+							<estimatedDate>2011-09-12 12:32:02.0</estimatedDate>
+							<plannedDate>2011-09-26 10:33:42.0</plannedDate>
+							<inProgressDate>2011-09-26 11:41:25.0</inProgressDate>
+							<doneDate>2011-09-28 15:36:11.0</doneDate>
+							<effort>5</effort>
+							<value>0</value>
+							<rank>2</rank>
+							<creationDate>2011-09-09 16:53:40.0</creationDate>
+							<type>0</type>
+							<executionFrequency>1</executionFrequency>
+							<name><![CDATA[Client SDK module]]></name>
+							<textAs/>
+							<textICan/>
+							<textTo/>
+							<notes><![CDATA[h2. Notes
+
+
+The Client SDK is already a separate module (with its own license key) and
+released with Switch 10 but from Switch 11 on it will be “commercially”
+considered as a module.
+Whoever buys this module is automatically entitled to use the SwitchClient
+module. 
+
+h2. Acceptance Criteria
+
+
+Using only 1 key, the one for Client SDK, the same features and connection
+rights as in the SwitchClient module become available.
+Note that in such case the customer does not get separate keys for Client SDK
+and SwitchClient module.]]></notes>
+							<description><![CDATA[As a (prepress) manager on a tight budget I don’t want to pay twice for the
+same features, so when I have purchased the Client SDK module I need the
+SwitchClient module included. 
+
+]]></description>
+							<creator id='2'/>
+							<feature />
+							<actor />
+							<tasks>
+								<task id='380'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>3</rank>
+									<creationDate>2011-09-26 11:15:11.0</creationDate>
+									<inProgressDate>2011-09-28 11:53:41.0</inProgressDate>
+									<doneDate>2011-09-28 15:36:11.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Check that connecitons from Client and SDK based clients]]></name>
+									<description><![CDATA[Check different variations of Client and SDK licenses - Client should be able to connect with both licenses, SDK based Client should be able to connect only with ClientSDK license;
+
+Make sure that number of availble connections is calculated correctly according to license installed.]]></description>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='11'/>
+								</task>
+								<task id='377'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>1</rank>
+									<creationDate>2011-09-26 11:09:56.0</creationDate>
+									<inProgressDate>2011-09-27 14:55:40.0</inProgressDate>
+									<doneDate>2011-09-28 15:36:11.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Make sure Client SDK enables Client license]]></name>
+									<description/>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='11'/>
+								</task>
+								<task id='387'>
+									<estimation>0</estimation>
+									<type/>
+									<state>2</state>
+									<rank>0</rank>
+									<creationDate>2011-09-27 14:52:01.0</creationDate>
+									<inProgressDate>2011-09-27 14:52:45.0</inProgressDate>
+									<doneDate>2011-09-28 15:36:11.0</doneDate>
+									<blocked>false</blocked>
+									<name><![CDATA[Add Switch Client SDK license key]]></name>
+									<description><![CDATA[Make sure Switch allow connection of ClientSDK based apps only when key is activated]]></description>
+									<notes/>
+									<creator id='10'/>
+									<responsible id='11'/>
+								</task>
+							</tasks>
+						</story>
+					</stories>
+					<cliches>
+						<cliche id='45'>
+							<datePrise>2011-09-26 11:41:26.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>8</stories><inprogressStories>8</inprogressStories><doneStories>0</doneStories><tasks>21</tasks><waitTasks>12</waitTasks><inprogressTasks>8</inprogressTasks><doneTasks>1</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>21</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='50'>
+							<datePrise>2011-09-27 12:24:05.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>8</stories><inprogressStories>8</inprogressStories><doneStories>0</doneStories><tasks>23</tasks><waitTasks>11</waitTasks><inprogressTasks>9</inprogressTasks><doneTasks>3</doneTasks><sprintTasks>0</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>0</urgentTasks><storyTasks>23</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='51'>
+							<datePrise>2011-09-28 08:02:42.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>7</inprogressStories><doneStories>3</doneStories><tasks>30</tasks><waitTasks>10</waitTasks><inprogressTasks>9</inprogressTasks><doneTasks>11</doneTasks><sprintTasks>1</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>1</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='52'>
+							<datePrise>2011-09-29 09:37:18.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>5</inprogressStories><doneStories>5</doneStories><tasks>30</tasks><waitTasks>5</waitTasks><inprogressTasks>6</inprogressTasks><doneTasks>19</doneTasks><sprintTasks>1</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>1</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='53'>
+							<datePrise>2011-09-30 09:14:33.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>5</inprogressStories><doneStories>5</doneStories><tasks>31</tasks><waitTasks>3</waitTasks><inprogressTasks>8</inprogressTasks><doneTasks>20</doneTasks><sprintTasks>2</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='54'>
+							<datePrise>2011-10-01 09:14:33.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>5</inprogressStories><doneStories>5</doneStories><tasks>31</tasks><waitTasks>3</waitTasks><inprogressTasks>8</inprogressTasks><doneTasks>20</doneTasks><sprintTasks>2</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='55'>
+							<datePrise>2011-10-02 09:14:33.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>5</inprogressStories><doneStories>5</doneStories><tasks>31</tasks><waitTasks>3</waitTasks><inprogressTasks>8</inprogressTasks><doneTasks>20</doneTasks><sprintTasks>2</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='56'>
+							<datePrise>2011-10-03 14:28:13.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>5</inprogressStories><doneStories>5</doneStories><tasks>31</tasks><waitTasks>2</waitTasks><inprogressTasks>9</inprogressTasks><doneTasks>20</doneTasks><sprintTasks>2</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='57'>
+							<datePrise>2011-10-04 07:42:32.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>2</inprogressStories><doneStories>8</doneStories><tasks>32</tasks><waitTasks>0</waitTasks><inprogressTasks>5</inprogressTasks><doneTasks>27</doneTasks><sprintTasks>2</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>30</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='58'>
+							<datePrise>2011-10-05 09:31:52.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>1</inprogressStories><doneStories>9</doneStories><tasks>32</tasks><waitTasks>0</waitTasks><inprogressTasks>4</inprogressTasks><doneTasks>28</doneTasks><sprintTasks>2</sprintTasks><recurrentTasks>0</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>30</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='64'>
+							<datePrise>2011-10-06 09:46:37.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>1</inprogressStories><doneStories>9</doneStories><tasks>32</tasks><waitTasks>0</waitTasks><inprogressTasks>2</inprogressTasks><doneTasks>30</doneTasks><sprintTasks>3</sprintTasks><recurrentTasks>1</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='65'>
+							<datePrise>2011-10-07 16:01:41.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>1</inprogressStories><doneStories>9</doneStories><tasks>32</tasks><waitTasks>0</waitTasks><inprogressTasks>2</inprogressTasks><doneTasks>30</doneTasks><sprintTasks>3</sprintTasks><recurrentTasks>1</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='66'>
+							<datePrise>2011-10-08 16:01:41.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>1</inprogressStories><doneStories>9</doneStories><tasks>32</tasks><waitTasks>0</waitTasks><inprogressTasks>2</inprogressTasks><doneTasks>30</doneTasks><sprintTasks>3</sprintTasks><recurrentTasks>1</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='67'>
+							<datePrise>2011-10-09 16:01:41.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>1</inprogressStories><doneStories>9</doneStories><tasks>32</tasks><waitTasks>0</waitTasks><inprogressTasks>2</inprogressTasks><doneTasks>30</doneTasks><sprintTasks>3</sprintTasks><recurrentTasks>1</recurrentTasks><urgentTasks>2</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+						<cliche id='68'>
+							<datePrise>2011-10-10 11:46:06.0</datePrise>
+							<type>2</type>
+							<data><![CDATA[<cliche><stories>10</stories><inprogressStories>0</inprogressStories><doneStories>10</doneStories><tasks>33</tasks><waitTasks>1</waitTasks><inprogressTasks>1</inprogressTasks><doneTasks>31</doneTasks><sprintTasks>4</sprintTasks><recurrentTasks>1</recurrentTasks><urgentTasks>3</urgentTasks><storyTasks>29</storyTasks><remainingHours>0</remainingHours></cliche>]]></data>
+						</cliche>
+					</cliches>
+				</sprint>
+			</sprints>
+			<cliches>
+				<cliche id='10'>
+					<datePrise>2011-09-12 15:14:40.0</datePrise>
+					<type>0</type>
+					<data><![CDATA[<cliche><sprintID>R1S1</sprintID><activationDate>Mon Sep 12 15:14:40 CEST 2011</activationDate><sprintCapacity>34</sprintCapacity><functionalStoryCapacity>34</functionalStoryCapacity><technicalStoryCapacity>0</technicalStoryCapacity><defectStoryCapacity>0</defectStoryCapacity><functionalStoryBacklogPoints>47</functionalStoryBacklogPoints><technicalStoryBacklogPoints>0</technicalStoryBacklogPoints><defectStoryBacklogPoints>0</defectStoryBacklogPoints><productBacklogPoints>47</productBacklogPoints><functionalStoryProductRemainingPoints>47</functionalStoryProductRemainingPoints><technicalStoryProductRemainingPoints>0</technicalStoryProductRemainingPoints><defectStoryProductRemainingPoints>0</defectStoryProductRemainingPoints><productRemainingBacklogPoints>47</productRemainingBacklogPoints><functionalStoryReleaseRemainingPoints>34</functionalStoryReleaseRemainingPoints><technicalStoryReleaseRemainingPoints>0</technicalStoryReleaseRemainingPoints><defectStoryReleaseRemainingPoints>0</defectStoryReleaseRemainingPoints><finishedStories>0</finishedStories><inProgressStories>4</inProgressStories><plannedStories>0</plannedStories><estimatedStories>4</estimatedStories><acceptedStories>1</acceptedStories><suggestedStories>0</suggestedStories><unresolvedImpediments>0</unresolvedImpediments><sprintResources/></cliche>]]></data>
+				</cliche>
+				<cliche id='43'>
+					<datePrise>2011-09-26 10:33:14.0</datePrise>
+					<type>1</type>
+					<data><![CDATA[<cliche><sprintID>R1S1</sprintID><closeDate>Mon Sep 26 10:33:14 CEST 2011</closeDate><sprintVelocity>34</sprintVelocity><functionalStoryVelocity>34</functionalStoryVelocity><technicalStoryVelocity>0</technicalStoryVelocity><defectStoryVelocity>0</defectStoryVelocity><functionalStoryBacklogPoints>126</functionalStoryBacklogPoints><technicalStoryBacklogPoints>0</technicalStoryBacklogPoints><defectStoryBacklogPoints>0</defectStoryBacklogPoints><productBacklogPoints>126</productBacklogPoints><functionalStoryProductRemainingPoints>92</functionalStoryProductRemainingPoints><technicalStoryProductRemainingPoints>0</technicalStoryProductRemainingPoints><defectStoryProductRemainingPoints>0</defectStoryProductRemainingPoints><productRemainingBacklogPoints>92</productRemainingBacklogPoints><functionalStoryReleaseRemainingPoints>0</functionalStoryReleaseRemainingPoints><technicalStoryReleaseRemainingPoints>0</technicalStoryReleaseRemainingPoints><defectStoryReleaseRemainingPoints>0</defectStoryReleaseRemainingPoints><finishedStories>4</finishedStories><inProgressStories>0</inProgressStories><plannedStories>0</plannedStories><estimatedStories>10</estimatedStories><acceptedStories>7</acceptedStories><suggestedStories>2</suggestedStories><unresolvedImpediments>0</unresolvedImpediments><sprintResources/></cliche>]]></data>
+				</cliche>
+				<cliche id='44'>
+					<datePrise>2011-09-26 11:41:25.0</datePrise>
+					<type>0</type>
+					<data><![CDATA[<cliche><sprintID>R1S2</sprintID><activationDate>Mon Sep 26 11:41:25 CEST 2011</activationDate><sprintCapacity>42</sprintCapacity><functionalStoryCapacity>39</functionalStoryCapacity><technicalStoryCapacity>3</technicalStoryCapacity><defectStoryCapacity>0</defectStoryCapacity><functionalStoryBacklogPoints>129</functionalStoryBacklogPoints><technicalStoryBacklogPoints>3</technicalStoryBacklogPoints><defectStoryBacklogPoints>0</defectStoryBacklogPoints><productBacklogPoints>132</productBacklogPoints><functionalStoryProductRemainingPoints>95</functionalStoryProductRemainingPoints><technicalStoryProductRemainingPoints>3</technicalStoryProductRemainingPoints><defectStoryProductRemainingPoints>0</defectStoryProductRemainingPoints><productRemainingBacklogPoints>98</productRemainingBacklogPoints><functionalStoryReleaseRemainingPoints>39</functionalStoryReleaseRemainingPoints><technicalStoryReleaseRemainingPoints>3</technicalStoryReleaseRemainingPoints><defectStoryReleaseRemainingPoints>0</defectStoryReleaseRemainingPoints><finishedStories>4</finishedStories><inProgressStories>8</inProgressStories><plannedStories>0</plannedStories><estimatedStories>4</estimatedStories><acceptedStories>7</acceptedStories><suggestedStories>0</suggestedStories><unresolvedImpediments>0</unresolvedImpediments><sprintResources/></cliche>]]></data>
+				</cliche>
+				<cliche id='69'>
+					<datePrise>2011-10-10 11:56:39.0</datePrise>
+					<type>1</type>
+					<data><![CDATA[<cliche><sprintID>R1S2</sprintID><closeDate>Mon Oct 10 11:56:39 CEST 2011</closeDate><sprintVelocity>53</sprintVelocity><functionalStoryVelocity>42</functionalStoryVelocity><technicalStoryVelocity>11</technicalStoryVelocity><defectStoryVelocity>0</defectStoryVelocity><functionalStoryBacklogPoints>192</functionalStoryBacklogPoints><technicalStoryBacklogPoints>36</technicalStoryBacklogPoints><defectStoryBacklogPoints>0</defectStoryBacklogPoints><productBacklogPoints>228</productBacklogPoints><functionalStoryProductRemainingPoints>116</functionalStoryProductRemainingPoints><technicalStoryProductRemainingPoints>25</technicalStoryProductRemainingPoints><defectStoryProductRemainingPoints>0</defectStoryProductRemainingPoints><productRemainingBacklogPoints>141</productRemainingBacklogPoints><functionalStoryReleaseRemainingPoints>61</functionalStoryReleaseRemainingPoints><technicalStoryReleaseRemainingPoints>25</technicalStoryReleaseRemainingPoints><defectStoryReleaseRemainingPoints>0</defectStoryReleaseRemainingPoints><finishedStories>14</finishedStories><inProgressStories>0</inProgressStories><plannedStories>14</plannedStories><estimatedStories>12</estimatedStories><acceptedStories>16</acceptedStories><suggestedStories>4</suggestedStories><unresolvedImpediments>0</unresolvedImpediments><sprintResources/></cliche>]]></data>
+				</cliche>
+				<cliche id='70'>
+					<datePrise>2011-10-10 11:57:05.0</datePrise>
+					<type>0</type>
+					<data><![CDATA[<cliche><sprintID>R1S3</sprintID><activationDate>Mon Oct 10 11:57:05 CEST 2011</activationDate><sprintCapacity>86</sprintCapacity><functionalStoryCapacity>61</functionalStoryCapacity><technicalStoryCapacity>25</technicalStoryCapacity><defectStoryCapacity>0</defectStoryCapacity><functionalStoryBacklogPoints>192</functionalStoryBacklogPoints><technicalStoryBacklogPoints>36</technicalStoryBacklogPoints><defectStoryBacklogPoints>0</defectStoryBacklogPoints><productBacklogPoints>228</productBacklogPoints><functionalStoryProductRemainingPoints>116</functionalStoryProductRemainingPoints><technicalStoryProductRemainingPoints>25</technicalStoryProductRemainingPoints><defectStoryProductRemainingPoints>0</defectStoryProductRemainingPoints><productRemainingBacklogPoints>141</productRemainingBacklogPoints><functionalStoryReleaseRemainingPoints>61</functionalStoryReleaseRemainingPoints><technicalStoryReleaseRemainingPoints>25</technicalStoryReleaseRemainingPoints><defectStoryReleaseRemainingPoints>0</defectStoryReleaseRemainingPoints><finishedStories>14</finishedStories><inProgressStories>14</inProgressStories><plannedStories>0</plannedStories><estimatedStories>12</estimatedStories><acceptedStories>16</acceptedStories><suggestedStories>4</suggestedStories><unresolvedImpediments>0</unresolvedImpediments><sprintResources/></cliche>]]></data>
+				</cliche>
+				<cliche id='86'>
+					<datePrise>2011-10-24 10:42:35.0</datePrise>
+					<type>1</type>
+					<data><![CDATA[<cliche><sprintID>R1S3</sprintID><closeDate>Mon Oct 24 10:42:35 CEST 2011</closeDate><sprintVelocity>10</sprintVelocity><functionalStoryVelocity>8</functionalStoryVelocity><technicalStoryVelocity>2</technicalStoryVelocity><defectStoryVelocity>0</defectStoryVelocity><functionalStoryBacklogPoints>213</functionalStoryBacklogPoints><technicalStoryBacklogPoints>36</technicalStoryBacklogPoints><defectStoryBacklogPoints>0</defectStoryBacklogPoints><productBacklogPoints>249</productBacklogPoints><functionalStoryProductRemainingPoints>129</functionalStoryProductRemainingPoints><technicalStoryProductRemainingPoints>23</technicalStoryProductRemainingPoints><defectStoryProductRemainingPoints>0</defectStoryProductRemainingPoints><productRemainingBacklogPoints>152</productRemainingBacklogPoints><functionalStoryReleaseRemainingPoints>40</functionalStoryReleaseRemainingPoints><technicalStoryReleaseRemainingPoints>23</technicalStoryReleaseRemainingPoints><defectStoryReleaseRemainingPoints>0</defectStoryReleaseRemainingPoints><finishedStories>17</finishedStories><inProgressStories>0</inProgressStories><plannedStories>9</plannedStories><estimatedStories>16</estimatedStories><acceptedStories>16</acceptedStories><suggestedStories>12</suggestedStories><unresolvedImpediments>0</unresolvedImpediments><sprintResources/></cliche>]]></data>
+				</cliche>
+				<cliche id='87'>
+					<datePrise>2011-10-24 12:06:06.0</datePrise>
+					<type>0</type>
+					<data><![CDATA[<cliche><sprintID>R1S4</sprintID><activationDate>Mon Oct 24 12:06:06 CEST 2011</activationDate><sprintCapacity>86</sprintCapacity><functionalStoryCapacity>63</functionalStoryCapacity><technicalStoryCapacity>23</technicalStoryCapacity><defectStoryCapacity>0</defectStoryCapacity><functionalStoryBacklogPoints>213</functionalStoryBacklogPoints><technicalStoryBacklogPoints>36</technicalStoryBacklogPoints><defectStoryBacklogPoints>0</defectStoryBacklogPoints><productBacklogPoints>249</productBacklogPoints><functionalStoryProductRemainingPoints>129</functionalStoryProductRemainingPoints><technicalStoryProductRemainingPoints>23</technicalStoryProductRemainingPoints><defectStoryProductRemainingPoints>0</defectStoryProductRemainingPoints><productRemainingBacklogPoints>152</productRemainingBacklogPoints><functionalStoryReleaseRemainingPoints>63</functionalStoryReleaseRemainingPoints><technicalStoryReleaseRemainingPoints>23</technicalStoryReleaseRemainingPoints><defectStoryReleaseRemainingPoints>0</defectStoryReleaseRemainingPoints><finishedStories>17</finishedStories><inProgressStories>13</inProgressStories><plannedStories>0</plannedStories><estimatedStories>10</estimatedStories><acceptedStories>16</acceptedStories><suggestedStories>13</suggestedStories><unresolvedImpediments>0</unresolvedImpediments><sprintResources/></cliche>]]></data>
+				</cliche>
+				<cliche id='104'>
+					<datePrise>2011-11-08 09:17:12.0</datePrise>
+					<type>1</type>
+					<data><![CDATA[<cliche><sprintID>R1S4</sprintID><closeDate>Tue Nov 08 09:17:12 CET 2011</closeDate><sprintVelocity>50</sprintVelocity><functionalStoryVelocity>35</functionalStoryVelocity><technicalStoryVelocity>15</technicalStoryVelocity><defectStoryVelocity>0</defectStoryVelocity><functionalStoryBacklogPoints>256</functionalStoryBacklogPoints><technicalStoryBacklogPoints>39</technicalStoryBacklogPoints><defectStoryBacklogPoints>0</defectStoryBacklogPoints><productBacklogPoints>295</productBacklogPoints><functionalStoryProductRemainingPoints>137</functionalStoryProductRemainingPoints><technicalStoryProductRemainingPoints>11</technicalStoryProductRemainingPoints><defectStoryProductRemainingPoints>0</defectStoryProductRemainingPoints><productRemainingBacklogPoints>148</productRemainingBacklogPoints><functionalStoryReleaseRemainingPoints>49</functionalStoryReleaseRemainingPoints><technicalStoryReleaseRemainingPoints>8</technicalStoryReleaseRemainingPoints><defectStoryReleaseRemainingPoints>0</defectStoryReleaseRemainingPoints><finishedStories>27</finishedStories><inProgressStories>0</inProgressStories><plannedStories>3</plannedStories><estimatedStories>18</estimatedStories><acceptedStories>24</acceptedStories><suggestedStories>16</suggestedStories><unresolvedImpediments>0</unresolvedImpediments><sprintResources/></cliche>]]></data>
+				</cliche>
+				<cliche id='105'>
+					<datePrise>2011-11-08 14:14:34.0</datePrise>
+					<type>0</type>
+					<data><![CDATA[<cliche><sprintID>R1S5</sprintID><activationDate>Tue Nov 08 14:14:34 CET 2011</activationDate><sprintCapacity>110</sprintCapacity><functionalStoryCapacity>95</functionalStoryCapacity><technicalStoryCapacity>15</technicalStoryCapacity><defectStoryCapacity>0</defectStoryCapacity><functionalStoryBacklogPoints>257</functionalStoryBacklogPoints><technicalStoryBacklogPoints>46</technicalStoryBacklogPoints><defectStoryBacklogPoints>0</defectStoryBacklogPoints><productBacklogPoints>303</productBacklogPoints><functionalStoryProductRemainingPoints>138</functionalStoryProductRemainingPoints><technicalStoryProductRemainingPoints>18</technicalStoryProductRemainingPoints><defectStoryProductRemainingPoints>0</defectStoryProductRemainingPoints><productRemainingBacklogPoints>156</productRemainingBacklogPoints><functionalStoryReleaseRemainingPoints>95</functionalStoryReleaseRemainingPoints><technicalStoryReleaseRemainingPoints>15</technicalStoryReleaseRemainingPoints><defectStoryReleaseRemainingPoints>0</defectStoryReleaseRemainingPoints><finishedStories>27</finishedStories><inProgressStories>12</inProgressStories><plannedStories>0</plannedStories><estimatedStories>10</estimatedStories><acceptedStories>25</acceptedStories><suggestedStories>16</suggestedStories><unresolvedImpediments>0</unresolvedImpediments><sprintResources/></cliche>]]></data>
+				</cliche>
+			</cliches>
+		</release>
+	</releases>
+	<actors/>
+	<features/>
+	<stories>
+		<story id='289'>
+			<state>2</state>
+			<suggestedDate>2011-10-11 15:17:56.0</suggestedDate>
+			<acceptedDate>2011-10-11 15:18:07.0</acceptedDate>
+			<estimatedDate/>
+			<plannedDate/>
+			<inProgressDate/>
+			<doneDate/>
+			<effort/>
+			<value>0</value>
+			<rank>34</rank>
+			<creationDate>2011-10-11 15:17:56.0</creationDate>
+			<type>0</type>
+			<executionFrequency>1</executionFrequency>
+			<name><![CDATA[Tab based property pane]]></name>
+			<textAs><![CDATA[a flow designer]]></textAs>
+			<textICan><![CDATA[get a clear overview all properties of a tool]]></textICan>
+			<textTo><![CDATA[get a better view of all functionality that tools offers and to set up the tool more easily]]></textTo>
+			<notes><![CDATA[h2. Notes
+
+:
+1) Add tabs to the property pane.
+In Scripter this could result in some kind of property grouping feature. If no groups are made, then tools looks like it used to look. If groups are defined, the group name is shown as tab title.
+
+2) second attempt to clean up the property pane GUI. Where for Switch 10 we tried to get some kind of form layout in a table we could now use a real form. This would also not affect the preferences table GUI.
+
+h2. Acceptance Criteria
+
+
+property pane looks like image in attachment]]></notes>
+			<description/>
+			<creator id='17'/>
+			<feature />
+			<actor />
+			<tasks/>
+		</story>
+	</stories>
+</product>
