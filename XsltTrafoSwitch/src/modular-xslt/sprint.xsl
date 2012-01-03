@@ -5,7 +5,7 @@
 <xsl:import href="task.xsl"/>
 <xsl:output method="text"/>
 <xsl:template match="sprints">
-<xsl:for-each select="sprint">"#<xsl:value-of select="@id" />"^"Sprint <xsl:value-of select="orderNumber" />: <xsl:value-of select="substring(startDate,1,10)"/> -> <xsl:value-of select="substring(endDate,1,10)"/>"^"<xsl:call-template name="template-sprint"/>"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#<xsl:value-of select="../../@id" />"^""^""^""^""^""^""^"<xsl:value-of select="startDate" />"^"<xsl:value-of select="endDate" />"^""^""^""^""^""^""^""
+<xsl:for-each select="sprint">"#<xsl:value-of select="@id" />"^"Sprint <xsl:value-of select="orderNumber" />: <xsl:value-of select="substring(startDate,1,10)"/> -> <xsl:value-of select="substring(endDate,1,10)"/>"^"<xsl:call-template name="template-sprint"/>"^"Sprint"^""^"no"^""^""^""^""^"yes"^"#<xsl:value-of select="../../@id" />"^""^""^""^""^""^""^"<xsl:value-of select="startDate" />"^"<xsl:value-of select="endDate" />"^""^""^""^""^""^""^""^"#16"
 <xsl:apply-templates select="stories"/>
 <xsl:apply-templates select="tasks"/>
 </xsl:for-each>

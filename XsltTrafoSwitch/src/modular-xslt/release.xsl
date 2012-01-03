@@ -4,7 +4,7 @@
 <xsl:import href="template-release.xsl"/>
 <xsl:template match="/product/releases">
 <xsl:for-each select="release">
-"#<xsl:value-of select="@id" />"^"<xsl:value-of select="name" />"^"<xsl:call-template name="template-release"/>"^"Release"^""^"no"^""^""^""^""^"yes"^""^""^""^""^""^""^""^"<xsl:value-of select="startDate" />"^"<xsl:value-of select="endDate" />"^""^""^""^""^""^""^""
+"#<xsl:value-of select="@id" />"^"<xsl:value-of select="name" />"^"<xsl:call-template name="template-release"/>"^"Release"^""^"no"^""^""^""^""^"yes"^""^""^""^""^""^""^""^"<xsl:value-of select="startDate" />"^"<xsl:value-of select="endDate" />"^""^""^""^""^""^""^""^"#16"
 <xsl:apply-templates select="sprints"/>
 </xsl:for-each>
 </xsl:template>
