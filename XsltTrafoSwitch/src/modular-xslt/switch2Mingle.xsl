@@ -9,4 +9,4 @@
 <xsl:apply-templates select="/product/releases"/>
 <xsl:apply-templates select="/product/stories"/>
 </xsl:template>
-</xsl:stylesheet>
+</xsl:stylesheet> 
